@@ -1,7 +1,25 @@
-version: 1
+version: 2
+
+analysis_objects:
+  allowed: [business, company, industry, security, share_class, policy, strategy, analyst_self]
+  rule: "先定义分析对象，再选模型。公司质量、证券赔率和股权类别/市场分割必须分开。"
+  security_or_share_class_forced_models:
+    - "071" # 系统边界
+    - "032" # 期望值
+    - "033" # 尾部风险
+    - "037" # 信息不对称与信号
+    - "041" # 机会成本
+    - "043" # 供需
+    - "048" # 交易成本/套利摩擦
+    - "097" # 情景规划
+  analyst_self_forced_models:
+    - "020" # 元认知
+    - "055" # 确认偏误
+
 modes:
   quick-scan:
     target_models: "10-20"
+    target_mechanism_clusters: "6-12"
     require_domains:
       - epistemology_or_statistics
       - economics_or_business
@@ -11,25 +29,46 @@ modes:
   deep-audit:
     target_models: 100
     relevance_values: [Material, Secondary, Not material]
+    rule: "100个模型全部判相关性；最终按mechanism_cluster汇总，Material数量不是投票数。"
   adversarial-audit:
     target: "attack_thesis"
     priority_tags:
       - base-rate
-      - falsification
-      - inversion
+      - falsifiability
       - tail-risk
       - competition
       - substitution
       - policy-resistance
       - incentives
-      - moat-decay
+      - moat
       - scenario
       - optionality
 
+scoring:
+  object_match: 3
+  mode_priority_tag: 2
+  explicit_problem_match: 3
+  evidence_available: 2
+  anti_trigger_match: -4
+  same_cluster_already_selected: -3
+  no_observable_evidence: -2
+
+selection_pipeline:
+  - "Step 0: 明确analysis_object。具体股票/ADR/A股/H股至少同时建立company与security/share_class两层。"
+  - "Step 1: 读取config/model-routing-metadata.yaml中的analysis_objects、tags、mechanism_cluster与overlaps_with。"
+  - "Step 2: 根据研究问题、模式与已有证据计算候选分数。"
+  - "Step 3: 读取config/mechanism-clusters.yaml去重；同簇默认只保留primary_model，除非第二模型回答不同子问题且有独立证据。"
+  - "Step 4: 执行原子Skill；记录其证据是否独立、是否改变结论、是否产生新证伪条件。"
+  - "Step 5: Deep Audit仍对100模型逐项判相关性，但汇总按机制簇，不按模型个数计权。"
+  - "Step 6: 把模型对之间的共选、同证据、同结论、增量信息写入Model Independence Audit记录。"
+  - "Step 7: 若候选重复模型达到替换阈值，标记Merge/Replace，但不自动改课程编号。"
+
 selection_rules:
   - "先按问题结构选模型，不按课程顺序选。"
-  - "同一底层机制最多保留1个主模型+2个辅助模型。"
-  - "没有数据可检验的模型降低优先级。"
-  - "若结论高度依赖单一假设，优先路由到反证与情景模型。"
-  - "若参与者会适应，必须至少加入1个博弈/激励/复杂系统模型。"
-  - "若存在不可逆资本配置，必须考虑尾部风险、安全边际或实物期权。"
+  - "同一底层机制默认只保留1个主模型。"
+  - "第二模型只有在子问题和证据都独立时才展开。"
+  - "没有可观察证据的模型不得因为类比漂亮而升级为Material。"
+  - "公司好坏、证券价格、股权类别/市场分割必须显式拆开。"
+  - "若参与者会适应，至少加入1个博弈/激励/复杂系统模型。"
+  - "若存在不可逆资本配置，考虑尾部风险、安全边际或实物期权。"
+  - "最终报告不得用Material模型数量作为信心加权。"

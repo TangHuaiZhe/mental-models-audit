@@ -1,0 +1,603 @@
+version: 1
+schema: model-routing-metadata-v1
+models:
+  "001":
+    mechanism_cluster: "map-territory"
+    analysis_objects: ["company", "industry", "strategy", "analyst_self"]
+    tags: ["reasoning", "epistemology", "map", "territory"]
+    overlaps_with: []
+    independence_score: 1.00
+  "002":
+    mechanism_cluster: "first-principles"
+    analysis_objects: ["company", "industry", "strategy", "analyst_self"]
+    tags: ["reasoning", "epistemology", "first", "principles"]
+    overlaps_with: []
+    independence_score: 1.00
+  "003":
+    mechanism_cluster: "circle-of-competence"
+    analysis_objects: ["company", "industry", "strategy", "analyst_self"]
+    tags: ["reasoning", "epistemology", "circle", "of", "competence"]
+    overlaps_with: []
+    independence_score: 1.00
+  "004":
+    mechanism_cluster: "inversion"
+    analysis_objects: ["company", "industry", "strategy", "analyst_self"]
+    tags: ["reasoning", "epistemology", "inversion"]
+    overlaps_with: []
+    independence_score: 1.00
+  "005":
+    mechanism_cluster: "second-order-thinking"
+    analysis_objects: ["company", "industry", "strategy", "analyst_self"]
+    tags: ["reasoning", "epistemology", "second", "order", "thinking"]
+    overlaps_with: []
+    independence_score: 1.00
+  "006":
+    mechanism_cluster: "probabilistic-thinking"
+    analysis_objects: ["company", "industry", "strategy", "analyst_self"]
+    tags: ["reasoning", "epistemology", "probabilistic", "thinking"]
+    overlaps_with: []
+    independence_score: 1.00
+  "007":
+    mechanism_cluster: "bayesian-updating"
+    analysis_objects: ["company", "industry", "strategy", "analyst_self"]
+    tags: ["reasoning", "epistemology", "bayesian", "updating"]
+    overlaps_with: []
+    independence_score: 1.00
+  "008":
+    mechanism_cluster: "evidence-discipline"
+    analysis_objects: ["company", "industry", "strategy", "analyst_self"]
+    tags: ["reasoning", "epistemology", "falsifiability"]
+    overlaps_with: ["018"]
+    independence_score: 0.65
+  "009":
+    mechanism_cluster: "occams-razor"
+    analysis_objects: ["company", "industry", "strategy", "analyst_self"]
+    tags: ["reasoning", "epistemology", "occams", "razor"]
+    overlaps_with: []
+    independence_score: 1.00
+  "010":
+    mechanism_cluster: "steelmanning"
+    analysis_objects: ["company", "industry", "strategy", "analyst_self"]
+    tags: ["reasoning", "epistemology", "steelmanning"]
+    overlaps_with: []
+    independence_score: 1.00
+  "011":
+    mechanism_cluster: "necessary-sufficient"
+    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
+    tags: ["logic", "evidence", "necessary", "sufficient"]
+    overlaps_with: []
+    independence_score: 1.00
+  "012":
+    mechanism_cluster: "deduction-induction-abduction"
+    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
+    tags: ["logic", "evidence", "deduction", "induction", "abduction"]
+    overlaps_with: []
+    independence_score: 1.00
+  "013":
+    mechanism_cluster: "causal-inference"
+    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
+    tags: ["logic", "evidence", "correlation", "causation"]
+    overlaps_with: ["014"]
+    independence_score: 0.85
+  "014":
+    mechanism_cluster: "causal-inference"
+    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
+    tags: ["logic", "evidence", "counterfactual"]
+    overlaps_with: ["013"]
+    independence_score: 0.65
+  "015":
+    mechanism_cluster: "thought-experiment"
+    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
+    tags: ["logic", "evidence", "thought", "experiment"]
+    overlaps_with: []
+    independence_score: 1.00
+  "016":
+    mechanism_cluster: "operational-definition"
+    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
+    tags: ["logic", "evidence", "operational", "definition"]
+    overlaps_with: []
+    independence_score: 1.00
+  "017":
+    mechanism_cluster: "induction-black-swan"
+    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
+    tags: ["logic", "evidence", "induction", "black", "swan"]
+    overlaps_with: []
+    independence_score: 1.00
+  "018":
+    mechanism_cluster: "evidence-discipline"
+    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
+    tags: ["logic", "evidence", "hierarchy"]
+    overlaps_with: ["008"]
+    independence_score: 0.85
+  "019":
+    mechanism_cluster: "fact-value"
+    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
+    tags: ["logic", "evidence", "fact", "value"]
+    overlaps_with: []
+    independence_score: 1.00
+  "020":
+    mechanism_cluster: "metacognition"
+    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
+    tags: ["logic", "evidence", "metacognition"]
+    overlaps_with: []
+    independence_score: 1.00
+  "021":
+    mechanism_cluster: "stock-flow"
+    analysis_objects: ["business", "company", "industry"]
+    tags: ["engineering", "constraints", "conservation", "stock", "flow"]
+    overlaps_with: ["075"]
+    independence_score: 0.65
+  "022":
+    mechanism_cluster: "entropy"
+    analysis_objects: ["business", "company", "industry"]
+    tags: ["engineering", "constraints", "entropy"]
+    overlaps_with: []
+    independence_score: 1.00
+  "023":
+    mechanism_cluster: "energy-efficiency-constraints"
+    analysis_objects: ["business", "company", "industry"]
+    tags: ["engineering", "constraints", "energy", "efficiency"]
+    overlaps_with: []
+    independence_score: 1.00
+  "024":
+    mechanism_cluster: "leverage"
+    analysis_objects: ["business", "company", "industry"]
+    tags: ["engineering", "constraints", "leverage"]
+    overlaps_with: ["076"]
+    independence_score: 0.65
+  "025":
+    mechanism_cluster: "threshold-phase-transition"
+    analysis_objects: ["business", "company", "industry"]
+    tags: ["engineering", "constraints", "threshold", "phase", "transition"]
+    overlaps_with: []
+    independence_score: 1.00
+  "026":
+    mechanism_cluster: "scale-square-cube"
+    analysis_objects: ["business", "company", "industry"]
+    tags: ["engineering", "constraints", "scale", "square", "cube"]
+    overlaps_with: []
+    independence_score: 1.00
+  "027":
+    mechanism_cluster: "resilience"
+    analysis_objects: ["business", "company", "industry"]
+    tags: ["engineering", "constraints", "margin", "of", "safety", "redundancy"]
+    overlaps_with: ["065", "069"]
+    independence_score: 0.85
+  "028":
+    mechanism_cluster: "failure-analysis"
+    analysis_objects: ["business", "company", "industry"]
+    tags: ["engineering", "constraints", "fmea"]
+    overlaps_with: ["030"]
+    independence_score: 0.85
+  "029":
+    mechanism_cluster: "bottleneck-toc"
+    analysis_objects: ["business", "company", "industry"]
+    tags: ["engineering", "constraints", "bottleneck", "toc"]
+    overlaps_with: []
+    independence_score: 1.00
+  "030":
+    mechanism_cluster: "failure-analysis"
+    analysis_objects: ["business", "company", "industry"]
+    tags: ["engineering", "constraints", "reliability", "fault", "tree"]
+    overlaps_with: ["028"]
+    independence_score: 0.65
+  "031":
+    mechanism_cluster: "base-rate"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["statistics", "probability", "base", "rate", "base-rate", "outside-view"]
+    overlaps_with: ["054"]
+    independence_score: 0.85
+  "032":
+    mechanism_cluster: "expected-value"
+    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    tags: ["statistics", "probability", "expected", "value"]
+    overlaps_with: []
+    independence_score: 1.00
+  "033":
+    mechanism_cluster: "variance-tail-risk"
+    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    tags: ["statistics", "probability", "variance", "tail", "risk", "tail-risk", "permanent-loss"]
+    overlaps_with: []
+    independence_score: 1.00
+  "034":
+    mechanism_cluster: "law-of-large-numbers"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["statistics", "probability", "law", "of", "large", "numbers"]
+    overlaps_with: []
+    independence_score: 1.00
+  "035":
+    mechanism_cluster: "mean-reversion"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["statistics", "probability", "mean", "reversion"]
+    overlaps_with: []
+    independence_score: 1.00
+  "036":
+    mechanism_cluster: "selection-survivorship"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["statistics", "probability", "selection", "survivorship"]
+    overlaps_with: []
+    independence_score: 1.00
+  "037":
+    mechanism_cluster: "signaling"
+    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    tags: ["statistics", "probability", "information", "asymmetry", "signaling", "information-asymmetry"]
+    overlaps_with: ["085"]
+    independence_score: 0.85
+  "038":
+    mechanism_cluster: "information-value"
+    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    tags: ["statistics", "probability", "information", "value", "value-of-information"]
+    overlaps_with: []
+    independence_score: 1.00
+  "039":
+    mechanism_cluster: "compounding"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["statistics", "probability", "compounding"]
+    overlaps_with: []
+    independence_score: 1.00
+  "040":
+    mechanism_cluster: "covariance-diversification"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["statistics", "probability", "covariance", "diversification"]
+    overlaps_with: []
+    independence_score: 1.00
+  "041":
+    mechanism_cluster: "opportunity-cost"
+    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    tags: ["economics", "business", "opportunity", "cost"]
+    overlaps_with: ["096"]
+    independence_score: 0.85
+  "042":
+    mechanism_cluster: "marginal-utility"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["economics", "business", "marginal", "utility"]
+    overlaps_with: []
+    independence_score: 1.00
+  "043":
+    mechanism_cluster: "supply-demand"
+    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    tags: ["economics", "business", "supply", "demand", "supply-demand", "pricing"]
+    overlaps_with: []
+    independence_score: 1.00
+  "044":
+    mechanism_cluster: "agency-governance"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["economics", "business", "incentive", "principal", "agent"]
+    overlaps_with: ["087", "088"]
+    independence_score: 0.85
+  "045":
+    mechanism_cluster: "comparative-advantage"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["economics", "business", "comparative", "advantage"]
+    overlaps_with: []
+    independence_score: 1.00
+  "046":
+    mechanism_cluster: "economies-of-scale-scope"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["economics", "business", "economies", "of", "scale", "scope", "scale-economies"]
+    overlaps_with: []
+    independence_score: 1.00
+  "047":
+    mechanism_cluster: "network-effects"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["economics", "business", "network", "effects"]
+    overlaps_with: []
+    independence_score: 1.00
+  "048":
+    mechanism_cluster: "transaction-costs"
+    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    tags: ["economics", "business", "transaction", "costs", "switching-cost", "transaction-cost"]
+    overlaps_with: []
+    independence_score: 1.00
+  "049":
+    mechanism_cluster: "creative-destruction"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["economics", "business", "creative", "destruction", "disruption", "substitution"]
+    overlaps_with: []
+    independence_score: 1.00
+  "050":
+    mechanism_cluster: "pricing-power-value-capture"
+    analysis_objects: ["business", "company", "industry", "security"]
+    tags: ["economics", "business", "pricing", "power", "value", "capture", "pricing-power", "value-capture"]
+    overlaps_with: []
+    independence_score: 1.00
+  "051":
+    mechanism_cluster: "loss-aversion-prospect"
+    analysis_objects: ["analyst_self", "company", "security"]
+    tags: ["behavioral", "bias", "loss", "aversion", "prospect"]
+    overlaps_with: []
+    independence_score: 1.00
+  "052":
+    mechanism_cluster: "anchoring"
+    analysis_objects: ["analyst_self", "company", "security"]
+    tags: ["behavioral", "bias", "anchoring"]
+    overlaps_with: []
+    independence_score: 1.00
+  "053":
+    mechanism_cluster: "availability"
+    analysis_objects: ["analyst_self", "company", "security"]
+    tags: ["behavioral", "bias", "availability"]
+    overlaps_with: []
+    independence_score: 1.00
+  "054":
+    mechanism_cluster: "base-rate"
+    analysis_objects: ["analyst_self", "company", "security"]
+    tags: ["behavioral", "bias", "representativeness", "base", "rate", "neglect"]
+    overlaps_with: ["031"]
+    independence_score: 0.65
+  "055":
+    mechanism_cluster: "thesis-bias"
+    analysis_objects: ["analyst_self", "company", "security"]
+    tags: ["behavioral", "bias", "confirmation"]
+    overlaps_with: ["060"]
+    independence_score: 0.85
+  "056":
+    mechanism_cluster: "cognitive-dissonance"
+    analysis_objects: ["analyst_self", "company", "security"]
+    tags: ["behavioral", "bias", "cognitive", "dissonance"]
+    overlaps_with: []
+    independence_score: 1.00
+  "057":
+    mechanism_cluster: "sunk-cost"
+    analysis_objects: ["analyst_self", "company", "security"]
+    tags: ["behavioral", "bias", "sunk", "cost"]
+    overlaps_with: []
+    independence_score: 1.00
+  "058":
+    mechanism_cluster: "endowment-mental-accounting"
+    analysis_objects: ["analyst_self", "company", "security"]
+    tags: ["behavioral", "bias", "endowment", "mental", "accounting"]
+    overlaps_with: []
+    independence_score: 1.00
+  "059":
+    mechanism_cluster: "groupthink-conformity"
+    analysis_objects: ["analyst_self", "company", "security"]
+    tags: ["behavioral", "bias", "groupthink", "conformity"]
+    overlaps_with: []
+    independence_score: 1.00
+  "060":
+    mechanism_cluster: "thesis-bias"
+    analysis_objects: ["analyst_self", "company", "security"]
+    tags: ["behavioral", "bias", "motivated", "reasoning"]
+    overlaps_with: ["055"]
+    independence_score: 0.65
+  "061":
+    mechanism_cluster: "natural-selection"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["evolution", "competition", "natural", "selection"]
+    overlaps_with: []
+    independence_score: 1.00
+  "062":
+    mechanism_cluster: "fitness-landscape"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["evolution", "competition", "fitness", "landscape"]
+    overlaps_with: []
+    independence_score: 1.00
+  "063":
+    mechanism_cluster: "niche-competition"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["evolution", "competition", "niche"]
+    overlaps_with: []
+    independence_score: 1.00
+  "064":
+    mechanism_cluster: "symbiosis"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["evolution", "competition", "symbiosis"]
+    overlaps_with: []
+    independence_score: 1.00
+  "065":
+    mechanism_cluster: "resilience"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["evolution", "competition", "robustness", "immunity"]
+    overlaps_with: ["027", "069"]
+    independence_score: 0.65
+  "066":
+    mechanism_cluster: "arms-race"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["evolution", "competition", "arms", "race", "arms-race", "competitive-response"]
+    overlaps_with: []
+    independence_score: 1.00
+  "067":
+    mechanism_cluster: "path-dependence"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["evolution", "competition", "path", "dependence"]
+    overlaps_with: ["091"]
+    independence_score: 0.85
+  "068":
+    mechanism_cluster: "ecosystem-food-web"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["evolution", "competition", "ecosystem", "food", "web"]
+    overlaps_with: []
+    independence_score: 1.00
+  "069":
+    mechanism_cluster: "resilience"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["evolution", "competition", "diversity", "resilience"]
+    overlaps_with: ["027", "065"]
+    independence_score: 0.65
+  "070":
+    mechanism_cluster: "optionality"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["evolution", "competition", "antifragility", "optionality"]
+    overlaps_with: ["098"]
+    independence_score: 0.65
+  "071":
+    mechanism_cluster: "system-boundary"
+    analysis_objects: ["business", "company", "industry", "policy", "strategy", "share_class"]
+    tags: ["systems", "feedback", "system", "boundary", "system-boundary", "share-class"]
+    overlaps_with: []
+    independence_score: 1.00
+  "072":
+    mechanism_cluster: "feedback-learning"
+    analysis_objects: ["business", "company", "industry", "policy", "strategy"]
+    tags: ["systems", "feedback", "loops", "feedback-loop"]
+    overlaps_with: ["099"]
+    independence_score: 0.85
+  "073":
+    mechanism_cluster: "delay"
+    analysis_objects: ["business", "company", "industry", "policy", "strategy"]
+    tags: ["systems", "feedback", "delay", "lag"]
+    overlaps_with: []
+    independence_score: 1.00
+  "074":
+    mechanism_cluster: "nonlinearity-emergence"
+    analysis_objects: ["business", "company", "industry", "policy", "strategy"]
+    tags: ["systems", "feedback", "nonlinearity", "emergence"]
+    overlaps_with: []
+    independence_score: 1.00
+  "075":
+    mechanism_cluster: "stock-flow"
+    analysis_objects: ["business", "company", "industry", "policy", "strategy"]
+    tags: ["systems", "feedback", "stock", "flow", "dynamics"]
+    overlaps_with: ["021"]
+    independence_score: 0.85
+  "076":
+    mechanism_cluster: "leverage"
+    analysis_objects: ["business", "company", "industry", "policy", "strategy"]
+    tags: ["systems", "feedback", "leverage", "points"]
+    overlaps_with: ["024"]
+    independence_score: 0.85
+  "077":
+    mechanism_cluster: "system-traps-policy-resistance"
+    analysis_objects: ["business", "company", "industry", "policy", "strategy"]
+    tags: ["systems", "feedback", "system", "traps", "policy", "resistance", "policy-resistance"]
+    overlaps_with: []
+    independence_score: 1.00
+  "078":
+    mechanism_cluster: "control-observability"
+    analysis_objects: ["business", "company", "industry", "policy", "strategy"]
+    tags: ["systems", "feedback", "cybernetics"]
+    overlaps_with: ["079"]
+    independence_score: 0.65
+  "079":
+    mechanism_cluster: "control-observability"
+    analysis_objects: ["business", "company", "industry", "policy", "strategy"]
+    tags: ["systems", "feedback", "observability", "controllability"]
+    overlaps_with: ["078"]
+    independence_score: 0.85
+  "080":
+    mechanism_cluster: "complex-adaptive-systems"
+    analysis_objects: ["business", "company", "industry", "policy", "strategy"]
+    tags: ["systems", "feedback", "complex", "adaptive"]
+    overlaps_with: []
+    independence_score: 1.00
+  "081":
+    mechanism_cluster: "nash-equilibrium"
+    analysis_objects: ["company", "industry", "policy", "strategy", "security", "share_class"]
+    tags: ["game-theory", "institutions", "nash", "equilibrium", "nash-equilibrium", "strategic-response"]
+    overlaps_with: []
+    independence_score: 1.00
+  "082":
+    mechanism_cluster: "prisoners-dilemma"
+    analysis_objects: ["company", "industry", "policy", "strategy", "security"]
+    tags: ["game-theory", "institutions", "prisoners", "dilemma"]
+    overlaps_with: []
+    independence_score: 1.00
+  "083":
+    mechanism_cluster: "repeated-games-reputation"
+    analysis_objects: ["company", "industry", "policy", "strategy", "security"]
+    tags: ["game-theory", "institutions", "repeated", "games", "reputation"]
+    overlaps_with: []
+    independence_score: 1.00
+  "084":
+    mechanism_cluster: "zero-nonzero-sum"
+    analysis_objects: ["company", "industry", "policy", "strategy", "security"]
+    tags: ["game-theory", "institutions", "zero", "nonzero", "sum"]
+    overlaps_with: []
+    independence_score: 1.00
+  "085":
+    mechanism_cluster: "signaling"
+    analysis_objects: ["company", "industry", "policy", "strategy", "security"]
+    tags: ["game-theory", "institutions", "commitment", "credible", "threat"]
+    overlaps_with: ["037"]
+    independence_score: 0.65
+  "086":
+    mechanism_cluster: "public-goods"
+    analysis_objects: ["company", "industry", "policy", "strategy", "security"]
+    tags: ["game-theory", "institutions", "public", "goods"]
+    overlaps_with: []
+    independence_score: 1.00
+  "087":
+    mechanism_cluster: "agency-governance"
+    analysis_objects: ["company", "industry", "policy", "strategy", "security"]
+    tags: ["game-theory", "institutions", "governance", "checks", "balances"]
+    overlaps_with: ["044", "088"]
+    independence_score: 0.65
+  "088":
+    mechanism_cluster: "agency-governance"
+    analysis_objects: ["company", "industry", "policy", "strategy", "security"]
+    tags: ["game-theory", "institutions", "institutional", "incentives"]
+    overlaps_with: ["044", "087"]
+    independence_score: 0.65
+  "089":
+    mechanism_cluster: "social-network-centrality"
+    analysis_objects: ["company", "industry", "policy", "strategy", "security"]
+    tags: ["game-theory", "institutions", "social", "network", "centrality"]
+    overlaps_with: []
+    independence_score: 1.00
+  "090":
+    mechanism_cluster: "identity-norms"
+    analysis_objects: ["company", "industry", "policy", "strategy", "security"]
+    tags: ["game-theory", "institutions", "identity", "norms"]
+    overlaps_with: []
+    independence_score: 1.00
+  "091":
+    mechanism_cluster: "path-dependence"
+    analysis_objects: ["company", "industry", "security", "strategy"]
+    tags: ["strategy", "decision", "institutional", "path", "dependence"]
+    overlaps_with: ["067"]
+    independence_score: 0.65
+  "092":
+    mechanism_cluster: "critical-juncture"
+    analysis_objects: ["company", "industry", "security", "strategy"]
+    tags: ["strategy", "decision", "critical", "juncture"]
+    overlaps_with: []
+    independence_score: 1.00
+  "093":
+    mechanism_cluster: "shock-vs-structure"
+    analysis_objects: ["company", "industry", "security", "strategy", "share_class"]
+    tags: ["strategy", "decision", "shock", "vs", "structure", "shock-vs-structure"]
+    overlaps_with: []
+    independence_score: 1.00
+  "094":
+    mechanism_cluster: "strategic-resource-allocation"
+    analysis_objects: ["company", "industry", "security", "strategy"]
+    tags: ["strategy", "decision", "strategic", "resource", "allocation", "resource-allocation"]
+    overlaps_with: []
+    independence_score: 1.00
+  "095":
+    mechanism_cluster: "competitive-advantage-moat"
+    analysis_objects: ["company", "industry", "security", "strategy"]
+    tags: ["strategy", "decision", "competitive", "advantage", "moat", "competitive-advantage"]
+    overlaps_with: []
+    independence_score: 1.00
+  "096":
+    mechanism_cluster: "opportunity-cost"
+    analysis_objects: ["company", "industry", "security", "strategy"]
+    tags: ["strategy", "decision", "strategic", "tradeoffs"]
+    overlaps_with: ["041"]
+    independence_score: 0.65
+  "097":
+    mechanism_cluster: "scenario-planning"
+    analysis_objects: ["company", "industry", "security", "strategy", "share_class"]
+    tags: ["strategy", "decision", "scenario", "planning", "stress-test"]
+    overlaps_with: []
+    independence_score: 1.00
+  "098":
+    mechanism_cluster: "optionality"
+    analysis_objects: ["company", "industry", "security", "strategy", "share_class"]
+    tags: ["strategy", "decision", "tree", "real", "options", "real-options", "optionality"]
+    overlaps_with: ["070"]
+    independence_score: 0.85
+  "099":
+    mechanism_cluster: "feedback-learning"
+    analysis_objects: ["company", "industry", "security", "strategy"]
+    tags: ["strategy", "decision", "feedback", "learning", "speed"]
+    overlaps_with: ["072"]
+    independence_score: 0.65
+  "100":
+    mechanism_cluster: "multi-model-latticework"
+    analysis_objects: ["company", "industry", "security", "strategy"]
+    tags: ["strategy", "decision", "multi", "model", "latticework", "synthesis", "model-conflict"]
+    overlaps_with: []
+    independence_score: 1.00

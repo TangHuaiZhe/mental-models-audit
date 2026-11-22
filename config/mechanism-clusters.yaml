@@ -1,0 +1,79 @@
+version: 1
+default_max_expanded_per_cluster: 1
+clusters:
+  "stock-flow":
+    primary_model: "075"
+    members: ["021", "075"]
+    max_expanded: 1
+    rule: "同一研究中默认只展开一个；动态系统优先075，守恒/会计口径优先021。"
+  "leverage":
+    primary_model: "076"
+    members: ["024", "076"]
+    max_expanded: 1
+    rule: "机械/财务放大优先024；系统干预优先076。"
+  "resilience":
+    primary_model: "027"
+    members: ["027", "065", "069"]
+    max_expanded: 2
+    rule: "分别关注安全边际、防御层、多样性；最多展开2个且不得重复计票。"
+  "failure-analysis":
+    primary_model: "028"
+    members: ["028", "030"]
+    max_expanded: 2
+    rule: "028看失效模式，030看故障组合路径。"
+  "base-rate":
+    primary_model: "031"
+    members: ["031", "054"]
+    max_expanded: 1
+    rule: "公司/行业基准率用031；审查分析者基率忽视用054。"
+  "signaling":
+    primary_model: "037"
+    members: ["037", "085"]
+    max_expanded: 2
+    rule: "037偏信息不对称，085偏可信承诺/威胁。"
+  "opportunity-cost":
+    primary_model: "041"
+    members: ["041", "096"]
+    max_expanded: 2
+    rule: "041一般机会成本，096战略活动系统取舍。"
+  "agency-governance":
+    primary_model: "044"
+    members: ["044", "087", "088"]
+    max_expanded: 2
+    rule: "44激励错位，87治理制衡，88制度适应与非预期后果。"
+  "thesis-bias":
+    primary_model: "055"
+    members: ["055", "060"]
+    max_expanded: 1
+    rule: "一般确认偏误用055；利益/身份驱动明显时用060。"
+  "path-dependence":
+    primary_model: "067"
+    members: ["067", "091"]
+    max_expanded: 1
+    rule: "企业/技术路径用067；制度惯性用091。"
+  "optionality":
+    primary_model: "098"
+    members: ["070", "098"]
+    max_expanded: 1
+    rule: "组织适应性用070；资本配置/分阶段投资用098。"
+  "feedback-learning":
+    primary_model: "072"
+    members: ["072", "099"]
+    max_expanded: 2
+    rule: "072看反馈回路，099看学习速度。"
+  "control-observability":
+    primary_model: "079"
+    members: ["078", "079"]
+    max_expanded: 2
+    rule: "078看控制回路，079看可观测/可控。"
+  "evidence-discipline":
+    primary_model: "018"
+    members: ["008", "018"]
+    max_expanded: 2
+    rule: "008看证伪条件，018看证据等级。"
+  "causal-inference":
+    primary_model: "013"
+    members: ["013", "014"]
+    max_expanded: 2
+    rule: "相关-因果与反事实互补。"
+

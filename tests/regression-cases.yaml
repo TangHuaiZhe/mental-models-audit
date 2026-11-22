@@ -1,0 +1,43 @@
+version: 1
+cases:
+  - id: "sanhua-h-02050"
+    company: "三花智控"
+    security: "02050.HK"
+    archetype: "industrial-manufacturing"
+    status: completed
+    findings:
+      material_models_before_dedup: 26
+      independent_mechanism_clusters: 8
+      key_router_gap: "company与share_class未显式拆分"
+      key_overlap_pairs:
+        - ["021","075"]
+        - ["067","091"]
+        - ["070","098"]
+  - id: "kweichow-moutai"
+    company: "贵州茅台"
+    archetype: "brand-consumer"
+    status: pending
+  - id: "tencent"
+    company: "腾讯"
+    archetype: "platform-internet"
+    status: pending
+  - id: "cloudflare"
+    company: "Cloudflare"
+    archetype: "saas-network-infrastructure"
+    status: pending
+  - id: "tsmc"
+    company: "台积电"
+    archetype: "semiconductor-manufacturing"
+    status: pending
+  - id: "catl"
+    company: "宁德时代"
+    archetype: "advanced-manufacturing"
+    status: pending
+  - id: "large-bank"
+    company: "待选大型银行"
+    archetype: "financial-institution"
+    status: pending
+  - id: "innovative-biotech"
+    company: "待选创新药公司"
+    archetype: "biotech-r-and-d"
+    status: pending
