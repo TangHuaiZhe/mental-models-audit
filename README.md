@@ -42,3 +42,17 @@
 ## 来源
 
 课程主页面保留在 Notion。每个原子 Skill 会记录对应课程来源链接，但不复制整篇课程正文，以避免双重维护。
+
+## 在线课程（GitHub Pages）
+
+课程站点配置为：
+
+**https://tanghuaizhe.github.io/mental-models-audit/**
+
+站点使用 MkDocs Material，由 `.github/workflows/pages.yml` 在 `main` 更新后自动构建并部署。
+
+课程正文位于 `docs/course/`，共 100 讲；左侧导航按 10 个学科模块组织，并提供全文搜索、明暗主题、上一讲/下一讲以及课程与对应 Audit Skill 的链接。
+
+> Notion 仍是课程内容的 Source of Truth；GitHub 中的 Markdown 是用于版本控制与公开发布的快照。
+
+首次启用 GitHub Pages 时，在仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。完成一次设置后，后续推送到 `main` 会自动发布。
