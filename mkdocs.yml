@@ -1,0 +1,152 @@
+site_name: 跨学科思维模型100讲
+site_description: 100个跨学科思维模型，以及对应的公司/行业审查 Skills
+site_url: https://tanghuaizhe.github.io/mental-models-audit/
+repo_url: https://github.com/TangHuaiZhe/mental-models-audit
+repo_name: TangHuaiZhe/mental-models-audit
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+plugins:
+  - search:
+      lang: zh
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - 首页: index.md
+  - Audit Skills: audit.md
+  - 01—10 通用认知与元思维:
+      - "01 地图不是疆域（The Map Is Not the Territory）": course/001-map-territory.md
+      - "02 第一性原理——从基本事实重新构建问题": course/002-first-principles.md
+      - "03 能力圈——知道自己知道什么": course/003-circle-of-competence.md
+      - "04 反演思维——从避免失败开始": course/004-inversion.md
+      - "05 二阶思维——追问“然后呢”": course/005-second-order-thinking.md
+      - "06 概率思维——用概率替代非黑即白": course/006-probabilistic-thinking.md
+      - "07 贝叶斯更新——让信念随证据改变": course/007-bayesian-updating.md
+      - "08 可证伪性——什么证据能证明我错了": course/008-falsifiability.md
+      - "09 奥卡姆剃刀——解释力与假设数量": course/009-occams-razor.md
+      - "10 钢人化——先把对方观点理解到最强": course/010-steelmanning.md
+  - 11—20 逻辑、哲学与认识论:
+      - "11 充分条件与必要条件——没有它不行，有了它够不够": course/011-necessary-sufficient.md
+      - "12 演绎、归纳与溯因推理——我们究竟凭什么知道": course/012-deduction-induction-abduction.md
+      - "13 相关不等于因果——从观察到干预，中间隔着什么": course/013-correlation-causation.md
+      - "14 反事实思维——如果没有A，会发生什么": course/014-counterfactual.md
+      - "15 思想实验——把理论放进极端世界": course/015-thought-experiment.md
+      - "16 概念边界与操作性定义——先把词说清楚，再让数据说话": course/016-operational-definition.md
+      - "17 归纳问题与黑天鹅——过去从未发生，不等于未来不会发生": course/017-induction-black-swan.md
+      - "18 证据等级与来源批判——不是有没有来源，而是证据值多少权重": course/018-evidence-hierarchy.md
+      - "19 价值—事实区分与规范性判断——从“是什么”不能直接跳到“应该”": course/019-fact-value.md
+      - "20 元认知——观察自己的思考，并让它持续纠错": course/020-metacognition.md
+  - 21—30 物理学与工程学:
+      - "21 守恒、存量与流量——系统里的东西从哪里来，又到哪里去": course/021-conservation-stock-flow.md
+      - "22 熵——为什么秩序需要持续付费": course/022-entropy.md
+      - "23 能量、效率与约束——真实世界没有零成本转换": course/023-energy-efficiency-constraints.md
+      - "24 杠杆——找到能放大结果的结构": course/024-leverage.md
+      - "25 临界点、相变与阈值——为什么系统会突然变样": course/025-threshold-phase-transition.md
+      - "26 规模效应与平方—立方律——大系统不是小系统的放大版": course/026-scale-square-cube.md
+      - "27 安全边际与冗余——不要让系统刚好够用": course/027-margin-of-safety-redundancy.md
+      - "28 FMEA——在事故发生前系统地想象失败": course/028-fmea.md
+      - "29 瓶颈与约束理论——系统只会和最窄的地方一样快": course/029-bottleneck-toc.md
+      - "30 可靠性与故障树——系统为什么会失败，以及怎样让失败可控": course/030-reliability-fault-tree.md
+  - 31—40 数学、统计与信息论:
+      - "31 基础概率与基准率——先问这类事情通常有多常见": course/031-base-rate.md
+      - "32 期望值——高胜率不等于好决策": course/032-expected-value.md
+      - "33 方差、波动与尾部风险——平均值不会告诉你怎么死": course/033-variance-tail-risk.md
+      - "34 大数定律——重复可以平均噪声，但不能消灭偏差": course/034-law-of-large-numbers.md
+      - "35 均值回归——极端结果里通常混着运气": course/035-mean-reversion.md
+      - "36 选择偏差与幸存者偏差——你看到的世界是被筛过的": course/036-selection-survivorship.md
+      - "37 信息不对称与信号——真正有价值的信号必须难以伪装": course/037-information-asymmetry-signaling.md
+      - "38 信息熵与信息价值——真正有用的信息会改变你的决策": course/038-information-value.md
+      - "39 复利与指数增长——时间会放大微小差异": course/039-compounding.md
+      - "40 协方差与分散化——风险不只看有多大，还看会不会一起发生": course/040-covariance-diversification.md
+  - 41—50 经济学与商业:
+      - "41 机会成本——真正的成本是你放弃的最佳选择": course/041-opportunity-cost.md
+      - "42 边际效用——真正决定行动的是下一单位值不值": course/042-marginal-utility.md
+      - "43 供给与需求——价格是稀缺与选择的协调信号": course/043-supply-demand.md
+      - "44 激励相容与委托代理——系统真正得到的是它所奖励的行为": course/044-incentive-principal-agent.md
+      - "45 比较优势——即使你什么都更强，也不该什么都自己做": course/045-comparative-advantage.md
+      - "46 规模经济与范围经济——做得更多，以及一起做为什么可能更便宜": course/046-economies-of-scale-scope.md
+      - "47 网络效应——为什么有些产品越多人用越有价值": course/047-network-effects.md
+      - "48 交易成本——市场和公司都不是免费的": course/048-transaction-costs.md
+      - "49 创造性破坏——进步如何通过淘汰旧结构发生": course/049-creative-destruction.md
+      - "50 定价权、消费者剩余与价值捕获——创造价值之后，谁把价值留下来": course/050-pricing-power-value-capture.md
+  - 51—60 心理学与行为科学:
+      - "51 损失厌恶与前景理论——为什么亏100元比赚100元更难受": course/051-loss-aversion-prospect.md
+      - "52 锚定效应——第一个数字为什么会偷偷决定你的答案": course/052-anchoring.md
+      - "53 可得性启发——容易想到，不等于更可能发生": course/053-availability.md
+      - "54 代表性启发与基率忽视——看起来像，不等于统计上更可能": course/054-representativeness-base-rate-neglect.md
+      - "55 确认偏误——研究越多，为什么反而可能越确信自己的错误": course/055-confirmation-bias.md
+      - "56 认知失调——为什么我们宁愿修改故事，也不愿承认自己错了": course/056-cognitive-dissonance.md
+      - "57 沉没成本谬误——不要让无法改变的过去控制未来": course/057-sunk-cost.md
+      - "58 禀赋效应与心理账户——拥有和标签如何改变价值判断": course/058-endowment-mental-accounting.md
+      - "59 群体思维与从众——一百个人同意，可能只是一个观点复制了一百次": course/059-groupthink-conformity.md
+      - "60 动机性推理与自我欺骗——最危险的偏差，是你希望答案为真": course/060-motivated-reasoning.md
+  - 61—70 生物学与演化:
+      - "61 自然选择与适应——环境不会设计你，只会筛选你": course/061-natural-selection.md
+      - "62 适应度景观——为什么局部最优会困住你": course/062-fitness-landscape.md
+      - "63 生态位与竞争排斥——长期共存通常需要差异化": course/063-niche-competition.md
+      - "64 共生、寄生与互利——系统里的关系不只有竞争": course/064-symbiosis.md
+      - "65 冗余、免疫与稳健性——真正强的系统允许局部失败": course/065-robustness-immunity.md
+      - "66 进化军备竞赛——为什么你变强以后，对手也会变强": course/066-arms-race.md
+      - "67 路径依赖与历史偶然——过去会给未来铺轨": course/067-path-dependence.md
+      - "68 生态系统与食物网——不要只看节点，要看依赖网络": course/068-ecosystem-food-web.md
+      - "69 多样性与组合韧性——真正的分散，是不会一起失败": course/069-diversity-resilience.md
+      - "70 反脆弱与可选择性——不要预测所有未来，设计能从波动中获益的结构": course/070-antifragility-optionality.md
+  - 71—80 系统科学、控制论与复杂性:
+      - "71 系统边界与整体观——先决定什么算进问题里": course/071-system-boundary.md
+      - "72 正反馈与负反馈——系统为什么会越变越快，或自动拉回": course/072-feedback-loops.md
+      - "73 延迟效应——为什么你越着急纠偏，系统反而越容易振荡": course/073-delay.md
+      - "74 非线性与涌现——整体为什么会出现部件里没有的行为": course/074-nonlinearity-emergence.md
+      - "75 存量与流量模型——增长变慢，不等于总量开始下降": course/075-stock-flow-dynamics.md
+      - "76 杠杆点——不要更用力，要改变系统真正敏感的地方": course/076-leverage-points.md
+      - "77 系统陷阱与政策阻力——为什么好意干预会被系统反过来抵消": course/077-system-traps-policy-resistance.md
+      - "78 控制论——目标、测量、反馈与纠偏": course/078-cybernetics.md
+      - "79 可观测性与可控性——看不见就难诊断，改不了就无法控制": course/079-observability-controllability.md
+      - "80 复杂适应系统与自组织——不要命令所有结果，设计产生结果的规则": course/080-complex-adaptive-systems.md
+  - 81—90 博弈论、政治学与社会学:
+      - "81 纳什均衡——大家都不满意的结果，也可能非常稳定": course/081-nash-equilibrium.md
+      - "82 囚徒困境——为什么所有人都理性，结果却一起变差": course/082-prisoners-dilemma.md
+      - "83 重复博弈与声誉——明天还会见面，今天就会不一样": course/083-repeated-games-reputation.md
+      - "84 零和与非零和博弈——先问蛋糕能不能变大": course/084-zero-nonzero-sum.md
+      - "85 承诺、可信威胁与信号——真正有力量的是别人相信你会做到": course/085-commitment-credible-threat.md
+      - "86 公共物品与集体行动困境——所有人都想要，不等于有人愿意付": course/086-public-goods.md
+      - "87 委托代理与权力制衡——不要寻找完美的人，要设计可纠错的权力结构": course/087-governance-checks-balances.md
+      - "88 制度激励与非预期后果——规则一公布，所有人都会开始适应": course/088-institutional-incentives.md
+      - "89 社会网络与中心性——位置有时比力量本身更重要": course/089-social-network-centrality.md
+      - "90 身份认同、规范与群体边界——当观点变成“我们是谁”": course/090-identity-norms.md
+  - 91—100 历史、战略与决策:
+      - "91 路径依赖与制度惯性——过去的选择还在继续投票": course/091-institutional-path-dependence.md
+      - "92 临界转折与偶然性——结构决定可能，关键节点决定路径": course/092-critical-juncture.md
+      - "93 短期冲击与长期结构——暴雨不等于气候，但气候也会改变暴雨": course/093-shock-vs-structure.md
+      - "94 战略互动与资源配置——战略不是多做，而是把稀缺资源押在少数关键位置": course/094-strategic-resource-allocation.md
+      - "95 竞争优势与护城河——真正的优势，是别人看见你赚钱后仍然抢不走": course/095-competitive-advantage-moat.md
+      - "96 机会成本与战略取舍——真正的战略要明确哪些好机会也不做": course/096-strategic-tradeoffs.md
+      - "97 情景规划与压力测试——不要只准备一个未来": course/097-scenario-planning.md
+      - "98 决策树与实物期权——不要一次性押注未来，先买选择权": course/098-decision-tree-real-options.md
+      - "99 速度、反馈与迭代学习——最大的优势之一，是比别人更快发现自己错了": course/099-feedback-learning-speed.md
+      - "100 多模型综合——建立你的个人思维格栅": course/100-multi-model-latticework.md
