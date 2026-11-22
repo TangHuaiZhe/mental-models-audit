@@ -1,17 +1,22 @@
-version: 1
+version: 2
+
 atomic_audit:
   model_id: "031"
   model_name: "基础概率与基准率"
+  analysis_object: "business | company | industry | security | share_class | policy | strategy | analyst_self"
+  mechanism_cluster: "base-rate"
   relevance: "Material | Secondary | Not material"
   question: "本模型试图回答的核心问题"
   evidence_for:
     - fact: "支持当前命题的证据"
       source: "来源或数据定位"
+      evidence_id: "E1"
   evidence_against:
     - fact: "反对当前命题的证据"
       source: "来源或数据定位"
-  mechanism: "证据通过什么机制影响公司/行业"
-  implication: "对未来经营、竞争、资本回报或估值的含义"
+      evidence_id: "E2"
+  mechanism: "证据通过什么机制影响公司/行业/证券"
+  implication: "对经营、竞争、资本回报、风险或估值的含义"
   bull_case_impact: "strengthen | neutral | weaken"
   bear_case_impact: "strengthen | neutral | weaken"
   unknowns:
@@ -19,10 +24,28 @@ atomic_audit:
   falsification:
     - "可观察、尽量带阈值或时间的证伪条件"
   confidence: 0
+  evidence_independence:
+    shared_evidence_with_models: []
+    independent_evidence: true
+    note: "是否只是重复使用同一事实"
+  incremental_information:
+    adds_new_mechanism: true
+    adds_new_evidence: true
+    changes_decision: false
+    adds_new_falsification: true
   next_models:
     - "007"
 
+mechanism_summary:
+  cluster: "value-capture"
+  primary_model: "050"
+  supporting_models: []
+  independent_evidence_ids: []
+  conclusion: ""
+  confidence: 0
+
 portfolio_summary:
+  analysis_objects: []
   top_positive_mechanisms: []
   top_negative_mechanisms: []
   critical_unknowns: []
@@ -30,3 +53,7 @@ portfolio_summary:
   model_conflicts: []
   evidence_gaps: []
   recommended_next_checks: []
+  model_independence:
+    material_models_raw: 0
+    independent_mechanism_clusters: 0
+    duplicate_or_supporting_models: 0
