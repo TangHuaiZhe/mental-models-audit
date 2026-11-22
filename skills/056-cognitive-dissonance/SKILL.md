@@ -10,6 +10,7 @@ metadata:
 # 056 认知失调
 
 课程来源：https://app.notion.com/p/41f938852e8c815ead6ede4a19e84fc9
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/056-cognitive-dissonance/
 
 ## 何时调用
 

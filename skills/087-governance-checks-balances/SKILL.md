@@ -10,6 +10,7 @@ metadata:
 # 087 委托代理与权力制衡
 
 课程来源：https://app.notion.com/p/41f938852e8c812abdf9f3c7bdbbdc1a
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/087-governance-checks-balances/
 
 ## 何时调用
 

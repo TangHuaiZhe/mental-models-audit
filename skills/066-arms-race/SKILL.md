@@ -10,6 +10,7 @@ metadata:
 # 066 进化军备竞赛
 
 课程来源：https://app.notion.com/p/41f938852e8c811c8f34e842deaf1991
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/066-arms-race/
 
 ## 何时调用
 

@@ -10,6 +10,7 @@ metadata:
 # 012 演绎、归纳与溯因
 
 课程来源：https://app.notion.com/p/41c938852e8c81aca620ebe54abb6040
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/012-deduction-induction-abduction/
 
 ## 何时调用
 

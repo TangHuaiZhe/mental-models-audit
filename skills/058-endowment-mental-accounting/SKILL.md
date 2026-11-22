@@ -10,6 +10,7 @@ metadata:
 # 058 禀赋效应与心理账户
 
 课程来源：https://app.notion.com/p/41f938852e8c81cb93d2c8c7a1ba04ce
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/058-endowment-mental-accounting/
 
 ## 何时调用
 

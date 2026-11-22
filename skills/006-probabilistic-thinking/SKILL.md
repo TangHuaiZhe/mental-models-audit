@@ -10,6 +10,7 @@ metadata:
 # 006 概率思维
 
 课程来源：https://app.notion.com/p/418938852e8c81b58250f3bb29c1ff6c
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/006-probabilistic-thinking/
 
 ## 何时调用
 

@@ -10,6 +10,7 @@ metadata:
 # 017 归纳问题与黑天鹅
 
 课程来源：https://app.notion.com/p/41f938852e8c8161b4c4e76d541dbdd9
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/017-induction-black-swan/
 
 ## 何时调用
 

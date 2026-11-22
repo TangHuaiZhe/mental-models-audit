@@ -10,6 +10,7 @@ metadata:
 # 054 代表性启发与基率忽视
 
 课程来源：https://app.notion.com/p/41f938852e8c81b78d92fa343f8b68a9
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/054-representativeness-base-rate-neglect/
 
 ## 何时调用
 

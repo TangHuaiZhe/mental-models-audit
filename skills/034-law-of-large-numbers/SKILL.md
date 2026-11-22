@@ -10,6 +10,7 @@ metadata:
 # 034 大数定律
 
 课程来源：https://app.notion.com/p/41f938852e8c8177a51fc3da6e644300
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/034-law-of-large-numbers/
 
 ## 何时调用
 

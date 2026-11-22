@@ -10,6 +10,7 @@ metadata:
 # 091 路径依赖与制度惯性
 
 课程来源：https://app.notion.com/p/41f938852e8c8182b88ff251614ba608
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/091-institutional-path-dependence/
 
 ## 何时调用
 

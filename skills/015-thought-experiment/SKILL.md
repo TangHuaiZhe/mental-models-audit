@@ -10,6 +10,7 @@ metadata:
 # 015 思想实验
 
 课程来源：https://app.notion.com/p/41f938852e8c8145948cc77bfb754835
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/015-thought-experiment/
 
 ## 何时调用
 

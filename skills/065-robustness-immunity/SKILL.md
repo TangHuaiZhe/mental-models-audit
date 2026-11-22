@@ -10,6 +10,7 @@ metadata:
 # 065 冗余、免疫与稳健性
 
 课程来源：https://app.notion.com/p/41f938852e8c818fbe6dcfb6bd142665
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/065-robustness-immunity/
 
 ## 何时调用
 

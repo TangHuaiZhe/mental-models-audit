@@ -10,6 +10,7 @@ metadata:
 # 082 囚徒困境
 
 课程来源：https://app.notion.com/p/41f938852e8c816cad38c865c1723849
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/082-prisoners-dilemma/
 
 ## 何时调用
 

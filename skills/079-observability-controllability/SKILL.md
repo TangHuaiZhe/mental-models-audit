@@ -10,6 +10,7 @@ metadata:
 # 079 可观测性与可控性
 
 课程来源：https://app.notion.com/p/41f938852e8c81138d1df52786dde328
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/079-observability-controllability/
 
 ## 何时调用
 

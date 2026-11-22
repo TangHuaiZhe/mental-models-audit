@@ -10,6 +10,7 @@ metadata:
 # 083 重复博弈与声誉
 
 课程来源：https://app.notion.com/p/41f938852e8c8138bf37d650981f9eb6
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/083-repeated-games-reputation/
 
 ## 何时调用
 

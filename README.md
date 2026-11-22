@@ -55,4 +55,4 @@
 
 > Notion 仍是课程内容的 Source of Truth；GitHub 中的 Markdown 是用于版本控制与公开发布的快照。
 
-首次启用 GitHub Pages 时，在仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。完成一次设置后，后续推送到 `main` 会自动发布。
+GitHub Pages 已配置为由 GitHub Actions 发布。后续推送到 `main` 会自动重新构建网站。

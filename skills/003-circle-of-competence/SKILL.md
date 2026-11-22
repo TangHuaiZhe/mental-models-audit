@@ -10,6 +10,7 @@ metadata:
 # 003 能力圈
 
 课程来源：https://app.notion.com/p/412938852e8c81019b61deb7ce66d932
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/003-circle-of-competence/
 
 ## 何时调用
 

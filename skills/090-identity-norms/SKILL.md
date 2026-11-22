@@ -10,6 +10,7 @@ metadata:
 # 090 身份认同、规范与群体边界
 
 课程来源：https://app.notion.com/p/41f938852e8c81ae8838fba79cea3646
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/090-identity-norms/
 
 ## 何时调用
 

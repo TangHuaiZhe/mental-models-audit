@@ -10,6 +10,7 @@ metadata:
 # 086 公共物品与集体行动困境
 
 课程来源：https://app.notion.com/p/41f938852e8c81818836d976473e9e42
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/086-public-goods/
 
 ## 何时调用
 

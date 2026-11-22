@@ -10,6 +10,7 @@ metadata:
 # 076 杠杆点
 
 课程来源：https://app.notion.com/p/41f938852e8c814481a7fe83f5143dac
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/076-leverage-points/
 
 ## 何时调用
 

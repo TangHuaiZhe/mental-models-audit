@@ -10,6 +10,7 @@ metadata:
 # 045 比较优势
 
 课程来源：https://app.notion.com/p/41f938852e8c81ec8f33f80a6b98f38e
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/045-comparative-advantage/
 
 ## 何时调用
 

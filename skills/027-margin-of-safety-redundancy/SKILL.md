@@ -10,6 +10,7 @@ metadata:
 # 027 安全边际与冗余
 
 课程来源：https://app.notion.com/p/41f938852e8c8144a54ad9a92443e669
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/027-margin-of-safety-redundancy/
 
 ## 何时调用
 

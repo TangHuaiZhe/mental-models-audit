@@ -10,6 +10,7 @@ metadata:
 # 041 机会成本
 
 课程来源：https://app.notion.com/p/41f938852e8c814ba48ada678df50b0b
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/041-opportunity-cost/
 
 ## 何时调用
 

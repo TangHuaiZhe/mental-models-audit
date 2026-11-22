@@ -10,6 +10,7 @@ metadata:
 # 084 零和与非零和博弈
 
 课程来源：https://app.notion.com/p/41f938852e8c8173a1c1cda928849125
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/084-zero-nonzero-sum/
 
 ## 何时调用
 

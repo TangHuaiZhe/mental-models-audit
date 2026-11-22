@@ -10,6 +10,7 @@ metadata:
 # 047 网络效应
 
 课程来源：https://app.notion.com/p/41f938852e8c8116b439c9d503b75975
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/047-network-effects/
 
 ## 何时调用
 

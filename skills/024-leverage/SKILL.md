@@ -10,6 +10,7 @@ metadata:
 # 024 杠杆
 
 课程来源：https://app.notion.com/p/41f938852e8c8105bb29df1e7611fcaa
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/024-leverage/
 
 ## 何时调用
 

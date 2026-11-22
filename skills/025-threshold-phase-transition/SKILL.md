@@ -10,6 +10,7 @@ metadata:
 # 025 临界点、相变与阈值
 
 课程来源：https://app.notion.com/p/41f938852e8c81499e0ce4817eeef5c6
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/025-threshold-phase-transition/
 
 ## 何时调用
 

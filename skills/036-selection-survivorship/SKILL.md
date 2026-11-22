@@ -10,6 +10,7 @@ metadata:
 # 036 选择偏差与幸存者偏差
 
 课程来源：https://app.notion.com/p/41f938852e8c81fcb113cae9edc854ec
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/036-selection-survivorship/
 
 ## 何时调用
 

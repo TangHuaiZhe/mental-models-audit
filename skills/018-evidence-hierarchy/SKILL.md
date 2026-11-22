@@ -10,6 +10,7 @@ metadata:
 # 018 证据等级与来源批判
 
 课程来源：https://app.notion.com/p/41f938852e8c81f0a5e8d95e8126ee8a
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/018-evidence-hierarchy/
 
 ## 何时调用
 

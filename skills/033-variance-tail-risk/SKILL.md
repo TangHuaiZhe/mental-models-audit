@@ -10,6 +10,7 @@ metadata:
 # 033 方差、波动与尾部风险
 
 课程来源：https://app.notion.com/p/41f938852e8c81f8a602df95b265ed94
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/033-variance-tail-risk/
 
 ## 何时调用
 

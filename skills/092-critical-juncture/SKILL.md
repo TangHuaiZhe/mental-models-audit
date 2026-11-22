@@ -10,6 +10,7 @@ metadata:
 # 092 临界转折与偶然性
 
 课程来源：https://app.notion.com/p/41f938852e8c8183a04ef14292b98ed1
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/092-critical-juncture/
 
 ## 何时调用
 

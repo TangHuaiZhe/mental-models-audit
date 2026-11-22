@@ -10,6 +10,7 @@ metadata:
 # 039 复利与指数增长
 
 课程来源：https://app.notion.com/p/41f938852e8c819b8273c8cabf9c8609
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/039-compounding/
 
 ## 何时调用
 

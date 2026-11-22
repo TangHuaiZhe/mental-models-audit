@@ -10,6 +10,7 @@ metadata:
 # 010 钢人化
 
 课程来源：https://app.notion.com/p/419938852e8c81f6b1ebfd5e464dddf0
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/010-steelmanning/
 
 ## 何时调用
 

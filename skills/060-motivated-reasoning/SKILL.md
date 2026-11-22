@@ -10,6 +10,7 @@ metadata:
 # 060 动机性推理与自我欺骗
 
 课程来源：https://app.notion.com/p/41f938852e8c81408b64fa7692917c51
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/060-motivated-reasoning/
 
 ## 何时调用
 

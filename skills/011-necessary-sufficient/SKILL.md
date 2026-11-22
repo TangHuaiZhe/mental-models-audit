@@ -10,6 +10,7 @@ metadata:
 # 011 充分条件与必要条件
 
 课程来源：https://app.notion.com/p/41b938852e8c81adbf62d91b712959bc
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/011-necessary-sufficient/
 
 ## 何时调用
 

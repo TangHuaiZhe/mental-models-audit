@@ -10,6 +10,7 @@ metadata:
 # 044 激励相容与委托代理
 
 课程来源：https://app.notion.com/p/41f938852e8c81548984cede4edec479
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/044-incentive-principal-agent/
 
 ## 何时调用
 

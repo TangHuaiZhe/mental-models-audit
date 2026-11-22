@@ -10,6 +10,7 @@ metadata:
 # 037 信息不对称与信号
 
 课程来源：https://app.notion.com/p/41f938852e8c813e916acbeaa21c0c01
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/037-information-asymmetry-signaling/
 
 ## 何时调用
 

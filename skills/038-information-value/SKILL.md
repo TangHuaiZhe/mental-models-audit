@@ -10,6 +10,7 @@ metadata:
 # 038 信息熵与信息价值
 
 课程来源：https://app.notion.com/p/41f938852e8c81708eb4ee28756574c4
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/038-information-value/
 
 ## 何时调用
 

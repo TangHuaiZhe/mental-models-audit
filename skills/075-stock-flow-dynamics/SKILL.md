@@ -10,6 +10,7 @@ metadata:
 # 075 存量与流量模型
 
 课程来源：https://app.notion.com/p/41f938852e8c81a1b29bdf62a18e09b3
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/075-stock-flow-dynamics/
 
 ## 何时调用
 

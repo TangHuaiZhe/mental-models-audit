@@ -10,6 +10,7 @@ metadata:
 # 071 系统边界与整体观
 
 课程来源：https://app.notion.com/p/41f938852e8c813fb0d5fbcf8b6f81ea
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/071-system-boundary/
 
 ## 何时调用
 

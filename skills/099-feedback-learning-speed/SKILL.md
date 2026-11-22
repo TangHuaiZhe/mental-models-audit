@@ -10,6 +10,7 @@ metadata:
 # 099 速度、反馈与迭代学习
 
 课程来源：https://app.notion.com/p/41f938852e8c81418dcad3391bfd468f
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/099-feedback-learning-speed/
 
 ## 何时调用
 

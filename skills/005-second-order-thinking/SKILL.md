@@ -10,6 +10,7 @@ metadata:
 # 005 二阶思维
 
 课程来源：https://app.notion.com/p/412938852e8c81538000cd42a5338a90
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/005-second-order-thinking/
 
 ## 何时调用
 

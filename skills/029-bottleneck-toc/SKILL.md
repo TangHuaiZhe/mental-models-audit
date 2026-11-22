@@ -10,6 +10,7 @@ metadata:
 # 029 瓶颈与约束理论
 
 课程来源：https://app.notion.com/p/41f938852e8c8165b5f7f5dd583e22f5
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/029-bottleneck-toc/
 
 ## 何时调用
 

@@ -10,6 +10,7 @@ metadata:
 # 002 第一性原理
 
 课程来源：https://app.notion.com/p/411938852e8c81538132f4db9cb0b562
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/002-first-principles/
 
 ## 何时调用
 

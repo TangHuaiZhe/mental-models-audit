@@ -10,6 +10,7 @@ metadata:
 # 048 交易成本
 
 课程来源：https://app.notion.com/p/41f938852e8c81b099cec082d5692ebd
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/048-transaction-costs/
 
 ## 何时调用
 

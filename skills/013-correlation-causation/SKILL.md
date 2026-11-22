@@ -10,6 +10,7 @@ metadata:
 # 013 相关不等于因果
 
 课程来源：https://app.notion.com/p/41c938852e8c8154947ff44445e36d12
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/013-correlation-causation/
 
 ## 何时调用
 

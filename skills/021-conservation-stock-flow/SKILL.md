@@ -10,6 +10,7 @@ metadata:
 # 021 守恒、存量与流量
 
 课程来源：https://app.notion.com/p/41f938852e8c81be9bebe5d025eca637
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/021-conservation-stock-flow/
 
 ## 何时调用
 

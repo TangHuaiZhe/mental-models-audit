@@ -10,6 +10,7 @@ metadata:
 # 098 决策树与实物期权
 
 课程来源：https://app.notion.com/p/41f938852e8c8105951ac9d713ddf58f
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/098-decision-tree-real-options/
 
 ## 何时调用
 

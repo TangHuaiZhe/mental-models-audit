@@ -10,6 +10,7 @@ metadata:
 # 069 多样性与组合韧性
 
 课程来源：https://app.notion.com/p/41f938852e8c8165bc10d3e27166910a
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/069-diversity-resilience/
 
 ## 何时调用
 

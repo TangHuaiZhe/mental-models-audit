@@ -10,6 +10,7 @@ metadata:
 # 094 战略互动与资源配置
 
 课程来源：https://app.notion.com/p/41f938852e8c815aa547fcb70bfa0885
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/094-strategic-resource-allocation/
 
 ## 何时调用
 

@@ -10,6 +10,7 @@ metadata:
 # 026 规模效应与平方—立方律
 
 课程来源：https://app.notion.com/p/41f938852e8c812aa2a2c6f47b8335e6
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/026-scale-square-cube/
 
 ## 何时调用
 

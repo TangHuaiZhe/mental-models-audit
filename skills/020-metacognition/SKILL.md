@@ -10,6 +10,7 @@ metadata:
 # 020 元认知
 
 课程来源：https://app.notion.com/p/41f938852e8c813bbee5de7ebf812ad2
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/020-metacognition/
 
 ## 何时调用
 

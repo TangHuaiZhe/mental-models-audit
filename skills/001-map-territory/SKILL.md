@@ -10,6 +10,7 @@ metadata:
 # 001 地图不是疆域
 
 课程来源：https://app.notion.com/p/411938852e8c810ebad3fac008bc5646
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/001-map-territory/
 
 ## 何时调用
 

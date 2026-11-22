@@ -10,6 +10,7 @@ metadata:
 # 080 复杂适应系统与自组织
 
 课程来源：https://app.notion.com/p/41f938852e8c81c28206c3d8a8f18e36
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/080-complex-adaptive-systems/
 
 ## 何时调用
 

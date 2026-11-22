@@ -10,6 +10,7 @@ metadata:
 # 077 系统陷阱与政策阻力
 
 课程来源：https://app.notion.com/p/41f938852e8c81de9251c13db457aa90
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/077-system-traps-policy-resistance/
 
 ## 何时调用
 

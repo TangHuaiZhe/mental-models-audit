@@ -10,6 +10,7 @@ metadata:
 # 019 价值—事实区分与规范性判断
 
 课程来源：https://app.notion.com/p/41f938852e8c810d8db3fd6077c625fe
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/019-fact-value/
 
 ## 何时调用
 

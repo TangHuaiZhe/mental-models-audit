@@ -10,6 +10,7 @@ metadata:
 # 008 可证伪性
 
 课程来源：https://app.notion.com/p/419938852e8c815bb62be122f11ba4ba
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/008-falsifiability/
 
 ## 何时调用
 

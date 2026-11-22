@@ -10,6 +10,7 @@ metadata:
 # 073 延迟效应
 
 课程来源：https://app.notion.com/p/41f938852e8c81adb187c5cc0b48b21b
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/073-delay/
 
 ## 何时调用
 

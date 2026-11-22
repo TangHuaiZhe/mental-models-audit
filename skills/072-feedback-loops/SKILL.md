@@ -10,6 +10,7 @@ metadata:
 # 072 正反馈与负反馈
 
 课程来源：https://app.notion.com/p/41f938852e8c81fbb35bdf1fadae412b
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/072-feedback-loops/
 
 ## 何时调用
 

@@ -10,6 +10,7 @@ metadata:
 # 063 生态位与竞争排斥
 
 课程来源：https://app.notion.com/p/41f938852e8c8151bd05ebde6ba8ba7e
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/063-niche-competition/
 
 ## 何时调用
 

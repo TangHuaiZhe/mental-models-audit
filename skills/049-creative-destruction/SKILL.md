@@ -10,6 +10,7 @@ metadata:
 # 049 创造性破坏
 
 课程来源：https://app.notion.com/p/41f938852e8c8118a69efa6ccfa60b63
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/049-creative-destruction/
 
 ## 何时调用
 

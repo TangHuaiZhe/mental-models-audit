@@ -10,6 +10,7 @@ metadata:
 # 067 路径依赖与历史偶然
 
 课程来源：https://app.notion.com/p/41f938852e8c81fabceeea91cae6dac6
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/067-path-dependence/
 
 ## 何时调用
 

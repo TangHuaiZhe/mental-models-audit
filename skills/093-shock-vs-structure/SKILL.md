@@ -10,6 +10,7 @@ metadata:
 # 093 短期冲击与长期结构
 
 课程来源：https://app.notion.com/p/41f938852e8c8189829ef9d88c1e0416
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/093-shock-vs-structure/
 
 ## 何时调用
 

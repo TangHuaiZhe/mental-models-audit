@@ -10,6 +10,7 @@ metadata:
 # 053 可得性启发
 
 课程来源：https://app.notion.com/p/41f938852e8c817c86cce9d37b8f7c23
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/053-availability/
 
 ## 何时调用
 

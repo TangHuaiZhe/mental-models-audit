@@ -10,6 +10,7 @@ metadata:
 # 050 定价权、消费者剩余与价值捕获
 
 课程来源：https://app.notion.com/p/41f938852e8c814b8ab4fe2985202487
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/050-pricing-power-value-capture/
 
 ## 何时调用
 

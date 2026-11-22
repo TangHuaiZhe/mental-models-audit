@@ -10,6 +10,7 @@ metadata:
 # 014 反事实
 
 课程来源：https://app.notion.com/p/41d938852e8c81e79903e2b6bbbc79e6
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/014-counterfactual/
 
 ## 何时调用
 

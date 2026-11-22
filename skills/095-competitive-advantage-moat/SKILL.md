@@ -10,6 +10,7 @@ metadata:
 # 095 竞争优势与护城河
 
 课程来源：https://app.notion.com/p/41f938852e8c8159b1bace8563a12f4d
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/095-competitive-advantage-moat/
 
 ## 何时调用
 

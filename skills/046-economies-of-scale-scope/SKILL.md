@@ -10,6 +10,7 @@ metadata:
 # 046 规模经济与范围经济
 
 课程来源：https://app.notion.com/p/41f938852e8c81a485cbe79aafa95488
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/046-economies-of-scale-scope/
 
 ## 何时调用
 

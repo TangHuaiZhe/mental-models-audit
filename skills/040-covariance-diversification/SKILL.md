@@ -10,6 +10,7 @@ metadata:
 # 040 协方差与分散化
 
 课程来源：https://app.notion.com/p/41f938852e8c8199849dd9a3d426d558
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/040-covariance-diversification/
 
 ## 何时调用
 

@@ -10,6 +10,7 @@ metadata:
 # 030 可靠性与故障树
 
 课程来源：https://app.notion.com/p/41f938852e8c8140a348f16ec9179f7d
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/030-reliability-fault-tree/
 
 ## 何时调用
 

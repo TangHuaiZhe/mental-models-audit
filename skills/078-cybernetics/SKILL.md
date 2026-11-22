@@ -10,6 +10,7 @@ metadata:
 # 078 控制论
 
 课程来源：https://app.notion.com/p/41f938852e8c81b98695e59af29f0f7d
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/078-cybernetics/
 
 ## 何时调用
 

@@ -10,6 +10,7 @@ metadata:
 # 097 情景规划与压力测试
 
 课程来源：https://app.notion.com/p/41f938852e8c81049b8bf53488352fb9
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/097-scenario-planning/
 
 ## 何时调用
 

@@ -10,6 +10,7 @@ metadata:
 # 009 奥卡姆剃刀
 
 课程来源：https://app.notion.com/p/419938852e8c81d1a1f9f0060e167403
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/009-occams-razor/
 
 ## 何时调用
 

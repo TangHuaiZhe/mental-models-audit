@@ -10,6 +10,7 @@ metadata:
 # 062 适应度景观
 
 课程来源：https://app.notion.com/p/41f938852e8c815599e5dc9546b4f771
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/062-fitness-landscape/
 
 ## 何时调用
 

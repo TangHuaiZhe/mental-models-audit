@@ -10,6 +10,7 @@ metadata:
 # 059 群体思维与从众
 
 课程来源：https://app.notion.com/p/41f938852e8c81c0ae9cd47a75b80a03
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/059-groupthink-conformity/
 
 ## 何时调用
 

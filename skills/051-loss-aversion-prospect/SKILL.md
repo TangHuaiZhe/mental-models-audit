@@ -10,6 +10,7 @@ metadata:
 # 051 损失厌恶与前景理论
 
 课程来源：https://app.notion.com/p/41f938852e8c81aebfc4e36f5e4ee678
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/051-loss-aversion-prospect/
 
 ## 何时调用
 

@@ -10,6 +10,7 @@ metadata:
 # 004 反演思维
 
 课程来源：https://app.notion.com/p/412938852e8c819ba614dc7f496215a1
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/004-inversion/
 
 ## 何时调用
 

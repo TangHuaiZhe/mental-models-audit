@@ -10,6 +10,7 @@ metadata:
 # 088 制度激励与非预期后果
 
 课程来源：https://app.notion.com/p/41f938852e8c8191be29faa99c3da762
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/088-institutional-incentives/
 
 ## 何时调用
 

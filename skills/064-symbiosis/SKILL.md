@@ -10,6 +10,7 @@ metadata:
 # 064 共生、寄生与互利
 
 课程来源：https://app.notion.com/p/41f938852e8c8141aa18d9a0c8eabcc1
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/064-symbiosis/
 
 ## 何时调用
 

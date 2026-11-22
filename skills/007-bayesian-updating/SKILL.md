@@ -10,6 +10,7 @@ metadata:
 # 007 贝叶斯更新
 
 课程来源：https://app.notion.com/p/419938852e8c810dafecc3fa375dac5e
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/007-bayesian-updating/
 
 ## 何时调用
 

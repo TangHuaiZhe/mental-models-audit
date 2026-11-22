@@ -10,6 +10,7 @@ metadata:
 # 089 社会网络与中心性
 
 课程来源：https://app.notion.com/p/41f938852e8c81a1a90fd434ad7d15b5
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/089-social-network-centrality/
 
 ## 何时调用
 

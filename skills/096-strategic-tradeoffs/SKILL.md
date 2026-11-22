@@ -10,6 +10,7 @@ metadata:
 # 096 机会成本与战略取舍
 
 课程来源：https://app.notion.com/p/41f938852e8c81d2ba6dd6bd4212454b
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/096-strategic-tradeoffs/
 
 ## 何时调用
 

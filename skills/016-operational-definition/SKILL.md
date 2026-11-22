@@ -10,6 +10,7 @@ metadata:
 # 016 概念边界与操作性定义
 
 课程来源：https://app.notion.com/p/41f938852e8c81a88a63f3762c969f81
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/016-operational-definition/
 
 ## 何时调用
 

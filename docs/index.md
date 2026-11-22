@@ -1,6 +1,6 @@
 # 跨学科思维模型100讲
 
-> **Notion 是课程源（Source of Truth），GitHub 是发布快照；本仓库同时包含课程与 100 个可执行 Mental Model Audit Skills。**
+> **[Notion 课程总页](https://app.notion.com/p/411938852e8c815eb369e88d48f2f36b)是内容源，本站是发布快照；仓库同时包含课程与 100 个可执行审查技能。**
 
 [查看 Mental Models Audit 使用说明](audit.md)
 

@@ -10,6 +10,7 @@ metadata:
 # 035 均值回归
 
 课程来源：https://app.notion.com/p/41f938852e8c81c8a2c9f7b78ce55605
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/035-mean-reversion/
 
 ## 何时调用
 

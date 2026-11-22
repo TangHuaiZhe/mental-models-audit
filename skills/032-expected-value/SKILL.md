@@ -10,6 +10,7 @@ metadata:
 # 032 期望值
 
 课程来源：https://app.notion.com/p/41f938852e8c81caae66ca7477dffb4f
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/032-expected-value/
 
 ## 何时调用
 

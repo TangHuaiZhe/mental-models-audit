@@ -10,6 +10,7 @@ metadata:
 # 085 承诺、可信威胁与信号
 
 课程来源：https://app.notion.com/p/41f938852e8c81b3bc1ee070b3c2759e
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/085-commitment-credible-threat/
 
 ## 何时调用
 

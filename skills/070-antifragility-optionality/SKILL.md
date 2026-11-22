@@ -10,6 +10,7 @@ metadata:
 # 070 反脆弱与可选择性
 
 课程来源：https://app.notion.com/p/41f938852e8c8138aa8ed3ed9c2e8655
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/070-antifragility-optionality/
 
 ## 何时调用
 

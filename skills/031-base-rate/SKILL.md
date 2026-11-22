@@ -10,6 +10,7 @@ metadata:
 # 031 基础概率与基准率
 
 课程来源：https://app.notion.com/p/41f938852e8c81bfa939c6b50c9073f1
+课程页面：https://tanghuaizhe.github.io/mental-models-audit/course/031-base-rate/
 
 ## 何时调用
 
