@@ -2,7 +2,7 @@
 name: mental-models-audit
 description: '使用《跨学科思维模型100讲》对应的100个原子审查器，对上市公司、行业、商业模式、政策、战略或投资命题进行跨学科审计。支持 quick-scan、deep-audit 与 adversarial-audit；输出相关性、证据、机制、反方、未知数、证伪条件和后续模型路由。'
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Mental Models Audit Router
@@ -32,6 +32,37 @@ metadata:
 6. **显式未知。** 证据不足时输出 unknowns，不用故事补齐。
 7. **可证伪。** Material 模型至少给一个可观察的 falsification condition。
 8. **避免重复计数。** 模型重叠时合并为机制簇，而不是重复加分。
+
+
+## 分析对象分层
+
+在选择模型前，先明确当前在分析什么：
+
+- `business`：业务本身是否创造价值；
+- `company`：企业组织、资本配置、竞争优势与财务质量；
+- `industry`：行业结构、供需、技术和竞争均衡；
+- `security`：证券价格、赔率和估值；
+- `share_class`：A/H、ADR、不同投票权或流动性造成的市场分割；
+- `policy`：政策和制度；
+- `strategy`：战略选择；
+- `analyst_self`：分析者自身偏差。
+
+**禁止把“好公司”直接推导为“好证券”。** 对具体股票研究，至少同时建立 `company` 与 `security` 两层；存在A/H、ADR或其他股权类别时，追加 `share_class`。
+
+## 模型独立性纪律
+
+100个模型是盲点清单，不是100票投票。读取：
+
+- `config/model-routing-metadata.yaml`
+- `config/mechanism-clusters.yaml`
+- `config/replacement-candidates.yaml`
+
+若多个模型属于同一 mechanism cluster：
+
+1. 默认只展开主模型；
+2. 第二模型只有在回答不同子问题且拥有独立证据时才展开；
+3. 汇总时只能算一个底层机制；
+4. 长期通过 `docs/model-independence-audit.md` 的跨公司回归结果决定是否合并或替换模型。
 
 ## 三种模式
 
@@ -68,12 +99,13 @@ metadata:
 1. 定义研究对象与 thesis。
 2. 列出当前事实底稿与数据缺口。
 3. 判断问题类型：事实 / 因果 / 风险 / 商业质量 / 组织制度 / 战略。
-4. 读取 `config/model-registry.yaml`，按 tags 与 trigger 选模型。
-5. 运行选中的原子 Skill。
-6. 对结果做去重：同一底层机制只保留一条主结论，其他作为佐证。
-7. 检查模型冲突：哪些模型给出相反建议？冲突来自什么边界条件？
-8. 输出统一审计报告。
+4. 读取 `config/model-registry.yaml` 确认100模型清单，再读取 `config/model-routing-metadata.yaml` 按 analysis object、tags、机制簇与重叠关系筛选候选模型。
+5. 读取 `config/mechanism-clusters.yaml` 去重后，运行选中的原子 Skill。
+6. 同一机制簇默认只保留一个主模型；只有第二模型回答不同子问题且依赖独立证据时才允许并行展开。
+7. 检查模型冲突与证据独立性：哪些模型给出相反建议？哪些只是同一事实的重复表达？
+8. 输出统一审计报告，并按机制簇而不是模型数量计权。
 9. 若与 deep-equity-research 联用，把结果映射回：商业模式、护城河、财务质量、增长、估值、反方、证伪与跟踪清单。
+10. 若本次为Smoke Test或回归测试，把共选率、同证据率、同结论率和增量信息率写入 Model Independence Audit。
 
 ## 统一输出
 
