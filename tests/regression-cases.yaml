@@ -15,8 +15,22 @@ cases:
         - ["070","098"]
   - id: "kweichow-moutai"
     company: "贵州茅台"
+    security: "600519.SH"
     archetype: "brand-consumer"
-    status: pending
+    status: completed
+    findings:
+      material_models_before_dedup: 17
+      independent_mechanism_clusters: 17
+      secondary_models: 65
+      not_material_models: 18
+      key_router_success: "company与security被显式拆分，Material模型未出现机制簇重复计票"
+      candidate_model_signal: "Goodhart's Law在渠道压货、指标导向与真实动销之间提供明显增量解释"
+      key_findings:
+        - "高ROE与高毛利不再自动意味着高增长；2025-2026进入增长停滞/再平衡期"
+        - "直销显著上升、批发代理下降，渠道改革是当前核心经营变量"
+        - "经营现金流同比大增主要受财务公司同业存款变动影响，不能直接当作酒业现金创造改善"
+        - "合同负债同比大降是重要领先信号，但需结合渠道改革解释，不能单独视为需求崩塌"
+        - "护城河仍强，但投资回报越来越依赖增长恢复、资本回报与估值而非单纯品牌质量"
   - id: "tencent"
     company: "腾讯"
     archetype: "platform-internet"
