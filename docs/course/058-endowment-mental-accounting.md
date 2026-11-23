@@ -1,3 +1,5 @@
+> **Model Set v1.0 迁移提示：** 该课程页属于 legacy。Active ID 058 已迁移为 [幂律与帕累托分布](../model-set-v1/058-power-law-pareto.md)。
+
 # 第58讲：禀赋效应与心理账户——拥有和标签如何改变价值判断
 
 ## 一句话定义
