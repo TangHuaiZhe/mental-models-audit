@@ -125,7 +125,7 @@ models:
     name: "赖特定律与经验曲线"
     slug: "wrights-law-experience-curve"
     module: 3
-    source: "docs/course/021-wrights-law.md"
+    source: "docs/course/021-wrights-law-experience-curve.md"
     path: "skills/021-wrights-law-experience-curve/SKILL.md"
   - id: "022"
     name: "熵"
