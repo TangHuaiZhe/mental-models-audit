@@ -40,6 +40,16 @@ extra_css:
 nav:
   - 首页: index.md
   - Audit Skills: audit.md
+  - Model Set v1.0 RC:
+      - 概览: model-set-v1/index.md
+      - "015 古德哈特定律": model-set-v1/015-goodharts-law.md
+      - "019 探索—利用权衡": model-set-v1/019-explore-exploit-tradeoff.md
+      - "021 赖特定律与经验曲线": model-set-v1/021-wrights-law-experience-curve.md
+      - "053 S曲线与创新扩散": model-set-v1/053-s-curve-diffusion.md
+      - "057 资本周期": model-set-v1/057-capital-cycle.md
+      - "058 幂律与帕累托分布": model-set-v1/058-power-law-pareto.md
+      - "070 反脆弱、凸性与非对称收益": model-set-v1/070-antifragility-convexity.md
+      - "091 期限转换与久期缺口": model-set-v1/091-maturity-transformation-duration-gap.md
   - 01—10 通用认知与元思维:
       - "01 地图不是疆域（The Map Is Not the Territory）": course/001-map-territory.md
       - "02 第一性原理——从基本事实重新构建问题": course/002-first-principles.md
