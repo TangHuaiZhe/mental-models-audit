@@ -1,5 +1,7 @@
 # 跨学科思维模型100讲
 
+> **Active Model Set v1.0**：GitHub 当前导航展示经过跨行业 Regression Tests 换血后的100个 active models；Notion 原始课程和旧页面继续作为历史版本保留。
+
 > **[Notion 课程总页](https://app.notion.com/p/411938852e8c815eb369e88d48f2f36b)是内容源，本站是发布快照；仓库同时包含课程与 100 个可执行审查技能。**
 
 [查看 Mental Models Audit 使用说明](audit.md)
@@ -88,7 +90,7 @@
 
 - [第14讲：反事实思维——如果没有A，会发生什么](course/014-counterfactual.md)
 
-- [第15讲：思想实验——把理论放进极端世界](course/015-thought-experiment.md)
+- [第15讲：古德哈特定律——当指标变成目标，指标会开始失真](course/015-goodharts-law.md)
 
 - [第16讲：概念边界与操作性定义——先把词说清楚，再让数据说话](course/016-operational-definition.md)
 
@@ -104,7 +106,7 @@
 
 从硬约束和失效机制理解现实：守恒、熵、效率、规模、冗余、瓶颈、可靠性与工程安全。
 
-- [第21讲：守恒、存量与流量——系统里的东西从哪里来，又到哪里去](course/021-conservation-stock-flow.md)
+- [第21讲：赖特定律与经验曲线——累计经验如何持续降低单位成本](course/021-wrights-law-experience-curve.md)
 
 - [第22讲：熵——为什么秩序需要持续付费](course/022-entropy.md)
 
@@ -134,7 +136,7 @@
 
 - [第33讲：方差、波动与尾部风险——平均值不会告诉你怎么死](course/033-variance-tail-risk.md)
 
-- [第34讲：大数定律——重复可以平均噪声，但不能消灭偏差](course/034-law-of-large-numbers.md)
+- [第34讲：幂律与帕累托分布——少数极端结果决定大部分价值](course/034-power-law-pareto.md)
 
 - [第35讲：均值回归——极端结果里通常混着运气](course/035-mean-reversion.md)
 
@@ -154,7 +156,7 @@
 
 - [第41讲：机会成本——真正的成本是你放弃的最佳选择](course/041-opportunity-cost.md)
 
-- [第42讲：边际效用——真正决定行动的是下一单位值不值](course/042-marginal-utility.md)
+- [第42讲：期限转换与久期缺口——资产负债表的时间错配](course/042-maturity-transformation-duration-gap.md)
 
 - [第43讲：供给与需求——价格是稀缺与选择的协调信号](course/043-supply-demand.md)
 
@@ -180,7 +182,7 @@
 
 - [第52讲：锚定效应——第一个数字为什么会偷偷决定你的答案](course/052-anchoring.md)
 
-- [第53讲：可得性启发——容易想到，不等于更可能发生](course/053-availability.md)
+- [第53讲：S曲线与创新扩散——高增长处于哪个渗透阶段](course/053-s-curve-diffusion.md)
 
 - [第54讲：代表性启发与基率忽视——看起来像，不等于统计上更可能](course/054-representativeness-base-rate-neglect.md)
 
@@ -188,7 +190,7 @@
 
 - [第56讲：认知失调——为什么我们宁愿修改故事，也不愿承认自己错了](course/056-cognitive-dissonance.md)
 
-- [第57讲：沉没成本谬误——不要让无法改变的过去控制未来](course/057-sunk-cost.md)
+- [第57讲：探索—利用权衡——现金牛与下一代机会如何分资源](course/057-explore-exploit.md)
 
 - [第58讲：禀赋效应与心理账户——拥有和标签如何改变价值判断](course/058-endowment-mental-accounting.md)
 
@@ -212,13 +214,13 @@
 
 - [第66讲：进化军备竞赛——为什么你变强以后，对手也会变强](course/066-arms-race.md)
 
-- [第67讲：路径依赖与历史偶然——过去会给未来铺轨](course/067-path-dependence.md)
+- [第67讲：路径依赖与锁定——历史选择如何自我强化](course/067-path-dependence-lock-in.md)
 
 - [第68讲：生态系统与食物网——不要只看节点，要看依赖网络](course/068-ecosystem-food-web.md)
 
 - [第69讲：多样性与组合韧性——真正的分散，是不会一起失败](course/069-diversity-resilience.md)
 
-- [第70讲：反脆弱与可选择性——不要预测所有未来，设计能从波动中获益的结构](course/070-antifragility-optionality.md)
+- [第70讲：反脆弱、凸性与非对称收益——什么时候波动本身创造价值](course/070-antifragility-convexity.md)
 
 ### 模块八｜71—80：系统科学、控制论与复杂性
 
@@ -272,7 +274,7 @@
 
 把前九个模块带回真实世界：处理历史路径、结构变化、战略取舍、情景、期权、反馈与多模型综合。
 
-- [第91讲：路径依赖与制度惯性——过去的选择还在继续投票](course/091-institutional-path-dependence.md)
+- [第91讲：资本周期——高利润如何吸引资本并最终压低回报](course/091-capital-cycle.md)
 
 - [第92讲：临界转折与偶然性——结构决定可能，关键节点决定路径](course/092-critical-juncture.md)
 
@@ -302,19 +304,19 @@
 
 ### 工程与系统路径
 
-[第21讲：守恒、存量与流量——系统里的东西从哪里来，又到哪里去](course/021-conservation-stock-flow.md) → [第29讲：瓶颈与约束理论——系统只会和最窄的地方一样快](course/029-bottleneck-toc.md) → [第30讲：可靠性与故障树——系统为什么会失败，以及怎样让失败可控](course/030-reliability-fault-tree.md) → [第65讲：冗余、免疫与稳健性——真正强的系统允许局部失败](course/065-robustness-immunity.md) → [第72讲：正反馈与负反馈——系统为什么会越变越快，或自动拉回](course/072-feedback-loops.md) → [第73讲：延迟效应——为什么你越着急纠偏，系统反而越容易振荡](course/073-delay.md) → [第78讲：控制论——目标、测量、反馈与纠偏](course/078-cybernetics.md) → [第79讲：可观测性与可控性——看不见就难诊断，改不了就无法控制](course/079-observability-controllability.md) → [第99讲：速度、反馈与迭代学习——最大的优势之一，是比别人更快发现自己错了](course/099-feedback-learning-speed.md)
+[第21讲：赖特定律与经验曲线——累计经验如何持续降低单位成本](course/021-wrights-law-experience-curve.md) → [第29讲：瓶颈与约束理论——系统只会和最窄的地方一样快](course/029-bottleneck-toc.md) → [第30讲：可靠性与故障树——系统为什么会失败，以及怎样让失败可控](course/030-reliability-fault-tree.md) → [第65讲：冗余、免疫与稳健性——真正强的系统允许局部失败](course/065-robustness-immunity.md) → [第72讲：正反馈与负反馈——系统为什么会越变越快，或自动拉回](course/072-feedback-loops.md) → [第73讲：延迟效应——为什么你越着急纠偏，系统反而越容易振荡](course/073-delay.md) → [第78讲：控制论——目标、测量、反馈与纠偏](course/078-cybernetics.md) → [第79讲：可观测性与可控性——看不见就难诊断，改不了就无法控制](course/079-observability-controllability.md) → [第99讲：速度、反馈与迭代学习——最大的优势之一，是比别人更快发现自己错了](course/099-feedback-learning-speed.md)
 
 ### 个人重大决策路径
 
-[第41讲：机会成本——真正的成本是你放弃的最佳选择](course/041-opportunity-cost.md) → [第51讲：损失厌恶与前景理论——为什么亏100元比赚100元更难受](course/051-loss-aversion-prospect.md) → [第57讲：沉没成本谬误——不要让无法改变的过去控制未来](course/057-sunk-cost.md) → [第60讲：动机性推理与自我欺骗——最危险的偏差，是你希望答案为真](course/060-motivated-reasoning.md) → [第70讲：反脆弱与可选择性——不要预测所有未来，设计能从波动中获益的结构](course/070-antifragility-optionality.md) → [第97讲：情景规划与压力测试——不要只准备一个未来](course/097-scenario-planning.md) → [第98讲：决策树与实物期权——不要一次性押注未来，先买选择权](course/098-decision-tree-real-options.md) → [第99讲：速度、反馈与迭代学习——最大的优势之一，是比别人更快发现自己错了](course/099-feedback-learning-speed.md) → [第100讲：多模型综合——建立你的个人思维格栅](course/100-multi-model-latticework.md)
+[第41讲：机会成本——真正的成本是你放弃的最佳选择](course/041-opportunity-cost.md) → [第51讲：损失厌恶与前景理论——为什么亏100元比赚100元更难受](course/051-loss-aversion-prospect.md) → [第57讲：探索—利用权衡——现金牛与下一代机会如何分资源](course/057-explore-exploit.md) → [第60讲：动机性推理与自我欺骗——最危险的偏差，是你希望答案为真](course/060-motivated-reasoning.md) → [第70讲：反脆弱、凸性与非对称收益——什么时候波动本身创造价值](course/070-antifragility-convexity.md) → [第97讲：情景规划与压力测试——不要只准备一个未来](course/097-scenario-planning.md) → [第98讲：决策树与实物期权——不要一次性押注未来，先买选择权](course/098-decision-tree-real-options.md) → [第99讲：速度、反馈与迭代学习——最大的优势之一，是比别人更快发现自己错了](course/099-feedback-learning-speed.md) → [第100讲：多模型综合——建立你的个人思维格栅](course/100-multi-model-latticework.md)
 
 ### 制度与政策路径
 
-[第05讲：二阶思维——追问“然后呢”](course/005-second-order-thinking.md) → [第13讲：相关不等于因果——从观察到干预，中间隔着什么](course/013-correlation-causation.md) → [第44讲：激励相容与委托代理——系统真正得到的是它所奖励的行为](course/044-incentive-principal-agent.md) → [第77讲：系统陷阱与政策阻力——为什么好意干预会被系统反过来抵消](course/077-system-traps-policy-resistance.md) → [第81讲：纳什均衡——大家都不满意的结果，也可能非常稳定](course/081-nash-equilibrium.md) → [第86讲：公共物品与集体行动困境——所有人都想要，不等于有人愿意付](course/086-public-goods.md) → [第87讲：委托代理与权力制衡——不要寻找完美的人，要设计可纠错的权力结构](course/087-governance-checks-balances.md) → [第88讲：制度激励与非预期后果——规则一公布，所有人都会开始适应](course/088-institutional-incentives.md) → [第90讲：身份认同、规范与群体边界——当观点变成“我们是谁”](course/090-identity-norms.md) → [第91讲：路径依赖与制度惯性——过去的选择还在继续投票](course/091-institutional-path-dependence.md)
+[第05讲：二阶思维——追问“然后呢”](course/005-second-order-thinking.md) → [第13讲：相关不等于因果——从观察到干预，中间隔着什么](course/013-correlation-causation.md) → [第44讲：激励相容与委托代理——系统真正得到的是它所奖励的行为](course/044-incentive-principal-agent.md) → [第77讲：系统陷阱与政策阻力——为什么好意干预会被系统反过来抵消](course/077-system-traps-policy-resistance.md) → [第81讲：纳什均衡——大家都不满意的结果，也可能非常稳定](course/081-nash-equilibrium.md) → [第86讲：公共物品与集体行动困境——所有人都想要，不等于有人愿意付](course/086-public-goods.md) → [第87讲：委托代理与权力制衡——不要寻找完美的人，要设计可纠错的权力结构](course/087-governance-checks-balances.md) → [第88讲：制度激励与非预期后果——规则一公布，所有人都会开始适应](course/088-institutional-incentives.md) → [第90讲：身份认同、规范与群体边界——当观点变成“我们是谁”](course/090-identity-norms.md) → [第91讲：资本周期——高利润如何吸引资本并最终压低回报](course/091-capital-cycle.md)
 
 ### 创新与战略路径
 
-[第49讲：创造性破坏——进步如何通过淘汰旧结构发生](course/049-creative-destruction.md) → [第61讲：自然选择与适应——环境不会设计你，只会筛选你](course/061-natural-selection.md) → [第62讲：适应度景观——为什么局部最优会困住你](course/062-fitness-landscape.md) → [第66讲：进化军备竞赛——为什么你变强以后，对手也会变强](course/066-arms-race.md) → [第67讲：路径依赖与历史偶然——过去会给未来铺轨](course/067-path-dependence.md) → [第70讲：反脆弱与可选择性——不要预测所有未来，设计能从波动中获益的结构](course/070-antifragility-optionality.md) → [第94讲：战略互动与资源配置——战略不是多做，而是把稀缺资源押在少数关键位置](course/094-strategic-resource-allocation.md) → [第95讲：竞争优势与护城河——真正的优势，是别人看见你赚钱后仍然抢不走](course/095-competitive-advantage-moat.md) → [第96讲：机会成本与战略取舍——真正的战略要明确哪些好机会也不做](course/096-strategic-tradeoffs.md) → [第98讲：决策树与实物期权——不要一次性押注未来，先买选择权](course/098-decision-tree-real-options.md)
+[第49讲：创造性破坏——进步如何通过淘汰旧结构发生](course/049-creative-destruction.md) → [第61讲：自然选择与适应——环境不会设计你，只会筛选你](course/061-natural-selection.md) → [第62讲：适应度景观——为什么局部最优会困住你](course/062-fitness-landscape.md) → [第66讲：进化军备竞赛——为什么你变强以后，对手也会变强](course/066-arms-race.md) → [第67讲：路径依赖与锁定——历史选择如何自我强化](course/067-path-dependence-lock-in.md) → [第70讲：反脆弱、凸性与非对称收益——什么时候波动本身创造价值](course/070-antifragility-convexity.md) → [第94讲：战略互动与资源配置——战略不是多做，而是把稀缺资源押在少数关键位置](course/094-strategic-resource-allocation.md) → [第95讲：竞争优势与护城河——真正的优势，是别人看见你赚钱后仍然抢不走](course/095-competitive-advantage-moat.md) → [第96讲：机会成本与战略取舍——真正的战略要明确哪些好机会也不做](course/096-strategic-tradeoffs.md) → [第98讲：决策树与实物期权——不要一次性押注未来，先买选择权](course/098-decision-tree-real-options.md)
 
 ### 课程关联规范
 
