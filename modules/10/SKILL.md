@@ -3,14 +3,14 @@ name: mental-models-module-10
 description: '历史、战略与决策模块的预筛选路由器。用于从本模块10个模型中选择会实质改变公司、行业或 thesis 判断的原子审查器。'
 metadata:
   module: "10"
-  version: "0.1.0"
+  version: "1.0.0"
 ---
 
 # 模块 10｜历史、战略与决策
 
 ## 原子模型
 
-- 091 路径依赖与制度惯性 → `../../skills/091-institutional-path-dependence/SKILL.md`
+- 091 资本周期 → `../../skills/091-capital-cycle/SKILL.md`
 - 092 临界转折与偶然性 → `../../skills/092-critical-juncture/SKILL.md`
 - 093 短期冲击与长期结构 → `../../skills/093-shock-vs-structure/SKILL.md`
 - 094 战略互动与资源配置 → `../../skills/094-strategic-resource-allocation/SKILL.md`

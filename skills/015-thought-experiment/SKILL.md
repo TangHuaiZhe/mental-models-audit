@@ -2,10 +2,14 @@
 name: mm-015-thought-experiment
 description: '使用第15讲「思想实验」审查公司、行业或投资 thesis。先判相关性，再检查证据、机制、反例、未知数与证伪条件。'
 metadata:
+  legacy: true
+  retired_in_model_set: "1.0.0"
   model_id: "015"
   module: "02"
   version: "0.1.0"
 ---
+
+> **Legacy / retired in Model Set v1.0.** 015 思想实验 不再属于 active 100-model set。迁移目标：`015-goodharts-law`。详见 `config/migration-map.yaml`。
 
 # 015 思想实验
 

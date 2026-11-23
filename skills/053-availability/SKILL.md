@@ -2,10 +2,14 @@
 name: mm-053-availability
 description: '使用第53讲「可得性启发」审查公司、行业或投资 thesis。先判相关性，再检查证据、机制、反例、未知数与证伪条件。'
 metadata:
+  legacy: true
+  retired_in_model_set: "1.0.0"
   model_id: "053"
   module: "06"
   version: "0.1.0"
 ---
+
+> **Legacy / retired in Model Set v1.0.** 053 可得性启发 不再属于 active 100-model set。迁移目标：`053-s-curve-diffusion`。详见 `config/migration-map.yaml`。
 
 # 053 可得性启发
 

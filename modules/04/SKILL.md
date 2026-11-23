@@ -3,7 +3,7 @@ name: mental-models-module-04
 description: '数学、统计与信息论模块的预筛选路由器。用于从本模块10个模型中选择会实质改变公司、行业或 thesis 判断的原子审查器。'
 metadata:
   module: "04"
-  version: "0.1.0"
+  version: "1.0.0"
 ---
 
 # 模块 04｜数学、统计与信息论
@@ -13,7 +13,7 @@ metadata:
 - 031 基础概率与基准率 → `../../skills/031-base-rate/SKILL.md`
 - 032 期望值 → `../../skills/032-expected-value/SKILL.md`
 - 033 方差、波动与尾部风险 → `../../skills/033-variance-tail-risk/SKILL.md`
-- 034 大数定律 → `../../skills/034-law-of-large-numbers/SKILL.md`
+- 034 幂律与帕累托分布 → `../../skills/034-power-law-pareto/SKILL.md`
 - 035 均值回归 → `../../skills/035-mean-reversion/SKILL.md`
 - 036 选择偏差与幸存者偏差 → `../../skills/036-selection-survivorship/SKILL.md`
 - 037 信息不对称与信号 → `../../skills/037-information-asymmetry-signaling/SKILL.md`

@@ -2,10 +2,14 @@
 name: mm-091-institutional-path-dependence
 description: '使用第91讲「路径依赖与制度惯性」审查公司、行业或投资 thesis。先判相关性，再检查证据、机制、反例、未知数与证伪条件。'
 metadata:
+  legacy: true
+  retired_in_model_set: "1.0.0"
   model_id: "091"
   module: "10"
   version: "0.1.0"
 ---
+
+> **Legacy / retired in Model Set v1.0.** 091 路径依赖与制度惯性 不再属于 active 100-model set。迁移目标：`067-path-dependence；ID 091 现用于 Capital Cycle`。详见 `config/migration-map.yaml`。
 
 # 091 路径依赖与制度惯性
 

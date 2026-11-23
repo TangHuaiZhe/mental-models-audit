@@ -2,10 +2,14 @@
 name: mm-057-sunk-cost
 description: '使用第57讲「沉没成本谬误」审查公司、行业或投资 thesis。先判相关性，再检查证据、机制、反例、未知数与证伪条件。'
 metadata:
+  legacy: true
+  retired_in_model_set: "1.0.0"
   model_id: "057"
   module: "06"
   version: "0.1.0"
 ---
+
+> **Legacy / retired in Model Set v1.0.** 057 沉没成本谬误 不再属于 active 100-model set。迁移目标：`057-explore-exploit`。详见 `config/migration-map.yaml`。
 
 # 057 沉没成本谬误
 
