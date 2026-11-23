@@ -1,8 +1,8 @@
 ---
 name: mental-models-audit
-description: '使用《跨学科思维模型100讲》对应的100个原子审查器，对上市公司、行业、商业模式、政策、战略或投资命题进行跨学科审计。支持 quick-scan、deep-audit 与 adversarial-audit；输出相关性、证据、机制、反方、未知数、证伪条件和后续模型路由。'
+description: '使用经过跨行业回归测试修订的100个 active 原子审查器，对上市公司、行业、商业模式、政策、战略或投资命题进行跨学科审计。支持 quick-scan、deep-audit 与 adversarial-audit；输出相关性、证据、机制、反方、未知数、证伪条件和后续模型路由。'
 metadata:
-  version: "0.2.1"
+  version: "1.0.0-rc1"
 ---
 
 # Mental Models Audit Router
@@ -58,7 +58,7 @@ metadata:
 
 ## 模型独立性纪律
 
-100个模型是盲点清单，不是100票投票。读取：
+100个 active 模型是盲点清单，不是100票投票。旧模型可能保留 compatibility stub，但不得进入路由。读取：
 
 - `config/model-routing-metadata.yaml`
 - `config/mechanism-clusters.yaml`
@@ -144,3 +144,20 @@ metadata:
 - 当前决策高度可逆，继续分析的信息边际价值低
 
 不要把“100个模型”变成新的 Analysis Paralysis。
+
+
+## Model Set v1.0 RC
+
+当前分支采用 Model Set v1.0 候选集合。active registry 始终恰好100个模型；旧课程/旧 Skill 通过 `config/migration-map.yaml` 保留迁移关系，但不参与 Router。
+
+新增七个独立机制：
+
+- 015 Goodhart's Law
+- 019 Explore–Exploit Tradeoff
+- 021 Wright's Law / Experience Curve
+- 053 S-Curve / Diffusion of Innovation
+- 057 Capital Cycle
+- 058 Power Law / Pareto Distribution
+- 091 Maturity Transformation / Duration Gap
+
+070 已收窄为“反脆弱、凸性与非对称收益”；分阶段投资选择权归 098 Real Options。
