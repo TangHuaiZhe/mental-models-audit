@@ -1,4 +1,5 @@
-version: 1
+version: 2
+model_set_version: "1.0.0"
 cases:
   - id: "sanhua-h-02050"
     company: "三花智控"
