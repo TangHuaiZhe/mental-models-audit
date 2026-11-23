@@ -1,4 +1,6 @@
-version: 1
+version: 2
+model_set_version: "1.0.0"
+active_model_count: 100
 models:
   - id: "001"
     name: "地图不是疆域"
@@ -85,11 +87,11 @@ models:
     source: "https://app.notion.com/p/41d938852e8c81e79903e2b6bbbc79e6"
     path: "skills/014-counterfactual/SKILL.md"
   - id: "015"
-    name: "思想实验"
-    slug: "thought-experiment"
-    module: 2
-    source: "https://app.notion.com/p/41f938852e8c8145948cc77bfb754835"
-    path: "skills/015-thought-experiment/SKILL.md"
+    name: "古德哈特定律"
+    slug: "goodharts-law"
+    module: 6
+    source: "https://tanghuaizhe.github.io/mental-models-audit/model-set-v1/015-goodharts-law/"
+    path: "skills/015-goodharts-law/SKILL.md"
   - id: "016"
     name: "概念边界与操作性定义"
     slug: "operational-definition"
@@ -109,11 +111,11 @@ models:
     source: "https://app.notion.com/p/41f938852e8c81f0a5e8d95e8126ee8a"
     path: "skills/018-evidence-hierarchy/SKILL.md"
   - id: "019"
-    name: "价值—事实区分与规范性判断"
-    slug: "fact-value"
-    module: 2
-    source: "https://app.notion.com/p/41f938852e8c810d8db3fd6077c625fe"
-    path: "skills/019-fact-value/SKILL.md"
+    name: "探索—利用权衡"
+    slug: "explore-exploit-tradeoff"
+    module: 10
+    source: "https://tanghuaizhe.github.io/mental-models-audit/model-set-v1/019-explore-exploit-tradeoff/"
+    path: "skills/019-explore-exploit-tradeoff/SKILL.md"
   - id: "020"
     name: "元认知"
     slug: "metacognition"
@@ -121,11 +123,11 @@ models:
     source: "https://app.notion.com/p/41f938852e8c813bbee5de7ebf812ad2"
     path: "skills/020-metacognition/SKILL.md"
   - id: "021"
-    name: "守恒、存量与流量"
-    slug: "conservation-stock-flow"
+    name: "赖特定律与经验曲线"
+    slug: "wrights-law-experience-curve"
     module: 3
-    source: "https://app.notion.com/p/41f938852e8c81be9bebe5d025eca637"
-    path: "skills/021-conservation-stock-flow/SKILL.md"
+    source: "https://tanghuaizhe.github.io/mental-models-audit/model-set-v1/021-wrights-law-experience-curve/"
+    path: "skills/021-wrights-law-experience-curve/SKILL.md"
   - id: "022"
     name: "熵"
     slug: "entropy"
@@ -213,7 +215,7 @@ models:
   - id: "036"
     name: "选择偏差与幸存者偏差"
     slug: "selection-survivorship"
-    module: 4
+    module: 2
     source: "https://app.notion.com/p/41f938852e8c81fcb113cae9edc854ec"
     path: "skills/036-selection-survivorship/SKILL.md"
   - id: "037"
@@ -261,7 +263,7 @@ models:
   - id: "044"
     name: "激励相容与委托代理"
     slug: "incentive-principal-agent"
-    module: 5
+    module: 6
     source: "https://app.notion.com/p/41f938852e8c81548984cede4edec479"
     path: "skills/044-incentive-principal-agent/SKILL.md"
   - id: "045"
@@ -313,11 +315,11 @@ models:
     source: "https://app.notion.com/p/41f938852e8c816da145d4acc8a74a6f"
     path: "skills/052-anchoring/SKILL.md"
   - id: "053"
-    name: "可得性启发"
-    slug: "availability"
-    module: 6
-    source: "https://app.notion.com/p/41f938852e8c817c86cce9d37b8f7c23"
-    path: "skills/053-availability/SKILL.md"
+    name: "S曲线与创新扩散"
+    slug: "s-curve-diffusion"
+    module: 7
+    source: "https://tanghuaizhe.github.io/mental-models-audit/model-set-v1/053-s-curve-diffusion/"
+    path: "skills/053-s-curve-diffusion/SKILL.md"
   - id: "054"
     name: "代表性启发与基率忽视"
     slug: "representativeness-base-rate-neglect"
@@ -337,17 +339,17 @@ models:
     source: "https://app.notion.com/p/41f938852e8c815ead6ede4a19e84fc9"
     path: "skills/056-cognitive-dissonance/SKILL.md"
   - id: "057"
-    name: "沉没成本谬误"
-    slug: "sunk-cost"
-    module: 6
-    source: "https://app.notion.com/p/41f938852e8c813cb4b1ca23743d02fc"
-    path: "skills/057-sunk-cost/SKILL.md"
+    name: "资本周期"
+    slug: "capital-cycle"
+    module: 5
+    source: "https://tanghuaizhe.github.io/mental-models-audit/model-set-v1/057-capital-cycle/"
+    path: "skills/057-capital-cycle/SKILL.md"
   - id: "058"
-    name: "禀赋效应与心理账户"
-    slug: "endowment-mental-accounting"
-    module: 6
-    source: "https://app.notion.com/p/41f938852e8c81cb93d2c8c7a1ba04ce"
-    path: "skills/058-endowment-mental-accounting/SKILL.md"
+    name: "幂律与帕累托分布"
+    slug: "power-law-pareto"
+    module: 4
+    source: "https://tanghuaizhe.github.io/mental-models-audit/model-set-v1/058-power-law-pareto/"
+    path: "skills/058-power-law-pareto/SKILL.md"
   - id: "059"
     name: "群体思维与从众"
     slug: "groupthink-conformity"
@@ -399,7 +401,7 @@ models:
   - id: "067"
     name: "路径依赖与历史偶然"
     slug: "path-dependence"
-    module: 7
+    module: 2
     source: "https://app.notion.com/p/41f938852e8c81fabceeea91cae6dac6"
     path: "skills/067-path-dependence/SKILL.md"
   - id: "068"
@@ -415,11 +417,11 @@ models:
     source: "https://app.notion.com/p/41f938852e8c8165bc10d3e27166910a"
     path: "skills/069-diversity-resilience/SKILL.md"
   - id: "070"
-    name: "反脆弱与可选择性"
-    slug: "antifragility-optionality"
+    name: "反脆弱、凸性与非对称收益"
+    slug: "antifragility-convexity"
     module: 7
-    source: "https://app.notion.com/p/41f938852e8c8138aa8ed3ed9c2e8655"
-    path: "skills/070-antifragility-optionality/SKILL.md"
+    source: "https://tanghuaizhe.github.io/mental-models-audit/model-set-v1/070-antifragility-convexity/"
+    path: "skills/070-antifragility-convexity/SKILL.md"
   - id: "071"
     name: "系统边界与整体观"
     slug: "system-boundary"
@@ -537,15 +539,15 @@ models:
   - id: "090"
     name: "身份认同、规范与群体边界"
     slug: "identity-norms"
-    module: 9
+    module: 6
     source: "https://app.notion.com/p/41f938852e8c81ae8838fba79cea3646"
     path: "skills/090-identity-norms/SKILL.md"
   - id: "091"
-    name: "路径依赖与制度惯性"
-    slug: "institutional-path-dependence"
-    module: 10
-    source: "https://app.notion.com/p/41f938852e8c8182b88ff251614ba608"
-    path: "skills/091-institutional-path-dependence/SKILL.md"
+    name: "期限转换与久期缺口"
+    slug: "maturity-transformation-duration-gap"
+    module: 9
+    source: "https://tanghuaizhe.github.io/mental-models-audit/model-set-v1/091-maturity-transformation-duration-gap/"
+    path: "skills/091-maturity-transformation-duration-gap/SKILL.md"
   - id: "092"
     name: "临界转折与偶然性"
     slug: "critical-juncture"
