@@ -68,3 +68,24 @@ AI 资本开支、算力预付款上升并伴随自由现金流受压时，触�
 ### 模型替换纪律
 
 单次公司中的模型重叠不能直接触发删除。只有跨多个商业 archetype 的回归测试显示：高共选率、高同证据率、高同结论率、低增量信息率，才进入 Merge/Replace。
+
+
+## v1.0 — Active Model Set
+
+v1.0 将模型独立性审计升级为正式模型集合治理：
+
+- active set 唯一来源：`config/model-registry.yaml`
+- 历史兼容：`config/migration-map.yaml`
+- 变更理由：`MODEL_SET_CHANGELOG.md`
+- 被替换的旧 Skill / course 文件不删除，只标记 legacy
+- 同一 ID 可以在新版本复用；Router 只读取 registry 指定的 active path
+- merge 释放的 ID 用于新的独立机制，避免整体重编号造成大量断链
+
+v1.0 正式新增：
+Goodhart's Law、Wright's Law / Experience Curve、Power Law / Pareto、Maturity Transformation / Duration Gap、S-Curve / Diffusion、Explore–Exploit、Capital Cycle。
+
+v1.0 正式合并：
+旧021→075 Stock–Flow Dynamics；旧091→067 Path Dependence & Lock-in。
+
+v1.0 正式收窄：
+070 只负责 Antifragility / Convexity；分阶段投资选择权由098 Real Options负责。

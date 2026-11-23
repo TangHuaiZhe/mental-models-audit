@@ -51,4 +51,14 @@
 
 ## 关键纪律
 
-在完成至少 6 个不同商业 archetype 的回归测试前，不正式重排100讲编号。Router 可以先进行机制簇去重，但课程层保持稳定。
+v1.0 已基于 8 类 archetype 的回归结果完成第一次正式 Revision。后续变更继续遵循同一原则：单次案例不触发替换；需要跨 archetype 的独立增量证据，并通过 migration map 保持兼容。
+
+
+## v1.0 Revision outcome
+
+- Merge：旧021→075；旧091→067。
+- Narrow：070。
+- Replace：015、021、034、042、053、057、091。
+- Keep despite similarity：046/047/068；027/065/069；041/096；066/091(new Capital Cycle)。
+
+具体理由见 `MODEL_SET_CHANGELOG.md`。
