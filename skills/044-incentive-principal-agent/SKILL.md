@@ -3,8 +3,8 @@ name: mm-044-incentive-principal-agent
 description: '使用第44讲「激励相容与委托代理」审查公司、行业或投资 thesis。先判相关性，再检查证据、机制、反例、未知数与证伪条件。'
 metadata:
   model_id: "044"
-  module: "05"
-  version: "0.1.0"
+  module: "06"
+  version: "1.0.0-rc1"
 ---
 
 # 044 激励相容与委托代理
