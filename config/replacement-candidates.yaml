@@ -29,11 +29,11 @@ candidates:
   - name: "Capital Cycle"
     cn: "资本周期"
     priority: 5
-    why: "高利润吸引资本进入、扩产、供给过剩、ROIC回落；对周期行业极重要。"
+    why: "高预期利润吸引资本进入、扩产、供给增加、ROIC可能回落；腾讯AI投入提供中强候选信号，仍须跨公司验证。"
   - name: "Explore–Exploit Tradeoff"
     cn: "探索—利用权衡"
-    priority: 4
-    why: "研发、新业务、资本配置中平衡现有优势与未来探索。"
+    priority: 5
+    why: "成熟业务现金流投入下一代产品时，审查探索预算、阶段目标与核心业务机会成本；腾讯AI投入提供强候选信号。"
   - name: "Power Law / Pareto Distribution"
     cn: "幂律 / 帕累托分布"
     priority: 4
