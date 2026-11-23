@@ -1,3 +1,5 @@
+> **Model Set v1.0 迁移提示：** 该课程页属于 legacy。原091语义已并入067；Active ID 091 现为 [期限转换与久期缺口](../model-set-v1/091-maturity-transformation-duration-gap.md)。
+
 # 第91讲：路径依赖与制度惯性——过去的选择还在继续投票
 
 ## 一句话定义
