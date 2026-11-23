@@ -14,6 +14,18 @@
 - 什么证据会证伪
 - 与哪些模型应继续联动
 
+## Active Model Set v1.0
+
+当前公司/行业/证券审计使用 **Model Set v1.0 RC**：100 个 active 模型经过跨行业 regression test 后重新去重与换血。
+
+- Active registry：`config/model-registry.yaml`
+- 模型迁移：`config/migration-map.yaml`
+- 变更记录：`MODEL_SET_CHANGELOG.md`
+- v1 课程入口：`docs/model-set-v1/`
+- 原始《跨学科思维模型100讲》页面仍保留，作为 legacy 教学内容和历史版本。
+
+Router **只读取 active registry**；legacy Skill 不参与模型选择。
+
 ## 三种运行模式
 
 1. **quick-scan**：自动选择约 10–20 个高相关模型，适合首次研究。
