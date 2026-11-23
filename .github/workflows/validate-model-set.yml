@@ -1,0 +1,41 @@
+name: Validate Mental Models Model Set
+
+on:
+  pull_request:
+    paths:
+      - "SKILL.md"
+      - "skills/**"
+      - "modules/**"
+      - "config/**"
+      - "schema/**"
+      - "docs/**"
+      - "mkdocs.yml"
+      - "scripts/validate_model_set.py"
+      - "MODEL_SET_CHANGELOG.md"
+  push:
+    branches: [main]
+    paths:
+      - "SKILL.md"
+      - "skills/**"
+      - "modules/**"
+      - "config/**"
+      - "schema/**"
+      - "docs/**"
+      - "mkdocs.yml"
+      - "scripts/validate_model_set.py"
+      - "MODEL_SET_CHANGELOG.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+      - name: Validate active 100-model set
+        run: python scripts/validate_model_set.py
