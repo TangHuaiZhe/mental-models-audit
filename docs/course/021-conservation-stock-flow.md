@@ -1,3 +1,5 @@
+> **Legacy course page — retired from active Model Set v1.0.** 迁移目标：075 存量—流量动力学；021现为 Wright's Law。当前模型请见 [v1.0 页面](075-stock-flow-dynamics.md)；完整映射见仓库 `config/migration-map.yaml`。
+
 # 第21讲：守恒、存量与流量——系统里的东西从哪里来，又到哪里去
 
 ## 一句话定义

@@ -2,7 +2,7 @@
 name: mental-models-audit
 description: '使用《跨学科思维模型100讲》对应的100个原子审查器，对上市公司、行业、商业模式、政策、战略或投资命题进行跨学科审计。支持 quick-scan、deep-audit 与 adversarial-audit；输出相关性、证据、机制、反方、未知数、证伪条件和后续模型路由。'
 metadata:
-  version: "0.2.1"
+  version: "1.0.0"
 ---
 
 # Mental Models Audit Router
@@ -21,6 +21,15 @@ metadata:
 - 已形成的投资 thesis
 
 若与 `deep-equity-research` 联用，事实与数字必须继承其数据源、时间口径与零虚构纪律。
+
+## Model Set v1.0
+
+v1.0 是经过多 archetype 回归测试后的首个正式模型集合。Active model 以 `config/model-registry.yaml` 为唯一清单；旧模型与旧 URL 通过 `config/migration-map.yaml` 保留可追踪性。
+
+- **100 active models 固定为审计器集合，不等于100票。**
+- 合并模型的旧机制由新主模型吸收；被替换模型保留 legacy 文件但不再参与 Router。
+- 新模型若来自回归测试而非原 Notion 课程，课程页使用 GitHub v1.0 页面作为当前发布源。
+- `MODEL_SET_CHANGELOG.md` 记录 Keep / Narrow / Merge / Replace 与证据。
 
 ## 核心原则
 

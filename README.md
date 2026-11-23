@@ -1,5 +1,7 @@
 # Mental Models Audit
 
+> **Active Model Set: v1.0.0** — 首个基于跨行业 Regression Tests 完成换血的正式100模型集合。
+
 本仓库收录《跨学科思维模型100讲》课程，并将每讲对应的模型做成可执行的公司与行业研究审查技能。
 
 ## 目标
@@ -50,3 +52,11 @@
 课程正文位于 `docs/course/`，共 100 讲；左侧导航按 10 个学科模块组织，并提供全文搜索、明暗主题、上一讲/下一讲以及课程与对应 Audit Skill 的链接。
 
 GitHub Pages 已配置为由 GitHub Actions 发布。后续推送到 `main` 会自动重新构建网站。
+
+
+## Model Set 版本治理
+
+- Active models: `config/model-registry.yaml`
+- v0.2.1 → v1.0 migration: `config/migration-map.yaml`
+- Change rationale: `MODEL_SET_CHANGELOG.md`
+- Legacy course/skill files继续保留，避免旧链接失效。

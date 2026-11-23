@@ -1,3 +1,5 @@
+> **Legacy course page — retired from active Model Set v1.0.** 迁移目标：034 Power Law / Pareto。当前模型请见 [v1.0 页面](034-power-law-pareto.md)；完整映射见仓库 `config/migration-map.yaml`。
+
 # 第34讲：大数定律——重复可以平均噪声，但不能消灭偏差
 
 ## 一句话定义

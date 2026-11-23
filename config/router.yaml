@@ -1,4 +1,5 @@
-version: 2
+version: 3
+model_set_version: "1.0.0"
 
 analysis_objects:
   allowed: [business, company, industry, security, share_class, trading_counter, policy, strategy, analyst_self]
@@ -74,7 +75,7 @@ selection_pipeline:
   - "Step 4: 执行原子Skill；记录其证据是否独立、是否改变结论、是否产生新证伪条件。"
   - "Step 5: Deep Audit仍对100模型逐项判相关性，但汇总按机制簇，不按模型个数计权。"
   - "Step 6: 把模型对之间的共选、同证据、同结论、增量信息写入Model Independence Audit记录。"
-  - "Step 7: 若候选重复模型达到替换阈值，标记Merge/Replace，但不自动改课程编号。"
+  - "Step 7: 记录模型独立性；v1.0 active set 的变更只通过 migration-map 与 changelog 管理，不在单次审计中自动替换模型。"
 
 selection_rules:
   - "先按问题结构选模型，不按课程顺序选。"

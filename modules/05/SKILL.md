@@ -3,7 +3,7 @@ name: mental-models-module-05
 description: '经济学与商业模块的预筛选路由器。用于从本模块10个模型中选择会实质改变公司、行业或 thesis 判断的原子审查器。'
 metadata:
   module: "05"
-  version: "0.1.0"
+  version: "1.0.0"
 ---
 
 # 模块 05｜经济学与商业
@@ -11,7 +11,7 @@ metadata:
 ## 原子模型
 
 - 041 机会成本 → `../../skills/041-opportunity-cost/SKILL.md`
-- 042 边际效用 → `../../skills/042-marginal-utility/SKILL.md`
+- 042 期限转换与久期缺口 → `../../skills/042-maturity-transformation-duration-gap/SKILL.md`
 - 043 供需 → `../../skills/043-supply-demand/SKILL.md`
 - 044 激励相容与委托代理 → `../../skills/044-incentive-principal-agent/SKILL.md`
 - 045 比较优势 → `../../skills/045-comparative-advantage/SKILL.md`

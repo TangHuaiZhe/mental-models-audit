@@ -1,3 +1,5 @@
+> **Legacy course page — retired from active Model Set v1.0.** 迁移目标：042 期限转换与久期缺口。当前模型请见 [v1.0 页面](042-maturity-transformation-duration-gap.md)；完整映射见仓库 `config/migration-map.yaml`。
+
 # 第42讲：边际效用——真正决定行动的是下一单位值不值
 
 ## 一句话定义

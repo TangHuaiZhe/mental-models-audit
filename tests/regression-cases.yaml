@@ -1,4 +1,5 @@
-version: 1
+version: 2
+model_set_version: "1.0.0"
 cases:
   - id: "sanhua-h-02050"
     company: "三花智控"
@@ -53,21 +54,65 @@ cases:
       source_result: "tests/results/tencent.md"
   - id: "cloudflare"
     company: "Cloudflare"
+    security: "NET"
     archetype: "saas-network-infrastructure"
-    status: pending
+    status: completed
+    findings:
+      material_models_before_dedup_approx: 28
+      independent_mechanism_clusters_approx: 27
+      count_status: "回归审计近似汇总，用于模型边界判断而非精确替换阈值"
+      key_router_success: "046规模经济、047网络效应、068生态系统被成功区分"
+      candidate_model_signals:
+        s_curve_diffusion: "中：开发者与AI Agent采用阶段需要渗透率框架"
+        modularity: "中：平台架构有价值，但尚未显示必须替换现有模型"
   - id: "tsmc"
     company: "台积电"
+    security: "2330.TW"
     archetype: "semiconductor-manufacturing"
-    status: pending
+    status: completed
+    findings:
+      material_models_before_dedup_approx: 34
+      independent_mechanism_clusters_approx: 33
+      count_status: "回归审计近似汇总"
+      candidate_model_signals:
+        wrights_law: "强：累计制造经验、良率与单位成本具有独立于规模经济的解释力"
+        capital_cycle: "强：高回报引致扩产，未来供给与ROIC反馈无法由军备竞赛替代"
   - id: "catl"
     company: "宁德时代"
+    security: "300750.SZ"
     archetype: "advanced-manufacturing"
-    status: pending
-  - id: "large-bank"
-    company: "待选大型银行"
+    status: completed
+    findings:
+      material_models_before_dedup_approx: 37
+      independent_mechanism_clusters_approx: 36
+      count_status: "回归审计近似汇总"
+      candidate_model_signals:
+        wrights_law: "强：累计GWh与制造学习曲线"
+        s_curve_diffusion: "强：动力电池与储能处于不同渗透阶段"
+        capital_cycle: "强：扩产、价格与行业ROIC反馈形成独立资本周期机制"
+  - id: "cmb"
+    company: "招商银行"
+    security: "600036.SH / 3968.HK"
     archetype: "financial-institution"
-    status: pending
-  - id: "innovative-biotech"
-    company: "待选创新药公司"
+    status: completed
+    findings:
+      material_models_before_dedup_approx: 35
+      independent_mechanism_clusters_approx: 29
+      count_status: "回归审计近似汇总"
+      key_router_finding: "金融机构重复主要集中在stock-flow、resilience、agency/governance等机制簇"
+      candidate_model_signals:
+        maturity_transformation_duration_gap: "强：NIM、资产负债重定价与流动性错配缺少专门模型"
+  - id: "beone"
+    company: "百济神州 / BeOne Medicines"
+    security: "688235.SH / 06160.HK"
     archetype: "biotech-r-and-d"
-    status: pending
+    status: completed
+    findings:
+      material_models_before_dedup_approx: 43
+      independent_mechanism_clusters_approx: 37
+      count_status: "回归审计近似汇总"
+      key_router_success: "概率、贝叶斯、期望值、分散化、情景与实物期权组合对药物管线适配度高"
+      candidate_model_signals:
+        power_law_pareto: "强：少数blockbuster项目可贡献大部分企业价值"
+        explore_exploit_tradeoff: "强：成熟商业化产品与高强度研发管线之间的资源分配"
+      overlap_finding: "070与098在药物pipeline上高度重叠，支持将070收窄为Antifragility/Convexity"

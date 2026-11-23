@@ -1,3 +1,5 @@
+> **Legacy course page — retired from active Model Set v1.0.** 迁移目标：067 路径依赖与锁定。当前模型请见 [v1.0 页面](067-path-dependence-lock-in.md)；完整映射见仓库 `config/migration-map.yaml`。
+
 # 第67讲：路径依赖与历史偶然——过去会给未来铺轨
 
 ## 一句话定义

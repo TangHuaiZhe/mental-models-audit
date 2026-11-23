@@ -1,11 +1,7 @@
-version: 1
+version: 2
+model_set_version: "1.0.0"
 default_max_expanded_per_cluster: 1
 clusters:
-  "stock-flow":
-    primary_model: "075"
-    members: ["021", "075"]
-    max_expanded: 1
-    rule: "同一研究中默认只展开一个；动态系统优先075，守恒/会计口径优先021。"
   "leverage":
     primary_model: "076"
     members: ["024", "076"]
@@ -46,16 +42,6 @@ clusters:
     members: ["055", "060"]
     max_expanded: 1
     rule: "一般确认偏误用055；利益/身份驱动明显时用060。"
-  "path-dependence":
-    primary_model: "067"
-    members: ["067", "091"]
-    max_expanded: 1
-    rule: "企业/技术路径用067；制度惯性用091。"
-  "optionality":
-    primary_model: "098"
-    members: ["070", "098"]
-    max_expanded: 1
-    rule: "组织适应性用070；资本配置/分阶段投资用098。"
   "feedback-learning":
     primary_model: "072"
     members: ["072", "099"]

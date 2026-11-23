@@ -2,10 +2,14 @@
 name: mm-021-conservation-stock-flow
 description: '使用第21讲「守恒、存量与流量」审查公司、行业或投资 thesis。先判相关性，再检查证据、机制、反例、未知数与证伪条件。'
 metadata:
+  legacy: true
+  retired_in_model_set: "1.0.0"
   model_id: "021"
   module: "03"
   version: "0.1.0"
 ---
+
+> **Legacy / retired in Model Set v1.0.** 021 守恒、存量与流量 不再属于 active 100-model set。迁移目标：`075-stock-flow-dynamics；ID 021 现用于 Wright's Law`。详见 `config/migration-map.yaml`。
 
 # 021 守恒、存量与流量
 

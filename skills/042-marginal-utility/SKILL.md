@@ -2,10 +2,14 @@
 name: mm-042-marginal-utility
 description: '使用第42讲「边际效用」审查公司、行业或投资 thesis。先判相关性，再检查证据、机制、反例、未知数与证伪条件。'
 metadata:
+  legacy: true
+  retired_in_model_set: "1.0.0"
   model_id: "042"
   module: "05"
   version: "0.1.0"
 ---
+
+> **Legacy / retired in Model Set v1.0.** 042 边际效用 不再属于 active 100-model set。迁移目标：`042-maturity-transformation-duration-gap`。详见 `config/migration-map.yaml`。
 
 # 042 边际效用
 

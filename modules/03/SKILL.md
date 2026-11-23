@@ -3,14 +3,14 @@ name: mental-models-module-03
 description: '物理学与工程学模块的预筛选路由器。用于从本模块10个模型中选择会实质改变公司、行业或 thesis 判断的原子审查器。'
 metadata:
   module: "03"
-  version: "0.1.0"
+  version: "1.0.0"
 ---
 
 # 模块 03｜物理学与工程学
 
 ## 原子模型
 
-- 021 守恒、存量与流量 → `../../skills/021-conservation-stock-flow/SKILL.md`
+- 021 赖特定律与经验曲线 → `../../skills/021-wrights-law-experience-curve/SKILL.md`
 - 022 熵 → `../../skills/022-entropy/SKILL.md`
 - 023 能量、效率与约束 → `../../skills/023-energy-efficiency-constraints/SKILL.md`
 - 024 杠杆 → `../../skills/024-leverage/SKILL.md`

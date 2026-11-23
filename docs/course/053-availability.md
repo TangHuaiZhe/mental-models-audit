@@ -1,3 +1,5 @@
+> **Legacy course page — retired from active Model Set v1.0.** 迁移目标：053 S曲线与创新扩散。当前模型请见 [v1.0 页面](053-s-curve-diffusion.md)；完整映射见仓库 `config/migration-map.yaml`。
+
 # 第53讲：可得性启发——容易想到，不等于更可能发生
 
 ## 一句话定义

@@ -1,5 +1,7 @@
 # Mental Models Audit
 
+**Active Model Set: v1.0.0**。Active 100 models 以 `config/model-registry.yaml` 为准；旧模型通过 `config/migration-map.yaml` 保留。
+
 这套站点同时包含两层内容：
 
 1. **课程层**：解释 100 个模型是什么、为什么有效、边界在哪里。

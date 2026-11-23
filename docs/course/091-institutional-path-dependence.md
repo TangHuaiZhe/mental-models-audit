@@ -1,3 +1,5 @@
+> **Legacy course page — retired from active Model Set v1.0.** 迁移目标：067 路径依赖与锁定；091现为资本周期。当前模型请见 [v1.0 页面](091-capital-cycle.md)；完整映射见仓库 `config/migration-map.yaml`。
+
 # 第91讲：路径依赖与制度惯性——过去的选择还在继续投票
 
 ## 一句话定义

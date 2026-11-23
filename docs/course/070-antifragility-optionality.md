@@ -1,3 +1,5 @@
+> **Legacy course page — retired from active Model Set v1.0.** 迁移目标：070 反脆弱、凸性与非对称收益。当前模型请见 [v1.0 页面](070-antifragility-convexity.md)；完整映射见仓库 `config/migration-map.yaml`。
+
 # 第70讲：反脆弱与可选择性——不要预测所有未来，设计能从波动中获益的结构
 
 ## 一句话定义

@@ -1,3 +1,5 @@
+> **Legacy course page — retired from active Model Set v1.0.** 迁移目标：057 探索—利用权衡。当前模型请见 [v1.0 页面](057-explore-exploit.md)；完整映射见仓库 `config/migration-map.yaml`。
+
 # 第57讲：沉没成本谬误——不要让无法改变的过去控制未来
 
 ## 一句话定义

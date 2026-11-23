@@ -2,10 +2,14 @@
 name: mm-034-law-of-large-numbers
 description: '使用第34讲「大数定律」审查公司、行业或投资 thesis。先判相关性，再检查证据、机制、反例、未知数与证伪条件。'
 metadata:
+  legacy: true
+  retired_in_model_set: "1.0.0"
   model_id: "034"
   module: "04"
   version: "0.1.0"
 ---
+
+> **Legacy / retired in Model Set v1.0.** 034 大数定律 不再属于 active 100-model set。迁移目标：`034-power-law-pareto`。详见 `config/migration-map.yaml`。
 
 # 034 大数定律
 

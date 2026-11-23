@@ -3,7 +3,7 @@ name: mental-models-module-02
 description: '逻辑、哲学与认识论模块的预筛选路由器。用于从本模块10个模型中选择会实质改变公司、行业或 thesis 判断的原子审查器。'
 metadata:
   module: "02"
-  version: "0.1.0"
+  version: "1.0.0"
 ---
 
 # 模块 02｜逻辑、哲学与认识论
@@ -14,7 +14,7 @@ metadata:
 - 012 演绎、归纳与溯因 → `../../skills/012-deduction-induction-abduction/SKILL.md`
 - 013 相关不等于因果 → `../../skills/013-correlation-causation/SKILL.md`
 - 014 反事实 → `../../skills/014-counterfactual/SKILL.md`
-- 015 思想实验 → `../../skills/015-thought-experiment/SKILL.md`
+- 015 古德哈特定律 → `../../skills/015-goodharts-law/SKILL.md`
 - 016 概念边界与操作性定义 → `../../skills/016-operational-definition/SKILL.md`
 - 017 归纳问题与黑天鹅 → `../../skills/017-induction-black-swan/SKILL.md`
 - 018 证据等级与来源批判 → `../../skills/018-evidence-hierarchy/SKILL.md`

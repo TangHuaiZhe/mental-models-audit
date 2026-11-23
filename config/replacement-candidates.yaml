@@ -1,51 +1,21 @@
-version: 1
-principle: "不为凑满100而保留重复模型；只有在跨公司回归测试中证明低独立增量信息后才正式替换。"
-replacement_thresholds:
-  co_selection_rate_min: 0.70
-  same_evidence_rate_min: 0.60
-  same_conclusion_rate_min: 0.70
-  incremental_information_rate_max: 0.20
-candidates:
-  - name: "Goodhart's Law"
-    cn: "古德哈特定律"
-    priority: 5
-    why: "审查KPI、激励、管理层目标和指标被游戏化。"
-  - name: "Wright's Law / Experience Curve"
-    cn: "赖特定律 / 经验曲线"
-    priority: 5
-    why: "制造业、半导体、电池、机器人等累计产量与单位成本下降的核心模型。"
-  - name: "S-Curve / Diffusion of Innovation"
-    cn: "S曲线 / 创新扩散"
-    priority: 5
-    why: "判断渗透率、增长阶段和成熟拐点。"
+version: 2
+model_set_version: "1.0.0"
+principle: "v1.0 已完成首轮正式换血；这里只保留尚未进入 active 100 的候选。"
+promoted_in_v1:
+  - "Goodhart's Law"
+  - "Wright's Law / Experience Curve"
+  - "S-Curve / Diffusion of Innovation"
+  - "Capital Cycle"
+  - "Explore–Exploit Tradeoff"
+  - "Power Law / Pareto Distribution"
+  - "Maturity Transformation / Duration Gap"
+remaining_candidates:
   - name: "Little's Law / Queueing Theory"
-    cn: "利特尔法则 / 排队论"
-    priority: 5
-    why: "连接WIP、吞吐量、周期时间，适合制造、供应链和软件工程。"
-  - name: "Reflexivity"
-    cn: "反身性"
-    priority: 4
-    why: "证券价格、融资能力、基本面之间可能互相反馈。"
-  - name: "Capital Cycle"
-    cn: "资本周期"
-    priority: 5
-    why: "高预期利润吸引资本进入、扩产、供给增加、ROIC可能回落；腾讯AI投入提供中强候选信号，仍须跨公司验证。"
-  - name: "Explore–Exploit Tradeoff"
-    cn: "探索—利用权衡"
-    priority: 5
-    why: "成熟业务现金流投入下一代产品时，审查探索预算、阶段目标与核心业务机会成本；腾讯AI投入提供强候选信号。"
-  - name: "Power Law / Pareto Distribution"
-    cn: "幂律 / 帕累托分布"
-    priority: 4
-    why: "客户、产品、内容、网络、风险贡献高度集中时比均值模型更合适。"
-  - name: "Modularity / Loose Coupling"
-    cn: "模块化 / 松耦合"
     priority: 3
-    why: "分析产品架构、组织扩展、供应链替代性和系统韧性。"
-potential_slots:
-  - models: ["021","075"]
-    reason: "Stock–Flow高度重复，优先候选合并。"
-  - models: ["067","091"]
-    reason: "路径依赖高度重叠，可能合并为通用模型+制度应用。"
-  - models: ["044","087"]
-    reason: "委托代理表述重复；更可能通过重新定义087而非删除。"
+    why: "制造与服务吞吐量有潜力，但当前 regression 尚未显示足够独立增量。"
+  - name: "Reflexivity"
+    priority: 3
+    why: "证券价格与基本面互相反馈在特定行业重要，但尚不足以替换 active model。"
+  - name: "Modularity / Loose Coupling"
+    priority: 3
+    why: "平台与系统架构有解释力，目前仍可由生态、韧性和交易成本模型覆盖大部分需求。"
