@@ -3,7 +3,8 @@ name: mental-models-module-09
 description: '博弈论、政治学与社会学模块的预筛选路由器。用于从本模块10个模型中选择会实质改变公司、行业或 thesis 判断的原子审查器。'
 metadata:
   module: "09"
-  version: "0.1.0"
+  version: "1.0.0"
+  model_set: "1.0.0"
 ---
 
 # 模块 09｜博弈论、政治学与社会学
@@ -22,6 +23,8 @@ metadata:
 - 090 身份认同、规范与群体边界 → `../../skills/090-identity-norms/SKILL.md`
 
 ## 路由规则
+
+> v1.0：只路由 `config/model-registry.yaml` 中的 active model；legacy skill 不参与候选。
 
 1. 明确 thesis、时间尺度和已有事实。
 2. 对10个模型逐项判断：Material / Secondary / Not material。
