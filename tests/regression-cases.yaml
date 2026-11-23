@@ -33,8 +33,24 @@ cases:
         - "护城河仍强，但投资回报越来越依赖增长恢复、资本回报与估值而非单纯品牌质量"
   - id: "tencent"
     company: "腾讯"
+    security: "0700.HK"
+    trading_counter: ["0700.HK HKD", "80700.HK RMB"]
     archetype: "platform-internet"
-    status: pending
+    status: completed
+    findings:
+      material_models_before_dedup_approx: 32
+      independent_mechanism_clusters_approx: 29
+      count_status: "前次审计近似汇总，未附100项逐项判定；不可用于精确替换阈值计算"
+      key_router_success: "company/security分离；0700与80700是同一股份的交易柜台，不触发share_class套利判断"
+      distinct_mechanisms:
+        "046": "规模及范围经济：共享算力和基础设施的单位成本问题，尚需可观察成本证据"
+        "047": "网络效应：参与者增加对其他参与者使用价值的影响"
+        "068": "生态系统：用户、商户、开发者、内容方的互补与依赖"
+      capital_allocation_trigger: "AI投入、算力预付款与单季负自由现金流，触发041/066/094/096/097；098仅用于可逆的分阶段投入"
+      candidate_model_signals:
+        explore_exploit_tradeoff: "强：成熟业务现金流与AI探索预算之间的资源分配"
+        capital_cycle: "中强：行业共同扩产之后的回报率风险，区别于066军备竞赛"
+      source_result: "tests/results/tencent.md"
   - id: "cloudflare"
     company: "Cloudflare"
     archetype: "saas-network-infrastructure"

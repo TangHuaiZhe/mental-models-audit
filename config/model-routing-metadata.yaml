@@ -189,13 +189,13 @@ models:
     independence_score: 0.85
   "032":
     mechanism_cluster: "expected-value"
-    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    analysis_objects: ["business", "company", "industry", "security", "share_class", "trading_counter"]
     tags: ["statistics", "probability", "expected", "value"]
     overlaps_with: []
     independence_score: 1.00
   "033":
     mechanism_cluster: "variance-tail-risk"
-    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    analysis_objects: ["business", "company", "industry", "security", "share_class", "trading_counter"]
     tags: ["statistics", "probability", "variance", "tail", "risk", "tail-risk", "permanent-loss"]
     overlaps_with: []
     independence_score: 1.00
@@ -219,13 +219,13 @@ models:
     independence_score: 1.00
   "037":
     mechanism_cluster: "signaling"
-    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    analysis_objects: ["business", "company", "industry", "security", "share_class", "trading_counter"]
     tags: ["statistics", "probability", "information", "asymmetry", "signaling", "information-asymmetry"]
     overlaps_with: ["085"]
     independence_score: 0.85
   "038":
     mechanism_cluster: "information-value"
-    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    analysis_objects: ["business", "company", "industry", "security", "share_class", "trading_counter"]
     tags: ["statistics", "probability", "information", "value", "value-of-information"]
     overlaps_with: []
     independence_score: 1.00
@@ -243,7 +243,7 @@ models:
     independence_score: 1.00
   "041":
     mechanism_cluster: "opportunity-cost"
-    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    analysis_objects: ["business", "company", "industry", "security", "share_class", "trading_counter"]
     tags: ["economics", "business", "opportunity", "cost"]
     overlaps_with: ["096"]
     independence_score: 0.85
@@ -255,7 +255,7 @@ models:
     independence_score: 1.00
   "043":
     mechanism_cluster: "supply-demand"
-    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    analysis_objects: ["business", "company", "industry", "security", "share_class", "trading_counter"]
     tags: ["economics", "business", "supply", "demand", "supply-demand", "pricing"]
     overlaps_with: []
     independence_score: 1.00
@@ -275,17 +275,21 @@ models:
     mechanism_cluster: "economies-of-scale-scope"
     analysis_objects: ["business", "company", "industry", "security"]
     tags: ["economics", "business", "economies", "of", "scale", "scope", "scale-economies"]
+    trigger: "产量或业务量扩大带来可验证的单位成本下降，或共享资产降低多产品总成本。"
+    anti_trigger: "仅有用户/收入增长、用户互相创造价值或参与者种类增多，而缺少单位成本或共享成本证据。"
     overlaps_with: []
     independence_score: 1.00
   "047":
     mechanism_cluster: "network-effects"
     analysis_objects: ["business", "company", "industry", "security"]
     tags: ["economics", "business", "network", "effects"]
+    trigger: "新增一侧参与者可验证地提高同侧或另一侧现有参与者的使用价值。"
+    anti_trigger: "仅有采购规模、固定成本摊薄、获客渠道优势，或多类伙伴共存而无参与者间价值增益。"
     overlaps_with: []
     independence_score: 1.00
   "048":
     mechanism_cluster: "transaction-costs"
-    analysis_objects: ["business", "company", "industry", "security", "share_class"]
+    analysis_objects: ["business", "company", "industry", "security", "share_class", "trading_counter"]
     tags: ["economics", "business", "transaction", "costs", "switching-cost", "transaction-cost"]
     overlaps_with: []
     independence_score: 1.00
@@ -407,6 +411,8 @@ models:
     mechanism_cluster: "ecosystem-food-web"
     analysis_objects: ["business", "company", "industry", "strategy"]
     tags: ["evolution", "competition", "ecosystem", "food", "web"]
+    trigger: "多类参与者形成互补、依赖或关键节点关系，节点变化会改变其他角色的行为或价值创造。"
+    anti_trigger: "只有单一用户群增长、内部规模降本，或普通供应商名单而无跨角色依赖与级联效应。"
     overlaps_with: []
     independence_score: 1.00
   "069":
@@ -423,7 +429,7 @@ models:
     independence_score: 0.65
   "071":
     mechanism_cluster: "system-boundary"
-    analysis_objects: ["business", "company", "industry", "policy", "strategy", "share_class"]
+    analysis_objects: ["business", "company", "industry", "policy", "strategy", "share_class", "trading_counter"]
     tags: ["systems", "feedback", "system", "boundary", "system-boundary", "share-class"]
     overlaps_with: []
     independence_score: 1.00
@@ -483,7 +489,7 @@ models:
     independence_score: 1.00
   "081":
     mechanism_cluster: "nash-equilibrium"
-    analysis_objects: ["company", "industry", "policy", "strategy", "security", "share_class"]
+    analysis_objects: ["company", "industry", "policy", "strategy", "security", "share_class", "trading_counter"]
     tags: ["game-theory", "institutions", "nash", "equilibrium", "nash-equilibrium", "strategic-response"]
     overlaps_with: []
     independence_score: 1.00
@@ -555,7 +561,7 @@ models:
     independence_score: 1.00
   "093":
     mechanism_cluster: "shock-vs-structure"
-    analysis_objects: ["company", "industry", "security", "strategy", "share_class"]
+    analysis_objects: ["company", "industry", "security", "strategy", "share_class", "trading_counter"]
     tags: ["strategy", "decision", "shock", "vs", "structure", "shock-vs-structure"]
     overlaps_with: []
     independence_score: 1.00
@@ -579,13 +585,13 @@ models:
     independence_score: 0.65
   "097":
     mechanism_cluster: "scenario-planning"
-    analysis_objects: ["company", "industry", "security", "strategy", "share_class"]
+    analysis_objects: ["company", "industry", "security", "strategy", "share_class", "trading_counter"]
     tags: ["strategy", "decision", "scenario", "planning", "stress-test"]
     overlaps_with: []
     independence_score: 1.00
   "098":
     mechanism_cluster: "optionality"
-    analysis_objects: ["company", "industry", "security", "strategy", "share_class"]
+    analysis_objects: ["company", "industry", "security", "strategy", "share_class", "trading_counter"]
     tags: ["strategy", "decision", "tree", "real", "options", "real-options", "optionality"]
     overlaps_with: ["070"]
     independence_score: 0.85

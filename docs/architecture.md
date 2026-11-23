@@ -30,7 +30,7 @@
 
 每个原子 Skill 的 `next_models` 形成有向图。Router 可以根据一次审计结果继续深挖，而不是按 001→100 线性调用。
 
-## v0.2 — Router 与模型独立性
+## v0.2.1 — Router 与模型独立性
 
 v0.2 增加一层集中式路由元数据：
 
@@ -55,9 +55,15 @@ v0.2 增加一层集中式路由元数据：
 
 Router 在选模型前必须先区分：
 
-`business / company / industry / security / share_class / policy / strategy / analyst_self`。
+`business / company / industry / security / share_class / trading_counter / policy / strategy / analyst_self`。
 
-对具体上市证券，禁止把“好公司”直接等价为“好证券”；存在 A/H、ADR 或不同股权类别时，必须显式增加 `share_class` 层。
+对具体上市证券，必须区分公司质量与证券赔率。`share_class` 处理 A/H 等不同类别、证券形式或权利差异；`trading_counter` 处理同一股份的不同交易货币或柜台。腾讯 0700.HK 与 80700.HK 属于后者；ADR 应先核对存托与转换关系。交易柜台价差要考虑汇率、流动性与转换摩擦，不能记作两类股份套利。
+
+### 资本配置与平台机制
+
+AI 资本开支、算力预付款上升并伴随自由现金流受压时，触发 041/066/094/096/097 审计；098 只覆盖可分阶段或可放弃的部分。记录现金流定义与付款时点，避免单季负值直接推断长期回报。`config/router.yaml` 给出问题到模型的映射。
+
+046 的单位成本下降、047 的参与者间价值增益、068 的跨角色互补依赖是三个不同机制。路由元数据和原子 Skill 记录各自 `trigger` / `anti_trigger`；只有不同证据支持不同问题时才可同时计入独立机制。
 
 ### 模型替换纪律
 

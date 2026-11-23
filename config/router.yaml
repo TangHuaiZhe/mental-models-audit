@@ -1,9 +1,11 @@
 version: 2
 
 analysis_objects:
-  allowed: [business, company, industry, security, share_class, policy, strategy, analyst_self]
-  rule: "先定义分析对象，再选模型。公司质量、证券赔率和股权类别/市场分割必须分开。"
-  security_or_share_class_forced_models:
+  allowed: [business, company, industry, security, share_class, trading_counter, policy, strategy, analyst_self]
+  rule: "先定义分析对象，再选模型。公司质量、证券赔率、股权类别和同一股份的交易柜台必须分开；交易柜台差异不等于股权类别差异。"
+  share_class_rule: "仅在股份权利、上市证券形式或A/H等不同类别与市场分割需要单独比较时使用；ADR需先核对存托凭证与基础股份的权利及转换关系。"
+  trading_counter_rule: "同一股份仅因计价/交收货币或交易柜台不同而分柜台交易时使用；例如0700.HK港币柜台与80700.HK人民币柜台，不得推断为两类股份。"
+  security_market_forced_models:
     - "071" # 系统边界
     - "032" # 期望值
     - "033" # 尾部风险
@@ -15,6 +17,17 @@ analysis_objects:
   analyst_self_forced_models:
     - "020" # 元认知
     - "055" # 确认偏误
+
+capital_allocation_audit:
+  trigger: "AI资本开支或算力预付款显著增加，同时自由现金流持续受压、由正转负或净现金明显下降；先核对现金流定义、付款时点与核心业务经营表现。"
+  models:
+    "041": "衡量AI投入挤占回购、分红、核心业务及其他投资的机会成本。"
+    "066": "检验竞争者投入是否迫使行业共同加码；不得由军备竞赛直接推断行业回报率。"
+    "094": "审查投入规模、阶段目标、退出条件和预期资本回报。"
+    "096": "识别资源有限时不能同时最大化的战略目标。"
+    "097": "分别测算AI兑现、缓慢兑现与失败时的现金流和资产负债表。"
+    "098": "只在投入可分阶段、可延后或可放弃时按实物期权分析；已承诺的大额不可逆支出不能全部视作小额期权。"
+  evidence_rule: "分别记录CAPEX付款、经营现金流、自由现金流、算力预付款、净现金/净负债和AI收入或单位经济；单季现金流转负只是审计触发，不自动证明永久侵蚀。"
 
 modes:
   quick-scan:
@@ -54,7 +67,7 @@ scoring:
   no_observable_evidence: -2
 
 selection_pipeline:
-  - "Step 0: 明确analysis_object。具体股票/ADR/A股/H股至少同时建立company与security/share_class两层。"
+  - "Step 0: 明确analysis_object。具体股票至少建立company与security两层；按股份权利追加share_class，按同一股份的交易货币/柜台追加trading_counter。"
   - "Step 1: 读取config/model-routing-metadata.yaml中的analysis_objects、tags、mechanism_cluster与overlaps_with。"
   - "Step 2: 根据研究问题、模式与已有证据计算候选分数。"
   - "Step 3: 读取config/mechanism-clusters.yaml去重；同簇默认只保留primary_model，除非第二模型回答不同子问题且有独立证据。"
@@ -68,7 +81,8 @@ selection_rules:
   - "同一底层机制默认只保留1个主模型。"
   - "第二模型只有在子问题和证据都独立时才展开。"
   - "没有可观察证据的模型不得因为类比漂亮而升级为Material。"
-  - "公司好坏、证券价格、股权类别/市场分割必须显式拆开。"
+  - "公司好坏、证券价格、股权类别和同一股份的交易柜台必须显式拆开。"
   - "若参与者会适应，至少加入1个博弈/激励/复杂系统模型。"
   - "若存在不可逆资本配置，考虑尾部风险、安全边际或实物期权。"
+  - "AI资本强度上升或自由现金流受压时执行capital_allocation_audit；检查投入可逆性，不能把现金流时点变化直接当成价值毁损。"
   - "最终报告不得用Material模型数量作为信心加权。"
