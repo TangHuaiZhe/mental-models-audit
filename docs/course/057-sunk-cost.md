@@ -1,3 +1,5 @@
+> **Model Set v1.0 迁移提示：** 该课程页属于 legacy。Active ID 057 已迁移为 [资本周期](../model-set-v1/057-capital-cycle.md)。
+
 # 第57讲：沉没成本谬误——不要让无法改变的过去控制未来
 
 ## 一句话定义
