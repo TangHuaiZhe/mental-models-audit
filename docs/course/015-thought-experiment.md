@@ -1,3 +1,5 @@
+> **Legacy course page — retired from active Model Set v1.0.** 迁移目标：015 Goodhart's Law。当前模型请见 [v1.0 页面](015-goodharts-law.md)；完整映射见仓库 `config/migration-map.yaml`。
+
 # 第15讲：思想实验——把理论放进极端世界
 
 ## 一句话定义
