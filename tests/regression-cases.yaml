@@ -53,21 +53,61 @@ cases:
       source_result: "tests/results/tencent.md"
   - id: "cloudflare"
     company: "Cloudflare"
+    security: "NET"
     archetype: "saas-network-infrastructure"
-    status: pending
+    status: completed
+    findings:
+      material_models_before_dedup_approx: 28
+      independent_mechanism_clusters_approx: 27
+      key_router_success: "046规模经济、047网络效应、068生态系统被区分为不同机制；047未因平台规模自动判Material"
+      candidate_model_signals:
+        s_curve_diffusion: "中强：开发者与AI Agent基础设施采用具有阶段性扩散特征"
+        modularity_loose_coupling: "中：平台组件与开发者架构有解释价值，但暂非一阶决策变量"
   - id: "tsmc"
     company: "台积电"
+    security: "2330.TW / TSM"
     archetype: "semiconductor-manufacturing"
-    status: pending
+    status: completed
+    findings:
+      material_models_before_dedup_approx: 34
+      independent_mechanism_clusters_approx: 33
+      candidate_model_signals:
+        wrights_law: "强：累计制造经验、良率爬坡与单位成本改善独立于046规模经济"
+        capital_cycle: "强：高回报诱发全行业扩产，决定中长期供给与ROIC"
   - id: "catl"
     company: "宁德时代"
+    security: "300750.SZ"
     archetype: "advanced-manufacturing"
-    status: pending
+    status: completed
+    findings:
+      material_models_before_dedup_approx: 37
+      independent_mechanism_clusters_approx: 36
+      candidate_model_signals:
+        wrights_law: "强：累计GWh、良率、自动化与单位Wh成本学习曲线"
+        s_curve_diffusion: "强：动力电池与储能处于不同渗透率阶段"
+        capital_cycle: "强：高增长与扩产最终通过供给、价格和ROIC闭环"
   - id: "large-bank"
-    company: "待选大型银行"
+    company: "招商银行"
+    security: "600036.SH / 3968.HK"
     archetype: "financial-institution"
-    status: pending
+    status: completed
+    findings:
+      material_models_before_dedup_approx: 35
+      independent_mechanism_clusters_approx: 29
+      key_overlap_pairs:
+        - ["021","075"]
+        - ["027","065","069"]
+        - ["044","087","088"]
+      candidate_model_signal: "Maturity Transformation / Duration Gap：强；资产负债期限与重定价错配是NIM、流动性和资本的一阶机制"
   - id: "innovative-biotech"
-    company: "待选创新药公司"
+    company: "BeOne Medicines（原百济神州）"
+    security: "ONC / 6160.HK / 688235.SH"
     archetype: "biotech-r-and-d"
-    status: pending
+    status: completed
+    findings:
+      material_models_before_dedup_approx: 43
+      independent_mechanism_clusters_approx: 37
+      candidate_model_signals:
+        power_law_pareto: "强：少数blockbuster和管线赢家贡献大部分企业价值"
+        explore_exploit_tradeoff: "强：成熟药物现金流与新管线研发竞争资本和组织资源"
+      model_narrowing_signal: "070可选择性与098实物期权重叠；070应只保留反脆弱/凸性，分阶段研发选择权归098"
