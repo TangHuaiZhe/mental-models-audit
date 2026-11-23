@@ -1,3 +1,5 @@
+> **Model Set v1.0 迁移提示：** 该课程页属于 legacy。Active ID 015 已迁移为 [古德哈特定律](../model-set-v1/015-goodharts-law.md)。
+
 # 第15讲：思想实验——把理论放进极端世界
 
 ## 一句话定义
