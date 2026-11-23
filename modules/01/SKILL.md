@@ -3,7 +3,7 @@ name: mental-models-module-01
 description: '通用认知与元思维模块的预筛选路由器。用于从本模块10个模型中选择会实质改变公司、行业或 thesis 判断的原子审查器。'
 metadata:
   module: "01"
-  version: "0.1.0"
+  version: "1.0.0-rc1"
 ---
 
 # 模块 01｜通用认知与元思维
