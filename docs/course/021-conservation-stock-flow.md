@@ -1,3 +1,5 @@
+> **Model Set v1.0 迁移提示：** 该课程页属于 legacy。原021语义已并入075；Active ID 021 现为 [赖特定律与经验曲线](../model-set-v1/021-wrights-law-experience-curve.md)。
+
 # 第21讲：守恒、存量与流量——系统里的东西从哪里来，又到哪里去
 
 ## 一句话定义

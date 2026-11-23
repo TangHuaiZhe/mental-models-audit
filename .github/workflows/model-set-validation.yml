@@ -1,0 +1,28 @@
+name: Validate Model Set
+
+on:
+  pull_request:
+    paths:
+      - "config/**"
+      - "skills/**"
+      - "modules/**"
+      - "scripts/validate_model_set.py"
+      - "requirements.txt"
+  push:
+    branches: [main]
+    paths:
+      - "config/**"
+      - "skills/**"
+      - "modules/**"
+      - "scripts/validate_model_set.py"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+      - run: pip install pyyaml
+      - run: python scripts/validate_model_set.py

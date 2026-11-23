@@ -1,16 +1,16 @@
 ---
 name: mental-models-module-03
-description: '物理学与工程学模块的预筛选路由器。用于从本模块10个模型中选择会实质改变公司、行业或 thesis 判断的原子审查器。'
+description: '工程、制造与约束模块的预筛选路由器。仅从active registry选择会实质改变公司、行业、证券或 thesis 判断的原子审查器。'
 metadata:
   module: "03"
-  version: "0.1.0"
+  version: "1.0.0-rc1"
 ---
 
-# 模块 03｜物理学与工程学
+# 模块 03｜工程、制造与约束
 
-## 原子模型
+## Active 原子模型
 
-- 021 守恒、存量与流量 → `../../skills/021-conservation-stock-flow/SKILL.md`
+- 021 赖特定律与经验曲线 → `../../skills/021-wrights-law-experience-curve/SKILL.md`
 - 022 熵 → `../../skills/022-entropy/SKILL.md`
 - 023 能量、效率与约束 → `../../skills/023-energy-efficiency-constraints/SKILL.md`
 - 024 杠杆 → `../../skills/024-leverage/SKILL.md`
@@ -23,9 +23,9 @@ metadata:
 
 ## 路由规则
 
-1. 明确 thesis、时间尺度和已有事实。
-2. 对10个模型逐项判断：Material / Secondary / Not material。
-3. quick-scan 中通常选 1–4 个；deep-audit 中10个全部判相关性。
-4. 模型若依赖同一底层事实，避免重复计权。
-5. Material 模型必须运行对应原子 Skill。
-6. 汇总本模块最强支持、最强反对、关键未知和证伪条件。
+1. 只使用 `config/model-registry.yaml` active 集合。
+2. 对本模块模型逐项判断：Material / Secondary / Not material。
+3. quick-scan通常选1–4个；deep-audit全部判相关性。
+4. 同一机制簇不得重复计权。
+5. Material模型必须运行对应原子Skill并记录 evidence_independence。
+6. 汇总最强支持、最强反对、关键未知、证伪条件和增量信息。

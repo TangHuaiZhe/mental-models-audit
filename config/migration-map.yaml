@@ -1,0 +1,53 @@
+version: 1
+model_set_from: "0.2.1"
+model_set_to: "1.0.0"
+entries:
+  - old_id: "015"
+    old_slug: "thought-experiment"
+    status: "replaced"
+    legacy_course: "docs/course/015-thought-experiment.md"
+    slot_reused_by: {id: "015", slug: "goodharts-law"}
+    reason: "跨8类公司回归中作为独立审查器增量低；思想实验保留为legacy方法论内容。"
+  - old_id: "019"
+    old_slug: "fact-value"
+    status: "replaced"
+    legacy_course: "docs/course/019-fact-value.md"
+    slot_reused_by: {id: "019", slug: "explore-exploit-tradeoff"}
+    reason: "规范性区分对公司基本面审计独立增量低；active slot让给高频资本配置机制。"
+  - old_id: "021"
+    old_slug: "conservation-stock-flow"
+    status: "merged"
+    merged_into: {id: "075", slug: "stock-flow-dynamics"}
+    legacy_course: "docs/course/021-conservation-stock-flow.md"
+    slot_reused_by: {id: "021", slug: "wrights-law-experience-curve"}
+    reason: "与075在机制、证据和决策变量上长期高度重叠。"
+  - old_id: "053"
+    old_slug: "availability"
+    status: "replaced"
+    legacy_course: "docs/course/053-availability.md"
+    slot_reused_by: {id: "053", slug: "s-curve-diffusion"}
+    reason: "公司/行业回归中独立Material命中低；S曲线对渗透率判断增量更高。"
+  - old_id: "057"
+    old_slug: "sunk-cost"
+    status: "replaced"
+    legacy_course: "docs/course/057-sunk-cost.md"
+    slot_reused_by: {id: "057", slug: "capital-cycle"}
+    reason: "沉没成本可由元认知/确认偏误覆盖；资本周期在TSMC/CATL/AI CAPEX中独立增量高。"
+  - old_id: "058"
+    old_slug: "endowment-mental-accounting"
+    status: "replaced"
+    legacy_course: "docs/course/058-endowment-mental-accounting.md"
+    slot_reused_by: {id: "058", slug: "power-law-pareto"}
+    reason: "基本面审计独立命中低；幂律对创新药、平台和集中度问题提供结构性增量。"
+  - old_id: "070"
+    old_slug: "antifragility-optionality"
+    status: "narrowed"
+    active: {id: "070", slug: "antifragility-convexity"}
+    reason: "与098实物期权重复；070仅保留反脆弱、凸性与非对称收益。"
+  - old_id: "091"
+    old_slug: "institutional-path-dependence"
+    status: "merged"
+    merged_into: {id: "067", slug: "path-dependence"}
+    legacy_course: "docs/course/091-institutional-path-dependence.md"
+    slot_reused_by: {id: "091", slug: "maturity-transformation-duration-gap"}
+    reason: "制度路径依赖是067应用场景；银行回归暴露期限转换/久期缺口为缺失的一阶机制。"

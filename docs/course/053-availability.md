@@ -1,3 +1,5 @@
+> **Model Set v1.0 迁移提示：** 该课程页属于 legacy。Active ID 053 已迁移为 [S曲线与创新扩散](../model-set-v1/053-s-curve-diffusion.md)。
+
 # 第53讲：可得性启发——容易想到，不等于更可能发生
 
 ## 一句话定义

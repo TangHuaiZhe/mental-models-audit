@@ -1,4 +1,4 @@
-version: 2
+version: 3
 
 analysis_objects:
   allowed: [business, company, industry, security, share_class, trading_counter, policy, strategy, analyst_self]
@@ -21,13 +21,16 @@ analysis_objects:
 capital_allocation_audit:
   trigger: "AI资本开支或算力预付款显著增加，同时自由现金流持续受压、由正转负或净现金明显下降；先核对现金流定义、付款时点与核心业务经营表现。"
   models:
+    "019": "衡量成熟业务利用（exploit）与下一代技术探索（explore）之间的长期资源配比。"
     "041": "衡量AI投入挤占回购、分红、核心业务及其他投资的机会成本。"
+    "057": "若高回报诱发全行业扩产，审查资本周期最终如何影响供给、价格与ROIC。"
     "066": "检验竞争者投入是否迫使行业共同加码；不得由军备竞赛直接推断行业回报率。"
     "094": "审查投入规模、阶段目标、退出条件和预期资本回报。"
     "096": "识别资源有限时不能同时最大化的战略目标。"
     "097": "分别测算AI兑现、缓慢兑现与失败时的现金流和资产负债表。"
     "098": "只在投入可分阶段、可延后或可放弃时按实物期权分析；已承诺的大额不可逆支出不能全部视作小额期权。"
   evidence_rule: "分别记录CAPEX付款、经营现金流、自由现金流、算力预付款、净现金/净负债和AI收入或单位经济；单季现金流转负只是审计触发，不自动证明永久侵蚀。"
+
 
 modes:
   quick-scan:
@@ -68,7 +71,7 @@ scoring:
 
 selection_pipeline:
   - "Step 0: 明确analysis_object。具体股票至少建立company与security两层；按股份权利追加share_class，按同一股份的交易货币/柜台追加trading_counter。"
-  - "Step 1: 读取config/model-routing-metadata.yaml中的analysis_objects、tags、mechanism_cluster与overlaps_with。"
+  - "Step 1: 只读取config/model-registry.yaml中的100个active模型；legacy路径不得参与路由。再读取config/model-routing-metadata.yaml中的analysis_objects、tags、mechanism_cluster与overlaps_with。"
   - "Step 2: 根据研究问题、模式与已有证据计算候选分数。"
   - "Step 3: 读取config/mechanism-clusters.yaml去重；同簇默认只保留primary_model，除非第二模型回答不同子问题且有独立证据。"
   - "Step 4: 执行原子Skill；记录其证据是否独立、是否改变结论、是否产生新证伪条件。"
@@ -86,3 +89,27 @@ selection_rules:
   - "若存在不可逆资本配置，考虑尾部风险、安全边际或实物期权。"
   - "AI资本强度上升或自由现金流受压时执行capital_allocation_audit；检查投入可逆性，不能把现金流时点变化直接当成价值毁损。"
   - "最终报告不得用Material模型数量作为信心加权。"
+
+
+model_set_v1_triggers:
+  goodharts_law:
+    model: "015"
+    trigger: "代理指标成为目标且参与者能够优化或游戏指标。"
+  explore_exploit:
+    model: "019"
+    trigger: "成熟现金牛与下一代探索竞争同一资本、人才或注意力。"
+  manufacturing_learning:
+    model: "021"
+    trigger: "累计产量、良率和单位成本存在可观测学习关系。"
+  adoption_curve:
+    model: "053"
+    trigger: "增长取决于渗透率和采用阶段，而非单纯份额或价格。"
+  capital_cycle:
+    model: "057"
+    trigger: "高回报正在诱发扩产或新进入，供给存在建设延迟。"
+  power_law:
+    model: "058"
+    trigger: "价值由少数客户、产品、管线或节点贡献，均值可能误导。"
+  maturity_transformation:
+    model: "091"
+    trigger: "资产与负债期限或重定价速度错配，影响NIM、流动性或资本。"

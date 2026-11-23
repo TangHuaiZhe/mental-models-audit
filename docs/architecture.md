@@ -68,3 +68,29 @@ AI 资本开支、算力预付款上升并伴随自由现金流受压时，触�
 ### 模型替换纪律
 
 单次公司中的模型重叠不能直接触发删除。只有跨多个商业 archetype 的回归测试显示：高共选率、高同证据率、高同结论率、低增量信息率，才进入 Merge/Replace。
+
+
+## v1.0 — Active Model Set
+
+v1.0 将“课程概念集合”升级为经过跨行业回归测试的 active 100 模型集合。
+
+### Active / Legacy 分离
+
+- Router 只读取 `config/model-registry.yaml` 的100个 active 模型。
+- 被替换、合并或收窄的旧模型保留旧路径，但作为 compatibility stub，不参与路由。
+- 迁移关系统一记录在 `config/migration-map.yaml`。
+- 原课程页面不删除；新模型发布在 `docs/model-set-v1/`。
+
+### 7进7出
+
+新增：Goodhart's Law、Explore–Exploit、Wright's Law、S-Curve、Capital Cycle、Power Law、Maturity Transformation / Duration Gap。
+
+合并：旧021→075；旧091→067。
+
+替换：旧015、019、053、057、058释放给更高增量模型。
+
+收窄：070只保留反脆弱/凸性；分阶段投资选择权归098。
+
+### 模块仍保持 10 × 10
+
+v1.0允许模型跨原课程编号区间重新归类。模块是研究视角，不再等同于ID连续区间；每个模块仍恰好10个 active 模型。

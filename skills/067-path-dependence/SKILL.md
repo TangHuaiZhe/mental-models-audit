@@ -3,8 +3,8 @@ name: mm-067-path-dependence
 description: '使用第67讲「路径依赖与历史偶然」审查公司、行业或投资 thesis。先判相关性，再检查证据、机制、反例、未知数与证伪条件。'
 metadata:
   model_id: "067"
-  module: "07"
-  version: "0.1.0"
+  module: "02"
+  version: "1.0.0-rc1"
 ---
 
 # 067 路径依赖与历史偶然

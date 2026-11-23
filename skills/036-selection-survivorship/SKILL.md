@@ -3,8 +3,8 @@ name: mm-036-selection-survivorship
 description: '使用第36讲「选择偏差与幸存者偏差」审查公司、行业或投资 thesis。先判相关性，再检查证据、机制、反例、未知数与证伪条件。'
 metadata:
   model_id: "036"
-  module: "04"
-  version: "0.1.0"
+  module: "02"
+  version: "1.0.0-rc1"
 ---
 
 # 036 选择偏差与幸存者偏差

@@ -1,3 +1,5 @@
+> **Model Set v1.0 迁移提示：** 该课程页属于 legacy。Active ID 019 已迁移为 [探索—利用权衡](../model-set-v1/019-explore-exploit-tradeoff.md)。
+
 # 第19讲：价值—事实区分与规范性判断——从“是什么”不能直接跳到“应该”
 
 ## 一句话定义

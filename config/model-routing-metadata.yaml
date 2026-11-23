@@ -1,5 +1,5 @@
-version: 1
-schema: model-routing-metadata-v1
+version: 2
+schema: model-routing-metadata-v2
 models:
   "001":
     mechanism_cluster: "map-territory"
@@ -86,10 +86,12 @@ models:
     overlaps_with: ["013"]
     independence_score: 0.65
   "015":
-    mechanism_cluster: "thought-experiment"
-    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
-    tags: ["logic", "evidence", "thought", "experiment"]
-    overlaps_with: []
+    mechanism_cluster: "goodharts-law"
+    analysis_objects: ["business", "company", "industry", "strategy", "analyst_self"]
+    tags: ["incentives", "kpi", "proxy-metric", "gaming", "governance"]
+    trigger: "当KPI、销售目标、增长指标、模型评分或考核指标成为参与者优化对象，且代理指标可能偏离真实目标时。"
+    anti_trigger: "若指标本身就是最终目标、参与者无法影响指标，或不存在指标优化与真实结果背离机制，则降级。"
+    overlaps_with: ["044", "079"]
     independence_score: 1.00
   "016":
     mechanism_cluster: "operational-definition"
@@ -110,10 +112,12 @@ models:
     overlaps_with: ["008"]
     independence_score: 0.85
   "019":
-    mechanism_cluster: "fact-value"
-    analysis_objects: ["company", "industry", "policy", "strategy", "analyst_self"]
-    tags: ["logic", "evidence", "fact", "value"]
-    overlaps_with: []
+    mechanism_cluster: "explore-exploit"
+    analysis_objects: ["company", "strategy", "security"]
+    tags: ["exploration", "exploitation", "capital-allocation", "innovation", "resource-allocation"]
+    trigger: "当成熟现金牛需要在维持当前优势与探索下一代产品/技术之间分配资本、人才和管理注意力时。"
+    anti_trigger: "若新业务只是独立小额项目、没有挤占核心资源，优先使用098实物期权而非本模型。"
+    overlaps_with: ["041", "094", "096", "098"]
     independence_score: 1.00
   "020":
     mechanism_cluster: "metacognition"
@@ -122,11 +126,13 @@ models:
     overlaps_with: []
     independence_score: 1.00
   "021":
-    mechanism_cluster: "stock-flow"
-    analysis_objects: ["business", "company", "industry"]
-    tags: ["engineering", "constraints", "conservation", "stock", "flow"]
-    overlaps_with: ["075"]
-    independence_score: 0.65
+    mechanism_cluster: "experience-curve"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["wrights-law", "experience-curve", "learning", "yield", "unit-cost", "manufacturing"]
+    trigger: "当累计产量、制造经验、良率、工艺学习或重复生产可能持续降低单位成本时。"
+    anti_trigger: "若成本下降主要来自固定成本摊薄、采购规模或一次性技术跃迁，优先使用046规模经济或049创造性破坏。"
+    overlaps_with: ["046", "099"]
+    independence_score: 1.00
   "022":
     mechanism_cluster: "entropy"
     analysis_objects: ["business", "company", "industry"]
@@ -318,10 +324,12 @@ models:
     overlaps_with: []
     independence_score: 1.00
   "053":
-    mechanism_cluster: "availability"
-    analysis_objects: ["analyst_self", "company", "security"]
-    tags: ["behavioral", "bias", "availability"]
-    overlaps_with: []
+    mechanism_cluster: "s-curve-diffusion"
+    analysis_objects: ["business", "company", "industry", "strategy"]
+    tags: ["s-curve", "diffusion", "penetration", "adoption", "saturation"]
+    trigger: "当行业增长高度取决于渗透率、采用阶段、从早期用户向主流市场扩散或接近饱和时。"
+    anti_trigger: "若增长由份额变化、价格或周期驱动而非采用率变化，不要用S曲线替代供需分析。"
+    overlaps_with: ["039", "049", "073", "093"]
     independence_score: 1.00
   "054":
     mechanism_cluster: "base-rate"
@@ -342,16 +350,20 @@ models:
     overlaps_with: []
     independence_score: 1.00
   "057":
-    mechanism_cluster: "sunk-cost"
-    analysis_objects: ["analyst_self", "company", "security"]
-    tags: ["behavioral", "bias", "sunk", "cost"]
-    overlaps_with: []
+    mechanism_cluster: "capital-cycle"
+    analysis_objects: ["business", "company", "industry", "security", "strategy"]
+    tags: ["capital-cycle", "capex", "capacity", "roic", "supply", "cycle"]
+    trigger: "当高利润/高预期回报正在吸引资本开支、扩产和新进入者，且供给存在建设延迟时。"
+    anti_trigger: "若供给无法由资本扩张、产能不构成竞争变量或行业没有明显资本进入退出机制，则降低优先级。"
+    overlaps_with: ["043", "066", "073", "093"]
     independence_score: 1.00
   "058":
-    mechanism_cluster: "endowment-mental-accounting"
-    analysis_objects: ["analyst_self", "company", "security"]
-    tags: ["behavioral", "bias", "endowment", "mental", "accounting"]
-    overlaps_with: []
+    mechanism_cluster: "power-law"
+    analysis_objects: ["business", "company", "industry", "security", "strategy"]
+    tags: ["power-law", "pareto", "fat-tail", "concentration", "winner-take-most"]
+    trigger: "当客户、产品、药物管线、内容、节点、项目或投资的价值高度集中在少数赢家，均值可能严重误导时。"
+    anti_trigger: "若分布接近均匀/正态，或集中只是暂时样本噪声，不要强行使用幂律。"
+    overlaps_with: ["033", "040"]
     independence_score: 1.00
   "059":
     mechanism_cluster: "groupthink-conformity"
@@ -405,7 +417,7 @@ models:
     mechanism_cluster: "path-dependence"
     analysis_objects: ["business", "company", "industry", "strategy"]
     tags: ["evolution", "competition", "path", "dependence"]
-    overlaps_with: ["091"]
+    overlaps_with: []
     independence_score: 0.85
   "068":
     mechanism_cluster: "ecosystem-food-web"
@@ -422,11 +434,13 @@ models:
     overlaps_with: ["027", "065"]
     independence_score: 0.65
   "070":
-    mechanism_cluster: "optionality"
-    analysis_objects: ["business", "company", "industry", "strategy"]
-    tags: ["evolution", "competition", "antifragility", "optionality"]
-    overlaps_with: ["098"]
-    independence_score: 0.65
+    mechanism_cluster: "antifragility-convexity"
+    analysis_objects: ["business", "company", "industry", "strategy", "security"]
+    tags: ["antifragility", "convexity", "asymmetry", "nonlinear-payoff", "stress"]
+    trigger: "当波动或压力可能通过非线性收益结构让系统受益，且下行有限、上行随波动放大时。"
+    anti_trigger: "分阶段投资、可延后/放弃的项目选择权属于098实物期权；仅有冗余或稳健性属于027/065/069。"
+    overlaps_with: ["027", "065", "069"]
+    independence_score: 1.00
   "071":
     mechanism_cluster: "system-boundary"
     analysis_objects: ["business", "company", "industry", "policy", "strategy", "share_class", "trading_counter"]
@@ -455,7 +469,7 @@ models:
     mechanism_cluster: "stock-flow"
     analysis_objects: ["business", "company", "industry", "policy", "strategy"]
     tags: ["systems", "feedback", "stock", "flow", "dynamics"]
-    overlaps_with: ["021"]
+    overlaps_with: []
     independence_score: 0.85
   "076":
     mechanism_cluster: "leverage"
@@ -548,11 +562,13 @@ models:
     overlaps_with: []
     independence_score: 1.00
   "091":
-    mechanism_cluster: "path-dependence"
-    analysis_objects: ["company", "industry", "security", "strategy"]
-    tags: ["strategy", "decision", "institutional", "path", "dependence"]
-    overlaps_with: ["067"]
-    independence_score: 0.65
+    mechanism_cluster: "maturity-transformation-duration-gap"
+    analysis_objects: ["business", "company", "industry", "security", "policy"]
+    tags: ["maturity-transformation", "duration-gap", "asset-liability", "repricing", "liquidity", "nim"]
+    trigger: "当企业用短久期/可赎回负债支持长期资产，或资产与负债重定价速度不同，影响净息差、流动性或资本稳定时。"
+    anti_trigger: "若企业没有显著期限错配、利率敏感性或流动性转换，不要把一般杠杆问题误写成期限转换。"
+    overlaps_with: ["024", "033", "075"]
+    independence_score: 1.00
   "092":
     mechanism_cluster: "critical-juncture"
     analysis_objects: ["company", "industry", "security", "strategy"]
@@ -590,10 +606,10 @@ models:
     overlaps_with: []
     independence_score: 1.00
   "098":
-    mechanism_cluster: "optionality"
+    mechanism_cluster: "real-options"
     analysis_objects: ["company", "industry", "security", "strategy", "share_class", "trading_counter"]
     tags: ["strategy", "decision", "tree", "real", "options", "real-options", "optionality"]
-    overlaps_with: ["070"]
+    overlaps_with: []
     independence_score: 0.85
   "099":
     mechanism_cluster: "feedback-learning"

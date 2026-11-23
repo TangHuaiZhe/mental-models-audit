@@ -1,6 +1,9 @@
-version: 2
+version: 3
+
+model_set_version: "1.0.0"
 
 atomic_audit:
+  active_model: true
   model_id: "031"
   model_name: "基础概率与基准率"
   analysis_object: "business | company | industry | security | share_class | trading_counter | policy | strategy | analyst_self"
