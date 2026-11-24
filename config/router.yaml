@@ -1,4 +1,4 @@
-version: 4
+version: 5
 model_set_version: "1.0.0"
 
 analysis_objects:
@@ -7,17 +7,17 @@ analysis_objects:
   share_class_rule: "仅在股份权利、上市证券形式或A/H等不同类别与市场分割需要单独比较时使用；ADR需先核对存托凭证与基础股份的权利及转换关系。"
   trading_counter_rule: "同一股份仅因计价/交收货币或交易柜台不同而分柜台交易时使用；例如0700.HK港币柜台与80700.HK人民币柜台，不得推断为两类股份。"
   security_market_forced_models:
-    - "071" # 系统边界
-    - "032" # 期望值
-    - "033" # 尾部风险
-    - "037" # 信息不对称与信号
-    - "041" # 机会成本
-    - "043" # 供需
-    - "048" # 交易成本/套利摩擦
-    - "097" # 情景规划
+    - "071"
+    - "032"
+    - "033"
+    - "037"
+    - "041"
+    - "043"
+    - "048"
+    - "097"
   analyst_self_forced_models:
-    - "020" # 元认知
-    - "055" # 确认偏误
+    - "020"
+    - "055"
 
 capital_allocation_audit:
   trigger: "AI资本开支或算力预付款显著增加，同时自由现金流持续受压、由正转负或净现金明显下降；先核对现金流定义、付款时点与核心业务经营表现。"
@@ -43,7 +43,7 @@ modes:
   deep-audit:
     target_models: 100
     relevance_values: [Material, Secondary, Not material]
-    rule: "100个模型全部判相关性；最终按mechanism_cluster汇总，Material数量不是投票数。"
+    rule: "100个模型全部判相关性；最终按独立机制与分析对象汇总，Material数量不是投票数。"
   adversarial-audit:
     target: "attack_thesis"
     priority_tags:
@@ -64,23 +64,25 @@ scoring:
   explicit_problem_match: 3
   evidence_available: 2
   anti_trigger_match: -4
-  same_cluster_already_selected: -3
+  duplicate_relation_already_selected: -3
+  complementary_with_independent_question_or_evidence: 1
   no_observable_evidence: -2
 
 selection_pipeline:
   - "Step 0: 明确analysis_object。具体股票至少建立company与security两层；按股份权利追加share_class，按同一股份的交易货币/柜台追加trading_counter。"
-  - "Step 1: 读取config/model-routing-metadata.yaml中的analysis_objects、tags、mechanism_cluster与overlaps_with。"
-  - "Step 2: 根据研究问题、模式与已有证据计算候选分数。"
-  - "Step 3: 读取config/mechanism-clusters.yaml去重；按 relation 判定重复、互补或对象专属；第二模型须有独立子问题及证据。"
-  - "Step 4: 执行原子Skill；记录其证据是否独立、是否改变结论、是否产生新证伪条件。"
-  - "Step 5: Deep Audit仍对100模型逐项判相关性，但汇总按机制簇，不按模型个数计权。"
-  - "Step 6: 把模型对之间的共选、同证据、同结论、增量信息写入Model Independence Audit记录。"
-  - "Step 7: 记录模型独立性；v1.0 active set 的变更只通过 migration-map 与 changelog 管理，不在单次审计中自动替换模型。"
+  - "Step 1: 读取config/model-routing-metadata.yaml中的analysis_objects、tags、mechanism_cluster与overlaps_with，生成候选。"
+  - "Step 2: 根据研究问题、模式与已有证据计算基础候选分数；不得仅因为同属 mechanism cluster 自动扣分。"
+  - "Step 3: 读取config/model-relationships.yaml。只有 duplicate 在同一对象、命题和证据成立时执行硬去重；complementary 可联合调用；object_specific 仅在声明对象内比较；prerequisite/supports/conflicts_with/common_confusion 按各自策略处理。"
+  - "Step 4: 读取config/mechanism-clusters.yaml控制候选分组与展示预算；max_expanded 不等于投票上限，也不能覆盖 pairwise relation。"
+  - "Step 5: 执行原子Skill；记录证据是否独立、是否增加新机制、是否增加新证伪条件、是否改变决策。"
+  - "Step 6: Deep Audit仍对100模型逐项判相关性，但汇总按独立机制和分析对象，不按模型个数计权。"
+  - "Step 7: 把模型对之间的共选、同证据、同结论、增量信息写入Model Independence Audit记录。"
+  - "Step 8: v1.0 active set 的变更只通过 migration-map 与 changelog 管理，不在单次审计中自动替换模型。"
 
 selection_rules:
   - "先按问题结构选模型，不按课程顺序选。"
-  - "同一对象、命题与证据的重复机制只计一次。"
-  - "第二模型只有在子问题和证据都独立时才展开。"
+  - "只有 duplicate 且同一对象、命题与证据成立时才硬去重。"
+  - "complementary 模型只要核心子问题、机制或增量信息独立即可联合展开；共享背景事实本身不构成重复。"
   - "没有可观察证据的模型不得因为类比漂亮而升级为Material。"
   - "公司好坏、证券价格、股权类别和同一股份的交易柜台必须显式拆开。"
   - "若参与者会适应，至少加入1个博弈/激励/复杂系统模型。"
@@ -88,10 +90,14 @@ selection_rules:
   - "AI资本强度上升或自由现金流受压时执行capital_allocation_audit；检查投入可逆性，不能把现金流时点变化直接当成价值毁损。"
   - "最终报告不得用Material模型数量作为信心加权。"
 
-deduplication_v3:
-  relation_source: "config/mechanism-clusters.yaml"
+relationship_policy:
+  source: "config/model-relationships.yaml"
+  cluster_source: "config/mechanism-clusters.yaml"
   rules:
     - "duplicate: 同一对象、同一命题、同一证据只计一次。"
-    - "complementary: 可分别展开，但须记录独立子问题及独立证据；共享事实不得重复计票。"
-    - "object-specific: 只在相同分析对象内去重，company/security/share_class/industry 不跨对象合并。"
-    - "旧 max_expanded 作为展示预算，不决定机制票数。"
+    - "complementary: 可分别展开；需要说明各自回答的子问题或新增机制/证据/证伪条件。"
+    - "object_specific: 只在声明的相同分析对象内去重。"
+    - "prerequisite: 优先执行前置模型，再执行依赖模型。"
+    - "supports: 可联合调用，不因支持关系去重。"
+    - "commonly_confused_with: 不去重；输出时显式区分。"
+    - "conflicts_with: 同时保留并比较适用条件，不得静默选择一方。"
