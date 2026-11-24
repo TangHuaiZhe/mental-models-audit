@@ -1,0 +1,92 @@
+version: 1
+model_set_version: "1.0.0"
+canonical_for_pairwise_semantics: true
+
+relation_semantics:
+  duplicate:
+    description: "同一分析对象上的两个模型回答实质相同的机制问题，且主要依赖相同证据；可同时保留相关性判定，但汇总只计一次。"
+    router_policy: "hard_dedup_when_same_object_claim_and_evidence"
+  complementary:
+    description: "模型关注不同但互补的子问题；共享背景事实不构成重复，只要机制、问题或增量信息独立即可联合调用。"
+    router_policy: "allow_joint_selection"
+  object_specific:
+    description: "两个模型只有在指定分析对象范围内才存在重叠；跨 company/security/share_class/industry 等对象不得相互去重。"
+    router_policy: "dedup_only_within_declared_object_scope"
+  prerequisite:
+    description: "from 模型的结论或定义是 to 模型可靠应用的前置条件。"
+    router_policy: "prefer_prerequisite_before_dependent"
+  supports:
+    description: "from 模型通常为 to 模型提供证据、结构或机制支持，但两者仍是独立判断。"
+    router_policy: "allow_joint_selection"
+  commonly_confused_with:
+    description: "模型概念容易被混淆，但不应因此去重；输出时应显式区分。"
+    router_policy: "never_dedup_by_relation_alone"
+  conflicts_with:
+    description: "两个模型在特定条件下可能产生竞争性解释或行动建议，需要显式比较适用条件。"
+    router_policy: "surface_conflict"
+
+relationships:
+  - from: "024"
+    to: "076"
+    type: complementary
+    rationale: "024 Leverage 研究输入如何被机械、经营或财务结构放大；076 Leverage Points 研究复杂系统中在哪里干预最有效。"
+  - from: "027"
+    to: "065"
+    type: complementary
+    rationale: "安全边际/冗余与 Robustness 都研究抗失败，但前者强调缓冲与冗余，后者强调在扰动下维持功能。"
+  - from: "027"
+    to: "069"
+    type: complementary
+    rationale: "安全边际关注缓冲，Diversity/Resilience 关注异质性与恢复能力。"
+  - from: "065"
+    to: "069"
+    type: complementary
+    rationale: "Robustness 与 Diversity/Resilience 可共享压力测试，但机制与设计手段不同。"
+  - from: "028"
+    to: "030"
+    type: complementary
+    rationale: "FMEA 枚举失效模式与影响，故障树研究多故障如何组合为顶层事件。"
+  - from: "031"
+    to: "054"
+    type: complementary
+    rationale: "031 Base Rate 研究客观参考类与先验分布；054 Base Rate Neglect 审查分析者是否忽略基准率。"
+  - from: "037"
+    to: "085"
+    type: complementary
+    rationale: "信息不对称/信号研究信息结构与信号成本；可信承诺研究博弈中的承诺、威胁与不可逆行动。"
+  - from: "041"
+    to: "096"
+    type: complementary
+    rationale: "机会成本比较被放弃的最佳替代项；Strategic Tradeoffs 研究活动系统中不可同时最大化的战略选择。"
+  - from: "044"
+    to: "087"
+    type: complementary
+    rationale: "Principal-Agent 研究激励错位；Governance 研究制度化监督、权力与制衡。"
+  - from: "044"
+    to: "088"
+    type: complementary
+    rationale: "激励设计与制度适应/非预期后果是不同层级的机制。"
+  - from: "087"
+    to: "088"
+    type: complementary
+    rationale: "治理结构与制度演化可互相影响，但不是同一机制。"
+  - from: "055"
+    to: "060"
+    type: complementary
+    rationale: "确认偏误描述证据选择偏差；身份、利益或动机驱动的推理解释偏误为何持续。"
+  - from: "072"
+    to: "099"
+    type: complementary
+    rationale: "反馈回路描述系统动态；Learning Curves/学习速度研究主体如何通过反馈提高表现。"
+  - from: "078"
+    to: "079"
+    type: complementary
+    rationale: "控制回路研究调节结构；可观测性/可控性研究状态能否被看见以及能否被输入改变。"
+  - from: "008"
+    to: "018"
+    type: complementary
+    rationale: "可证伪性规定命题如何被反驳；证据等级规定现有证据应赋予多大权重。"
+  - from: "013"
+    to: "014"
+    type: complementary
+    rationale: "相关与因果区分提出识别问题；反事实提供定义与检验因果效应的框架。"
