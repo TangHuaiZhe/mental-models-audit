@@ -2,3 +2,4 @@ site/
 public/
 .venv/
 __pycache__/
+.notion-publish-state.json

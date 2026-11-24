@@ -1,4 +1,4 @@
-version: 3
+version: 4
 model_set_version: "1.0.0"
 
 analysis_objects:
@@ -71,7 +71,7 @@ selection_pipeline:
   - "Step 0: 明确analysis_object。具体股票至少建立company与security两层；按股份权利追加share_class，按同一股份的交易货币/柜台追加trading_counter。"
   - "Step 1: 读取config/model-routing-metadata.yaml中的analysis_objects、tags、mechanism_cluster与overlaps_with。"
   - "Step 2: 根据研究问题、模式与已有证据计算候选分数。"
-  - "Step 3: 读取config/mechanism-clusters.yaml去重；同簇默认只保留primary_model，除非第二模型回答不同子问题且有独立证据。"
+  - "Step 3: 读取config/mechanism-clusters.yaml去重；按 relation 判定重复、互补或对象专属；第二模型须有独立子问题及证据。"
   - "Step 4: 执行原子Skill；记录其证据是否独立、是否改变结论、是否产生新证伪条件。"
   - "Step 5: Deep Audit仍对100模型逐项判相关性，但汇总按机制簇，不按模型个数计权。"
   - "Step 6: 把模型对之间的共选、同证据、同结论、增量信息写入Model Independence Audit记录。"
@@ -79,7 +79,7 @@ selection_pipeline:
 
 selection_rules:
   - "先按问题结构选模型，不按课程顺序选。"
-  - "同一底层机制默认只保留1个主模型。"
+  - "同一对象、命题与证据的重复机制只计一次。"
   - "第二模型只有在子问题和证据都独立时才展开。"
   - "没有可观察证据的模型不得因为类比漂亮而升级为Material。"
   - "公司好坏、证券价格、股权类别和同一股份的交易柜台必须显式拆开。"
@@ -87,3 +87,11 @@ selection_rules:
   - "若存在不可逆资本配置，考虑尾部风险、安全边际或实物期权。"
   - "AI资本强度上升或自由现金流受压时执行capital_allocation_audit；检查投入可逆性，不能把现金流时点变化直接当成价值毁损。"
   - "最终报告不得用Material模型数量作为信心加权。"
+
+deduplication_v3:
+  relation_source: "config/mechanism-clusters.yaml"
+  rules:
+    - "duplicate: 同一对象、同一命题、同一证据只计一次。"
+    - "complementary: 可分别展开，但须记录独立子问题及独立证据；共享事实不得重复计票。"
+    - "object-specific: 只在相同分析对象内去重，company/security/share_class/industry 不跨对象合并。"
+    - "旧 max_expanded 作为展示预算，不决定机制票数。"

@@ -2,7 +2,7 @@
 
 > **Active Model Set v1.0**：GitHub 当前导航展示经过跨行业 Regression Tests 换血后的100个 active models；Notion 原始课程和旧页面继续作为历史版本保留。
 
-> **[Notion 课程总页](https://app.notion.com/p/411938852e8c815eb369e88d48f2f36b)是内容源，本站是发布快照；仓库同时包含课程与 100 个可执行审查技能。**
+> **本仓库的 `docs/course/` 课程正文与 `skills/` 审查技能是唯一事实来源；本站和 Notion 均为单向发布目标。**
 
 [查看 Mental Models Audit 使用说明](audit.md)
 

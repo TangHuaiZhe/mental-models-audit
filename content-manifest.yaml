@@ -1,0 +1,904 @@
+version: 1
+source_of_truth: github
+publication_target: notion
+models:
+- model_id: '001'
+  notion_page_id: 411938852e8c810ebad3fac008bc5646
+  mapping_status: verified
+  github_path: docs/course/001-map-territory.md
+  skill_path: skills/001-map-territory/SKILL.md
+  content_hash: sha256:7d9556d3d81619a2af21512885e54479ee72887561e6540e64625007dff2ee2d
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '002'
+  notion_page_id: 411938852e8c81538132f4db9cb0b562
+  mapping_status: verified
+  github_path: docs/course/002-first-principles.md
+  skill_path: skills/002-first-principles/SKILL.md
+  content_hash: sha256:aa4680eeacd154a3eeb5d64102be0f57cfd5649f10f413bcd32d3e48097c0133
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '003'
+  notion_page_id: 412938852e8c81019b61deb7ce66d932
+  mapping_status: verified
+  github_path: docs/course/003-circle-of-competence.md
+  skill_path: skills/003-circle-of-competence/SKILL.md
+  content_hash: sha256:61c67a3979a953ee377be8c9771a3c8e6a3cc99a1ea4a69b98c933b6fc16deeb
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '004'
+  notion_page_id: 412938852e8c819ba614dc7f496215a1
+  mapping_status: verified
+  github_path: docs/course/004-inversion.md
+  skill_path: skills/004-inversion/SKILL.md
+  content_hash: sha256:f9baabc3b6380cec77e1299d68920784be1500d86341c3fc2555fba2b3dd546a
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '005'
+  notion_page_id: 412938852e8c81538000cd42a5338a90
+  mapping_status: verified
+  github_path: docs/course/005-second-order-thinking.md
+  skill_path: skills/005-second-order-thinking/SKILL.md
+  content_hash: sha256:43708ba52a4424869b23931874c0c26d8a353a1ba51e00a5a608e229b6409ae6
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '006'
+  notion_page_id: 418938852e8c81b58250f3bb29c1ff6c
+  mapping_status: verified
+  github_path: docs/course/006-probabilistic-thinking.md
+  skill_path: skills/006-probabilistic-thinking/SKILL.md
+  content_hash: sha256:563f6a2aa01f700b581795dbf5673cc0eb35083346685cdf8199f06c8841b87a
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '007'
+  notion_page_id: 419938852e8c810dafecc3fa375dac5e
+  mapping_status: verified
+  github_path: docs/course/007-bayesian-updating.md
+  skill_path: skills/007-bayesian-updating/SKILL.md
+  content_hash: sha256:6259e7154fd57013f578939e2659a6c1e88ab6d37dcc8b36232e1ddf172b865c
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 008
+  notion_page_id: 419938852e8c815bb62be122f11ba4ba
+  mapping_status: verified
+  github_path: docs/course/008-falsifiability.md
+  skill_path: skills/008-falsifiability/SKILL.md
+  content_hash: sha256:78aa5e18d13c64ebf990f17322427bc927c7132b7cb3b57e9be445d2576006ae
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 009
+  notion_page_id: 419938852e8c81d1a1f9f0060e167403
+  mapping_status: verified
+  github_path: docs/course/009-occams-razor.md
+  skill_path: skills/009-occams-razor/SKILL.md
+  content_hash: sha256:18d6c97a65a60fa0dcd7a0e796e1210a516706df4aaaad265da82be1458ec08e
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '010'
+  notion_page_id: 419938852e8c81f6b1ebfd5e464dddf0
+  mapping_status: verified
+  github_path: docs/course/010-steelmanning.md
+  skill_path: skills/010-steelmanning/SKILL.md
+  content_hash: sha256:a55ec4977a75d82f4851de7ee66a4547125072c3423f8c2da6b8b82555285d9c
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '011'
+  notion_page_id: 41b938852e8c81adbf62d91b712959bc
+  mapping_status: verified
+  github_path: docs/course/011-necessary-sufficient.md
+  skill_path: skills/011-necessary-sufficient/SKILL.md
+  content_hash: sha256:4bbfc97624f94c648ba577964fd2b998d3d0f4029225184ba0505dd786420971
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '012'
+  notion_page_id: 41c938852e8c81aca620ebe54abb6040
+  mapping_status: verified
+  github_path: docs/course/012-deduction-induction-abduction.md
+  skill_path: skills/012-deduction-induction-abduction/SKILL.md
+  content_hash: sha256:1d6740dbeef2e9bba549cc871c4e885b140e64c46f361993d09e4b532a21e10f
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '013'
+  notion_page_id: 41c938852e8c8154947ff44445e36d12
+  mapping_status: verified
+  github_path: docs/course/013-correlation-causation.md
+  skill_path: skills/013-correlation-causation/SKILL.md
+  content_hash: sha256:cc90c24739d83af7608dce83b83df338419463c7f31b7de7fb877925f70652c9
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '014'
+  notion_page_id: 41d938852e8c81e79903e2b6bbbc79e6
+  mapping_status: verified
+  github_path: docs/course/014-counterfactual.md
+  skill_path: skills/014-counterfactual/SKILL.md
+  content_hash: sha256:a1fed50dd4f7febd9155ea3c0ab4fb6d368263367e255e314a4f9a5a076c8db9
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '015'
+  notion_page_id: 41f938852e8c8145948cc77bfb754835
+  mapping_status: verified
+  github_path: docs/course/015-goodharts-law.md
+  skill_path: skills/015-goodharts-law/SKILL.md
+  content_hash: sha256:7586737f8c3eabef457ddc6f205cc24ee3e6884a749b52d781f99fbea7d62f26
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '016'
+  notion_page_id: 41f938852e8c81a88a63f3762c969f81
+  mapping_status: verified
+  github_path: docs/course/016-operational-definition.md
+  skill_path: skills/016-operational-definition/SKILL.md
+  content_hash: sha256:75b5cde3cc00ad81a89bce186363ecf68ce5fa561fdcaeb9a2c93320b5cac91e
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '017'
+  notion_page_id: 41f938852e8c8161b4c4e76d541dbdd9
+  mapping_status: verified
+  github_path: docs/course/017-induction-black-swan.md
+  skill_path: skills/017-induction-black-swan/SKILL.md
+  content_hash: sha256:82efe52f4a43ce68e8733bbcc1c58833df5404b49255af124fa4f1f57d9521cf
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 018
+  notion_page_id: 41f938852e8c81f0a5e8d95e8126ee8a
+  mapping_status: verified
+  github_path: docs/course/018-evidence-hierarchy.md
+  skill_path: skills/018-evidence-hierarchy/SKILL.md
+  content_hash: sha256:e06605020e31e7395e30da93e9450142b369621d54c40f3fa6efd63b2aa7c00e
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 019
+  notion_page_id: 41f938852e8c810d8db3fd6077c625fe
+  mapping_status: verified
+  github_path: docs/course/019-fact-value.md
+  skill_path: skills/019-fact-value/SKILL.md
+  content_hash: sha256:0ac68ce2d4b36ff9506fd4052adc9e0bbeabbef309fe88b0997ca19485d1853c
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '020'
+  notion_page_id: 41f938852e8c813bbee5de7ebf812ad2
+  mapping_status: verified
+  github_path: docs/course/020-metacognition.md
+  skill_path: skills/020-metacognition/SKILL.md
+  content_hash: sha256:49ffc417bf7a6f0d85a94bb8fdcca2d421c6ffd724ad7078cd02e51dc72348c4
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '021'
+  notion_page_id: 41f938852e8c81be9bebe5d025eca637
+  mapping_status: verified
+  github_path: docs/course/021-wrights-law-experience-curve.md
+  skill_path: skills/021-wrights-law-experience-curve/SKILL.md
+  content_hash: sha256:c5af90d5be358538abd8ae85d919c9e434f4d02ad75d57b617070b6af3c2494a
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '022'
+  notion_page_id: 41f938852e8c81b78136debdd4ad46bb
+  mapping_status: verified
+  github_path: docs/course/022-entropy.md
+  skill_path: skills/022-entropy/SKILL.md
+  content_hash: sha256:71637591a13963ac5b49266acfd674d4442aee1cb150d2cee23d89175d95e6ae
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '023'
+  notion_page_id: 41f938852e8c814b88e0c268aa3c5110
+  mapping_status: verified
+  github_path: docs/course/023-energy-efficiency-constraints.md
+  skill_path: skills/023-energy-efficiency-constraints/SKILL.md
+  content_hash: sha256:16b3e659538281c35be20eed3ea764909aff638e40aac81cb1d91e91a36c1acd
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '024'
+  notion_page_id: 41f938852e8c8105bb29df1e7611fcaa
+  mapping_status: verified
+  github_path: docs/course/024-leverage.md
+  skill_path: skills/024-leverage/SKILL.md
+  content_hash: sha256:d5dd49bb4b45add6ea8fced110d8a497baa06869995106c1f883d4bde1a27edd
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '025'
+  notion_page_id: 41f938852e8c81499e0ce4817eeef5c6
+  mapping_status: verified
+  github_path: docs/course/025-threshold-phase-transition.md
+  skill_path: skills/025-threshold-phase-transition/SKILL.md
+  content_hash: sha256:f78399ddc6b5ab64008eaa73c6be2f7227da9889d124f03d5da54d1f3621e58f
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '026'
+  notion_page_id: 41f938852e8c812aa2a2c6f47b8335e6
+  mapping_status: verified
+  github_path: docs/course/026-scale-square-cube.md
+  skill_path: skills/026-scale-square-cube/SKILL.md
+  content_hash: sha256:1bdd6d3dd3a0f9326921995de590e0a306fb9e3e913c9538b12c6f4fcf2b02e7
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '027'
+  notion_page_id: 41f938852e8c8144a54ad9a92443e669
+  mapping_status: verified
+  github_path: docs/course/027-margin-of-safety-redundancy.md
+  skill_path: skills/027-margin-of-safety-redundancy/SKILL.md
+  content_hash: sha256:4508ae738ac09a3e2ccfa6c0334cb122c3a6e64835aea3d37c53d243bcd8209b
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 028
+  notion_page_id: 41f938852e8c81239215f4c48277bcab
+  mapping_status: verified
+  github_path: docs/course/028-fmea.md
+  skill_path: skills/028-fmea/SKILL.md
+  content_hash: sha256:95feadeab5a3de92d94ee2e5f1f6e2eae1d70eac4e8fefec015b59950583e765
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 029
+  notion_page_id: 41f938852e8c8165b5f7f5dd583e22f5
+  mapping_status: verified
+  github_path: docs/course/029-bottleneck-toc.md
+  skill_path: skills/029-bottleneck-toc/SKILL.md
+  content_hash: sha256:510910cb66446d5a5e7d4a478b2b670cd014a2cffb2d61350f7de1c86048b136
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '030'
+  notion_page_id: 41f938852e8c8140a348f16ec9179f7d
+  mapping_status: verified
+  github_path: docs/course/030-reliability-fault-tree.md
+  skill_path: skills/030-reliability-fault-tree/SKILL.md
+  content_hash: sha256:e0ab3cd2d4c501ade995c334a1cc3449e3762841b8384f23dd27fc23d3e0f43d
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '031'
+  notion_page_id: 41f938852e8c81bfa939c6b50c9073f1
+  mapping_status: verified
+  github_path: docs/course/031-base-rate.md
+  skill_path: skills/031-base-rate/SKILL.md
+  content_hash: sha256:6b4148a83b28aa1ce74d0f6d6c5801a567cc06cd7e984147cd9fbd2a71a246a7
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '032'
+  notion_page_id: 41f938852e8c81caae66ca7477dffb4f
+  mapping_status: verified
+  github_path: docs/course/032-expected-value.md
+  skill_path: skills/032-expected-value/SKILL.md
+  content_hash: sha256:0e6a5a399f4d181688470a9b987f98e03ebe6e64800709814c8ff5664960d1a4
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '033'
+  notion_page_id: 41f938852e8c81f8a602df95b265ed94
+  mapping_status: verified
+  github_path: docs/course/033-variance-tail-risk.md
+  skill_path: skills/033-variance-tail-risk/SKILL.md
+  content_hash: sha256:695940b63747ca06eef73cc46a91ed379d25b4f1abb31e31f15c94361f627cf7
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '034'
+  notion_page_id: 41f938852e8c8177a51fc3da6e644300
+  mapping_status: verified
+  github_path: docs/course/034-power-law-pareto.md
+  skill_path: skills/034-power-law-pareto/SKILL.md
+  content_hash: sha256:3bb4f140a30b27b1349528b25c4b99db88f57e03852a82b4b1f6ba846c469220
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '035'
+  notion_page_id: 41f938852e8c81c8a2c9f7b78ce55605
+  mapping_status: verified
+  github_path: docs/course/035-mean-reversion.md
+  skill_path: skills/035-mean-reversion/SKILL.md
+  content_hash: sha256:ceb1d472bdf135e3a76ddf28c2bb6452c7c66bab135912e8289db4757647f93a
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '036'
+  notion_page_id: 41f938852e8c81fcb113cae9edc854ec
+  mapping_status: verified
+  github_path: docs/course/036-selection-survivorship.md
+  skill_path: skills/036-selection-survivorship/SKILL.md
+  content_hash: sha256:9c89b043334a074ee81f8a5eec1b6e1d4c483bcc6acdc9eb1b1e7fb31a6edac3
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '037'
+  notion_page_id: 41f938852e8c813e916acbeaa21c0c01
+  mapping_status: verified
+  github_path: docs/course/037-information-asymmetry-signaling.md
+  skill_path: skills/037-information-asymmetry-signaling/SKILL.md
+  content_hash: sha256:f0c539fbdc2f4852f8f0cf997e7f971d6e0519a7efa97ea97453c32f30b8d434
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 038
+  notion_page_id: 41f938852e8c81708eb4ee28756574c4
+  mapping_status: verified
+  github_path: docs/course/038-information-value.md
+  skill_path: skills/038-information-value/SKILL.md
+  content_hash: sha256:4b2ff9a70b30ed28fb0397ba6273f818bf8cc6cf55840e5c939f61bdabc8736d
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 039
+  notion_page_id: 41f938852e8c819b8273c8cabf9c8609
+  mapping_status: verified
+  github_path: docs/course/039-compounding.md
+  skill_path: skills/039-compounding/SKILL.md
+  content_hash: sha256:8622f83b25f9524682063b4be6f1261f7a8009e2df9fa29406939f326ae89969
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '040'
+  notion_page_id: 41f938852e8c8199849dd9a3d426d558
+  mapping_status: verified
+  github_path: docs/course/040-covariance-diversification.md
+  skill_path: skills/040-covariance-diversification/SKILL.md
+  content_hash: sha256:afc1983eeede7037d5ff09fc7e5a5e1eb0d6b941a5e83f3eabc8d26475349c3a
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '041'
+  notion_page_id: 41f938852e8c814ba48ada678df50b0b
+  mapping_status: verified
+  github_path: docs/course/041-opportunity-cost.md
+  skill_path: skills/041-opportunity-cost/SKILL.md
+  content_hash: sha256:ee1a267244653e2acc2fc783e2237f9784966ad5907a24b45c619529e5ce5434
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '042'
+  notion_page_id: 41f938852e8c8187aa72ebfdceb1b5ca
+  mapping_status: verified
+  github_path: docs/course/042-maturity-transformation-duration-gap.md
+  skill_path: skills/042-maturity-transformation-duration-gap/SKILL.md
+  content_hash: sha256:1af0f48b11c63cf1db3f0bda6c90c2a9f71d4e7b873d8adae59ac85da3cd80b7
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '043'
+  notion_page_id: 41f938852e8c814197dfc0131fa1c8ac
+  mapping_status: verified
+  github_path: docs/course/043-supply-demand.md
+  skill_path: skills/043-supply-demand/SKILL.md
+  content_hash: sha256:0ed69e79b2f9fda24a69e71d540d6811382a4bb7a64bf1e8861e43ff74859bb3
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '044'
+  notion_page_id: 41f938852e8c81548984cede4edec479
+  mapping_status: verified
+  github_path: docs/course/044-incentive-principal-agent.md
+  skill_path: skills/044-incentive-principal-agent/SKILL.md
+  content_hash: sha256:f159f7e9508b5cc221ca9666aae87c3ef4a1b09c0739c3a2f8ce1b625f773314
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '045'
+  notion_page_id: 41f938852e8c81ec8f33f80a6b98f38e
+  mapping_status: verified
+  github_path: docs/course/045-comparative-advantage.md
+  skill_path: skills/045-comparative-advantage/SKILL.md
+  content_hash: sha256:ba291157e21e9403e522421eef91977f9028b6b676b18b1bcf5dca4421aa823b
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '046'
+  notion_page_id: 41f938852e8c81a485cbe79aafa95488
+  mapping_status: verified
+  github_path: docs/course/046-economies-of-scale-scope.md
+  skill_path: skills/046-economies-of-scale-scope/SKILL.md
+  content_hash: sha256:70ec8d8042d5b3bfacbb0cce3718383e3934faa0215fbdc32085a598e7ede125
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '047'
+  notion_page_id: 41f938852e8c8116b439c9d503b75975
+  mapping_status: verified
+  github_path: docs/course/047-network-effects.md
+  skill_path: skills/047-network-effects/SKILL.md
+  content_hash: sha256:125b9391dc717bddec1ca2576d003dda525931dd0578cac11190f98aabfceca0
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 048
+  notion_page_id: 41f938852e8c81b099cec082d5692ebd
+  mapping_status: verified
+  github_path: docs/course/048-transaction-costs.md
+  skill_path: skills/048-transaction-costs/SKILL.md
+  content_hash: sha256:8f5f00ca726e9af555703ccfb5b00b1d019933c39676111f0deb163c0c2d9805
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 049
+  notion_page_id: 41f938852e8c8118a69efa6ccfa60b63
+  mapping_status: verified
+  github_path: docs/course/049-creative-destruction.md
+  skill_path: skills/049-creative-destruction/SKILL.md
+  content_hash: sha256:0b7da96f621c4092a2c76748b7677e73765e8d6a32148de423c87a41b76bd9d7
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '050'
+  notion_page_id: 41f938852e8c814b8ab4fe2985202487
+  mapping_status: verified
+  github_path: docs/course/050-pricing-power-value-capture.md
+  skill_path: skills/050-pricing-power-value-capture/SKILL.md
+  content_hash: sha256:e782ced1d5d770eb931d67ae2ee06a901ab8e54208ddced44c9be56ce44b4a27
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '051'
+  notion_page_id: 41f938852e8c81aebfc4e36f5e4ee678
+  mapping_status: verified
+  github_path: docs/course/051-loss-aversion-prospect.md
+  skill_path: skills/051-loss-aversion-prospect/SKILL.md
+  content_hash: sha256:0fd0fb68417f31de3a345fb89f82d39825edc76c966212ba05d5afe432c8c49d
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '052'
+  notion_page_id: 41f938852e8c816da145d4acc8a74a6f
+  mapping_status: verified
+  github_path: docs/course/052-anchoring.md
+  skill_path: skills/052-anchoring/SKILL.md
+  content_hash: sha256:39a5089e8ef5d0aee28dfcd9799228c213f4173e365faf0b8ccb7a235de01449
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '053'
+  notion_page_id: 41f938852e8c817c86cce9d37b8f7c23
+  mapping_status: verified
+  github_path: docs/course/053-s-curve-diffusion.md
+  skill_path: skills/053-s-curve-diffusion/SKILL.md
+  content_hash: sha256:6ba32dcfa01769826b255077d2cbd6b72c7e2441c7028ab61e20c2d4e5651717
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '054'
+  notion_page_id: 41f938852e8c81b78d92fa343f8b68a9
+  mapping_status: verified
+  github_path: docs/course/054-representativeness-base-rate-neglect.md
+  skill_path: skills/054-representativeness-base-rate-neglect/SKILL.md
+  content_hash: sha256:d4a981e0ba92e51ecaee6de8ea2da8f03f323034990565f7e69c4b19ef33955d
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '055'
+  notion_page_id: 41f938852e8c81bf8123eb9589cf2550
+  mapping_status: verified
+  github_path: docs/course/055-confirmation-bias.md
+  skill_path: skills/055-confirmation-bias/SKILL.md
+  content_hash: sha256:e35eb11b5db240e3dff8e9f66a037061eb1af1a4147df66a4c01f88724bfa3dd
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '056'
+  notion_page_id: 41f938852e8c815ead6ede4a19e84fc9
+  mapping_status: verified
+  github_path: docs/course/056-cognitive-dissonance.md
+  skill_path: skills/056-cognitive-dissonance/SKILL.md
+  content_hash: sha256:fc5b556fe026c764570738ebb8e4cd4e8b44cb3c5d268b14decc13fee01eb9e7
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '057'
+  notion_page_id: 41f938852e8c813cb4b1ca23743d02fc
+  mapping_status: verified
+  github_path: docs/course/057-explore-exploit.md
+  skill_path: skills/057-explore-exploit/SKILL.md
+  content_hash: sha256:e5d08201b2cf199a8747ac73199655d4007dd54ed937cf72b8f75928b613898f
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 058
+  notion_page_id: 41f938852e8c81cb93d2c8c7a1ba04ce
+  mapping_status: verified
+  github_path: docs/course/058-endowment-mental-accounting.md
+  skill_path: skills/058-endowment-mental-accounting/SKILL.md
+  content_hash: sha256:7a77e7ae37a16b3474e68d8110b51c6f177de3a255d7d3b963746f1c58aac945
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 059
+  notion_page_id: 41f938852e8c81c0ae9cd47a75b80a03
+  mapping_status: verified
+  github_path: docs/course/059-groupthink-conformity.md
+  skill_path: skills/059-groupthink-conformity/SKILL.md
+  content_hash: sha256:d01af8329866599bddf215643f1f034f145d328ff86fbfd6647f500d3f9d460b
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '060'
+  notion_page_id: 41f938852e8c81408b64fa7692917c51
+  mapping_status: verified
+  github_path: docs/course/060-motivated-reasoning.md
+  skill_path: skills/060-motivated-reasoning/SKILL.md
+  content_hash: sha256:ab02522254d9fc7f66e21e7f025a036a7d0cee39bf26080fe5f1ae1e4e596893
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '061'
+  notion_page_id: 41f938852e8c813eaf52c53b72487ae2
+  mapping_status: verified
+  github_path: docs/course/061-natural-selection.md
+  skill_path: skills/061-natural-selection/SKILL.md
+  content_hash: sha256:e958663384fa66f74000dedafdc271f96da1c54d41eee6a0c3beb68716e3afa8
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '062'
+  notion_page_id: 41f938852e8c815599e5dc9546b4f771
+  mapping_status: verified
+  github_path: docs/course/062-fitness-landscape.md
+  skill_path: skills/062-fitness-landscape/SKILL.md
+  content_hash: sha256:08044c3e3505575cdcae85bd33aa8b65041ec12631a5a26f4389a0fc23935098
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '063'
+  notion_page_id: 41f938852e8c8151bd05ebde6ba8ba7e
+  mapping_status: verified
+  github_path: docs/course/063-niche-competition.md
+  skill_path: skills/063-niche-competition/SKILL.md
+  content_hash: sha256:2bcb6c87a8f4c11c6de9f8b6976732d53c38faab6853390bf3496aa4dec2a022
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '064'
+  notion_page_id: 41f938852e8c8141aa18d9a0c8eabcc1
+  mapping_status: verified
+  github_path: docs/course/064-symbiosis.md
+  skill_path: skills/064-symbiosis/SKILL.md
+  content_hash: sha256:5cb8541a7da84e4bb9ff307e8a87688502cd891eee8d40fe0a8592307cf61541
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '065'
+  notion_page_id: 41f938852e8c818fbe6dcfb6bd142665
+  mapping_status: verified
+  github_path: docs/course/065-robustness-immunity.md
+  skill_path: skills/065-robustness-immunity/SKILL.md
+  content_hash: sha256:350fc65007ff859485aae59b7c0118f7e46f21b63191818cf052ac2b9fc99937
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '066'
+  notion_page_id: 41f938852e8c811c8f34e842deaf1991
+  mapping_status: verified
+  github_path: docs/course/066-arms-race.md
+  skill_path: skills/066-arms-race/SKILL.md
+  content_hash: sha256:8fd5f36193e32986ce44d99d5cb5cf53631ab768ca7e9c36334216f666c036e6
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '067'
+  notion_page_id: 41f938852e8c81fabceeea91cae6dac6
+  mapping_status: verified
+  github_path: docs/course/067-path-dependence-lock-in.md
+  skill_path: skills/067-path-dependence/SKILL.md
+  content_hash: sha256:563fb64a1499fb666962399e2e2f2802a2d4e5c1f69632a9ef435bea2de6315b
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 068
+  notion_page_id: 41f938852e8c81249e4dd567dcefdb1b
+  mapping_status: verified
+  github_path: docs/course/068-ecosystem-food-web.md
+  skill_path: skills/068-ecosystem-food-web/SKILL.md
+  content_hash: sha256:6bedbe367c00da7427a57cf94c595ad56011612ae8d940875a478666fac4c1d7
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 069
+  notion_page_id: 41f938852e8c8165bc10d3e27166910a
+  mapping_status: verified
+  github_path: docs/course/069-diversity-resilience.md
+  skill_path: skills/069-diversity-resilience/SKILL.md
+  content_hash: sha256:07f3a16494f951bf8717e9aaf91fa2dc550ed9a161eb2cdbbed0655d0c8d28cd
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '070'
+  notion_page_id: 41f938852e8c8138aa8ed3ed9c2e8655
+  mapping_status: verified
+  github_path: docs/course/070-antifragility-convexity.md
+  skill_path: skills/070-antifragility-convexity/SKILL.md
+  content_hash: sha256:dadcb45376b71292bb4a29dd52d46ac58aa242f272e75aaa6d3423e7e365be8c
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '071'
+  notion_page_id: 41f938852e8c813fb0d5fbcf8b6f81ea
+  mapping_status: verified
+  github_path: docs/course/071-system-boundary.md
+  skill_path: skills/071-system-boundary/SKILL.md
+  content_hash: sha256:5ba9b356f5bd82fb6891ea03198e483cf7470e66014febb3766bee66dd6be08b
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '072'
+  notion_page_id: 41f938852e8c81fbb35bdf1fadae412b
+  mapping_status: verified
+  github_path: docs/course/072-feedback-loops.md
+  skill_path: skills/072-feedback-loops/SKILL.md
+  content_hash: sha256:faa3e03177164071dbead24c9a5b740b1b94a71fe8d1066a614b390470b4b505
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '073'
+  notion_page_id: 41f938852e8c81adb187c5cc0b48b21b
+  mapping_status: verified
+  github_path: docs/course/073-delay.md
+  skill_path: skills/073-delay/SKILL.md
+  content_hash: sha256:74baff3f39b9461baa0f0519ff0e63258eb4d5446b8d903848f28f37e61c37bd
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '074'
+  notion_page_id: 41f938852e8c81988ba1c820fccb2af6
+  mapping_status: verified
+  github_path: docs/course/074-nonlinearity-emergence.md
+  skill_path: skills/074-nonlinearity-emergence/SKILL.md
+  content_hash: sha256:f21d10492acd7400b6917f54a3b657800d0792967dceffd459b63cb3e38ce508
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '075'
+  notion_page_id: 41f938852e8c81a1b29bdf62a18e09b3
+  mapping_status: verified
+  github_path: docs/course/075-stock-flow-dynamics.md
+  skill_path: skills/075-stock-flow-dynamics/SKILL.md
+  content_hash: sha256:c21d833e2ef7db6223b3f8ffd0485ec98d84bc4cbac5ee5000710fe72387b487
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '076'
+  notion_page_id: 41f938852e8c814481a7fe83f5143dac
+  mapping_status: verified
+  github_path: docs/course/076-leverage-points.md
+  skill_path: skills/076-leverage-points/SKILL.md
+  content_hash: sha256:50e218d77fa3dd7641adf22eb3b5faff37733881e5432ec6fc9a3a8063148a33
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '077'
+  notion_page_id: 41f938852e8c81de9251c13db457aa90
+  mapping_status: verified
+  github_path: docs/course/077-system-traps-policy-resistance.md
+  skill_path: skills/077-system-traps-policy-resistance/SKILL.md
+  content_hash: sha256:de551cef7d52dcd72f88b5fec79ae7c942f6560f8e7341b237f6c98d426270a9
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 078
+  notion_page_id: 41f938852e8c81b98695e59af29f0f7d
+  mapping_status: verified
+  github_path: docs/course/078-cybernetics.md
+  skill_path: skills/078-cybernetics/SKILL.md
+  content_hash: sha256:34ea5a25f4c937cd43020b9415ef105debcb56069b22973883811d97d87dc492
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 079
+  notion_page_id: 41f938852e8c81138d1df52786dde328
+  mapping_status: verified
+  github_path: docs/course/079-observability-controllability.md
+  skill_path: skills/079-observability-controllability/SKILL.md
+  content_hash: sha256:9eead91c7aab67fde7e17521c73681af8a5d94c4435176c95717258535aaf261
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 080
+  notion_page_id: 41f938852e8c81c28206c3d8a8f18e36
+  mapping_status: verified
+  github_path: docs/course/080-complex-adaptive-systems.md
+  skill_path: skills/080-complex-adaptive-systems/SKILL.md
+  content_hash: sha256:05d7d1caa5986886b334e8c2eefc4ba36f6e3f8f66738f1d8fed344935eed60d
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 081
+  notion_page_id: 41f938852e8c8117be21fb8056b223dc
+  mapping_status: verified
+  github_path: docs/course/081-nash-equilibrium.md
+  skill_path: skills/081-nash-equilibrium/SKILL.md
+  content_hash: sha256:ce693a51d5929ae32ecebe69f534e419cecbb14e89bc79bd694559368686d9d4
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 082
+  notion_page_id: 41f938852e8c816cad38c865c1723849
+  mapping_status: verified
+  github_path: docs/course/082-prisoners-dilemma.md
+  skill_path: skills/082-prisoners-dilemma/SKILL.md
+  content_hash: sha256:efd658e7fa58c706491dfa1c635b6a4af5277111cf8e5e3f4299500713900543
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 083
+  notion_page_id: 41f938852e8c8138bf37d650981f9eb6
+  mapping_status: verified
+  github_path: docs/course/083-repeated-games-reputation.md
+  skill_path: skills/083-repeated-games-reputation/SKILL.md
+  content_hash: sha256:660162e8138c0527fa6d77da421017abecd4c780ad7510197408aada52ccad92
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 084
+  notion_page_id: 41f938852e8c8173a1c1cda928849125
+  mapping_status: verified
+  github_path: docs/course/084-zero-nonzero-sum.md
+  skill_path: skills/084-zero-nonzero-sum/SKILL.md
+  content_hash: sha256:8908a6db25664fe147ff032752718a66ce3217be4e89a48967dec25e017673bd
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 085
+  notion_page_id: 41f938852e8c81b3bc1ee070b3c2759e
+  mapping_status: verified
+  github_path: docs/course/085-commitment-credible-threat.md
+  skill_path: skills/085-commitment-credible-threat/SKILL.md
+  content_hash: sha256:fcf89e90db2d486c922ac7e5a130520f9e6e3a32fd43187dc26f1a44c475e2bd
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 086
+  notion_page_id: 41f938852e8c81818836d976473e9e42
+  mapping_status: verified
+  github_path: docs/course/086-public-goods.md
+  skill_path: skills/086-public-goods/SKILL.md
+  content_hash: sha256:822ea06458eaca2dbaed73cca85e00a833b6cca3a8889f7077b56dae987f3f60
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 087
+  notion_page_id: 41f938852e8c812abdf9f3c7bdbbdc1a
+  mapping_status: verified
+  github_path: docs/course/087-governance-checks-balances.md
+  skill_path: skills/087-governance-checks-balances/SKILL.md
+  content_hash: sha256:6ac3b42329e1aa2bdc85e10115e61cdcce6f4b83a887605cef8af3b47ab856e3
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 088
+  notion_page_id: 41f938852e8c8191be29faa99c3da762
+  mapping_status: verified
+  github_path: docs/course/088-institutional-incentives.md
+  skill_path: skills/088-institutional-incentives/SKILL.md
+  content_hash: sha256:10a1dcdbb3fb8a9c4a790a532f323ddca3fdfe6354df9e95486282ded1022138
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 089
+  notion_page_id: 41f938852e8c81a1a90fd434ad7d15b5
+  mapping_status: verified
+  github_path: docs/course/089-social-network-centrality.md
+  skill_path: skills/089-social-network-centrality/SKILL.md
+  content_hash: sha256:e56a495cdaaf260a333c038fb9a10e9eccd93ded96af6849783da4a223f60b0c
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 090
+  notion_page_id: 41f938852e8c81ae8838fba79cea3646
+  mapping_status: verified
+  github_path: docs/course/090-identity-norms.md
+  skill_path: skills/090-identity-norms/SKILL.md
+  content_hash: sha256:c944a3d0440cab1e57773d6e1aa4bddfec12f41fad94dc3c12e5ce3b8f3c7a75
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 091
+  notion_page_id: 41f938852e8c8182b88ff251614ba608
+  mapping_status: verified
+  github_path: docs/course/091-capital-cycle.md
+  skill_path: skills/091-capital-cycle/SKILL.md
+  content_hash: sha256:9fed0cf63fd0c0de16bb8cdf43fe893b6e71cfb579325ae26a5a3d32168b6eff
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 092
+  notion_page_id: 41f938852e8c8183a04ef14292b98ed1
+  mapping_status: verified
+  github_path: docs/course/092-critical-juncture.md
+  skill_path: skills/092-critical-juncture/SKILL.md
+  content_hash: sha256:084b039ea403b7ef793d1d8107249f70e9a58c5516950cbd86233aeac8e39e9e
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 093
+  notion_page_id: 41f938852e8c8189829ef9d88c1e0416
+  mapping_status: verified
+  github_path: docs/course/093-shock-vs-structure.md
+  skill_path: skills/093-shock-vs-structure/SKILL.md
+  content_hash: sha256:ee8e0f49ce26fb732b2e8a1f4621739ad3c54b9afbd9115cc9eb29019c930e89
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 094
+  notion_page_id: 41f938852e8c815aa547fcb70bfa0885
+  mapping_status: verified
+  github_path: docs/course/094-strategic-resource-allocation.md
+  skill_path: skills/094-strategic-resource-allocation/SKILL.md
+  content_hash: sha256:7154aec9b4fadfdf95b8eed61902eb7a762a29cb2d18f44cb9524ca1d2a68c2d
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 095
+  notion_page_id: 41f938852e8c8159b1bace8563a12f4d
+  mapping_status: verified
+  github_path: docs/course/095-competitive-advantage-moat.md
+  skill_path: skills/095-competitive-advantage-moat/SKILL.md
+  content_hash: sha256:f44c02ea5e3f43458cdb41ae1f5b0614dfcee26ea797f70d9e3f938b0563b823
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 096
+  notion_page_id: 41f938852e8c81d2ba6dd6bd4212454b
+  mapping_status: verified
+  github_path: docs/course/096-strategic-tradeoffs.md
+  skill_path: skills/096-strategic-tradeoffs/SKILL.md
+  content_hash: sha256:891e5f84668382e98353e07cd93e4b9ed331c94ab76636bbd744308de8f29a44
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 097
+  notion_page_id: 41f938852e8c81049b8bf53488352fb9
+  mapping_status: verified
+  github_path: docs/course/097-scenario-planning.md
+  skill_path: skills/097-scenario-planning/SKILL.md
+  content_hash: sha256:f75ddb5cc9a382ce62ebbf841ae3c6dbe7687d58904d0e0874451bfe1cb13f44
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 098
+  notion_page_id: 41f938852e8c8105951ac9d713ddf58f
+  mapping_status: verified
+  github_path: docs/course/098-decision-tree-real-options.md
+  skill_path: skills/098-decision-tree-real-options/SKILL.md
+  content_hash: sha256:f2d07c65a7af43fbbe3fe691a08fd0ee0177993870fb406d76b950b57c189412
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: 099
+  notion_page_id: 41f938852e8c81418dcad3391bfd468f
+  mapping_status: verified
+  github_path: docs/course/099-feedback-learning-speed.md
+  skill_path: skills/099-feedback-learning-speed/SKILL.md
+  content_hash: sha256:ba20d12a058a178102bc1db7f6b789411ca31d87d3f39a1a8785a85f3a5ef66c
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing
+- model_id: '100'
+  notion_page_id: 41f938852e8c81778184cf97846feb6c
+  mapping_status: verified
+  github_path: docs/course/100-multi-model-latticework.md
+  skill_path: skills/100-multi-model-latticework/SKILL.md
+  content_hash: sha256:a73e55b7c1659441406d0b5fe68b8c7659258d0b5542113f6388da1f95cb7cf8
+  last_sync: null
+  mapping_verified_at: '2026-11-24'
+  mapping_evidence: Notion course index child-page listing

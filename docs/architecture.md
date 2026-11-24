@@ -89,3 +89,7 @@ v1.0 正式合并：
 
 v1.0 正式收窄：
 070 只负责 Antifragility / Convexity；分阶段投资选择权由098 Real Options负责。
+
+## Calibration Phase：Milestone 1–2
+
+GitHub 是课程与审查技能的唯一事实来源。Notion 单向发布、数据契约与基准模板详见 [校准说明](calibration.md)。
