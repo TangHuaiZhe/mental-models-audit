@@ -1,9 +1,13 @@
 model_set: 1.0.0
-router: 4.0.0
-audit_output_contract: 4.0.0
-benchmark_contract: 1.0.0
+router: 5.0.0
+audit_output_contract: 5.0.0
+benchmark_contract: 2.0.0
+mechanism_clusters: 4.0.0
+model_relationships: 1.0.0
 publication_manifest: 1.0.0
+
 compatibility:
   model_ids: frozen_001_to_100
-  prior_audit_output: v3_readable_with_missing_v4_fields_unknown
+  prior_audit_output: v4_and_earlier_readable_with_new_fields_missing_or_mapped
   prior_regression_cases: retained_as_historical_non_benchmark
+  prior_cluster_relation: v3_relation_field_retained_as_group_default_only

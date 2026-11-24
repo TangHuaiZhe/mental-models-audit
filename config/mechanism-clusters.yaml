@@ -1,94 +1,97 @@
-version: 3
+version: 4
 model_set_version: "1.0.0"
+relationship_source: "config/model-relationships.yaml"
 default_max_expanded_per_cluster: 1
+
+# mechanism-clusters 只负责候选分组与展示预算。
+# 精确的模型对关系、硬去重与前置/冲突语义以 model-relationships.yaml 为准。
 clusters:
   "leverage":
     primary_model: "076"
     members: ["024", "076"]
-    max_expanded: 1
-    rule: "机械/财务放大优先024；系统干预优先076。"
-    relation: "object-specific"
-    dedup_policy: "independent_evidence_required"
+    max_expanded: 2
+    rule: "024看机械/经营/财务放大；076看系统干预点。二者通常互补，不因同名 Leverage 自动去重。"
+    relation: "complementary"
+    dedup_policy: "pairwise_relationship_graph"
   "resilience":
     primary_model: "027"
     members: ["027", "065", "069"]
-    max_expanded: 2
-    rule: "分别关注安全边际、防御层、多样性；最多展开2个且不得重复计票。"
+    max_expanded: 3
+    rule: "027看安全边际与冗余，065看扰动下功能保持，069看多样性与恢复能力。"
     relation: "complementary"
-    dedup_policy: "independent_evidence_required"
+    dedup_policy: "pairwise_relationship_graph"
   "failure-analysis":
     primary_model: "028"
     members: ["028", "030"]
     max_expanded: 2
     rule: "028看失效模式，030看故障组合路径。"
     relation: "complementary"
-    dedup_policy: "independent_evidence_required"
+    dedup_policy: "pairwise_relationship_graph"
   "base-rate":
     primary_model: "031"
     members: ["031", "054"]
-    max_expanded: 1
-    rule: "公司/行业基准率用031；审查分析者基率忽视用054。"
-    relation: "object-specific"
-    dedup_policy: "independent_evidence_required"
+    max_expanded: 2
+    rule: "031看客观参考类与先验分布；054审查分析者是否忽略基准率。"
+    relation: "complementary"
+    dedup_policy: "pairwise_relationship_graph"
   "signaling":
     primary_model: "037"
     members: ["037", "085"]
     max_expanded: 2
-    rule: "037偏信息不对称，085偏可信承诺/威胁。"
+    rule: "037偏信息不对称与信号，085偏可信承诺/威胁。"
     relation: "complementary"
-    dedup_policy: "independent_evidence_required"
+    dedup_policy: "pairwise_relationship_graph"
   "opportunity-cost":
     primary_model: "041"
     members: ["041", "096"]
     max_expanded: 2
-    rule: "041一般机会成本，096战略活动系统取舍。"
+    rule: "041比较最佳替代项，096研究战略活动系统中的互斥选择。"
     relation: "complementary"
-    dedup_policy: "independent_evidence_required"
+    dedup_policy: "pairwise_relationship_graph"
   "agency-governance":
     primary_model: "044"
     members: ["044", "087", "088"]
-    max_expanded: 2
-    rule: "44激励错位，87治理制衡，88制度适应与非预期后果。"
+    max_expanded: 3
+    rule: "044看激励错位，087看治理制衡，088看制度适应与非预期后果。"
     relation: "complementary"
-    dedup_policy: "independent_evidence_required"
+    dedup_policy: "pairwise_relationship_graph"
   "thesis-bias":
     primary_model: "055"
     members: ["055", "060"]
-    max_expanded: 1
-    rule: "一般确认偏误用055；利益/身份驱动明显时用060。"
+    max_expanded: 2
+    rule: "055看确认偏误，060看身份/利益/动机驱动的推理。"
     relation: "complementary"
-    dedup_policy: "independent_evidence_required"
+    dedup_policy: "pairwise_relationship_graph"
   "feedback-learning":
     primary_model: "072"
     members: ["072", "099"]
     max_expanded: 2
     rule: "072看反馈回路，099看学习速度。"
     relation: "complementary"
-    dedup_policy: "independent_evidence_required"
+    dedup_policy: "pairwise_relationship_graph"
   "control-observability":
     primary_model: "079"
     members: ["078", "079"]
     max_expanded: 2
     rule: "078看控制回路，079看可观测/可控。"
     relation: "complementary"
-    dedup_policy: "independent_evidence_required"
+    dedup_policy: "pairwise_relationship_graph"
   "evidence-discipline":
     primary_model: "018"
     members: ["008", "018"]
     max_expanded: 2
     rule: "008看证伪条件，018看证据等级。"
     relation: "complementary"
-    dedup_policy: "independent_evidence_required"
+    dedup_policy: "pairwise_relationship_graph"
   "causal-inference":
     primary_model: "013"
     members: ["013", "014"]
     max_expanded: 2
     rule: "相关-因果与反事实互补。"
     relation: "complementary"
-    dedup_policy: "independent_evidence_required"
-
+    dedup_policy: "pairwise_relationship_graph"
 
 relation_semantics:
   duplicate: "同一分析对象、命题和证据指向同一机制；相关性可保留，汇总只计一次。"
-  complementary: "机制互补；不同子问题且有独立证据时可分别展开，不自动压成一票。"
-  object-specific: "只在分析对象相同时比较去重；公司、证券、股权类别或行业之间不能跨对象去重。"
+  complementary: "机制互补；不同子问题、机制或增量信息独立时可分别展开。共享背景事实不等于重复。"
+  object_specific: "只在声明的分析对象范围内比较去重；company/security/share_class/industry 等不得跨对象合并。"

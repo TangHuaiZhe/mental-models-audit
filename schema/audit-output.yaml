@@ -1,4 +1,4 @@
-version: 4
+version: 5
 model_set_version: "1.0.0"
 
 atomic_audit:
@@ -8,48 +8,73 @@ atomic_audit:
   mechanism_cluster: "base-rate"
   relevance: "Material | Secondary | Not material"
   question: "本模型试图回答的核心问题"
+
   evidence_for:
     - fact: "支持当前命题的证据"
       source: "来源或数据定位"
       evidence_id: "E1"
       as_of_date: "YYYY-MM-DD | null"
       metric_period: "FY2025 | 2025Q4 | null"
-      claim_type: "reported_fact | estimate | inference | opinion"
-      source_type: "filing | company | regulator | independent | market_data | other"
+      published_at: "YYYY-MM-DD | null"
+      retrieved_at: "YYYY-MM-DD | null"
+      claim_type: "reported_fact | company_claim | external_fact | analyst_inference | assumption | estimate"
+      source_type: "regulatory_filing | company_disclosure | regulator | independent_primary | independent_secondary | market_data | other"
       evidence_quality: "high | medium | low | unknown"
       normalization: "原始口径、单位、币种、调整与可比性说明 | null"
+
   evidence_against:
     - fact: "反对当前命题的证据"
       source: "来源或数据定位"
       evidence_id: "E2"
       as_of_date: "YYYY-MM-DD | null"
       metric_period: "FY2025 | 2025Q4 | null"
-      claim_type: "reported_fact | estimate | inference | opinion"
-      source_type: "filing | company | regulator | independent | market_data | other"
+      published_at: "YYYY-MM-DD | null"
+      retrieved_at: "YYYY-MM-DD | null"
+      claim_type: "reported_fact | company_claim | external_fact | analyst_inference | assumption | estimate"
+      source_type: "regulatory_filing | company_disclosure | regulator | independent_primary | independent_secondary | market_data | other"
       evidence_quality: "high | medium | low | unknown"
       normalization: "原始口径、单位、币种、调整与可比性说明 | null"
+
   mechanism: "证据通过什么机制影响公司/行业/证券"
   implication: "对经营、竞争、资本回报、风险或估值的含义"
   bull_case_impact: "strengthen | neutral | weaken"
   bear_case_impact: "strengthen | neutral | weaken"
+
   unknowns:
     - "当前无法回答但可能改变结论的问题"
   falsification:
     - "可观察、尽量带阈值或时间的证伪条件"
+
+  # legacy compatibility: 旧消费者仍可读取单一 confidence 0-100。
   confidence: 0
-  confidence_basis:
-    score: "0–1；说明证据覆盖、独立性与不确定性"
-    calibrated_on: null
-    limitations: []
+  confidence_dimensions:
+    evidence_confidence:
+      level: "high | medium | low | insufficient"
+      rationale: "事实质量、覆盖度、来源独立性和时点完整性"
+    mechanism_confidence:
+      level: "high | medium | low | insufficient"
+      rationale: "证据到机制的因果链是否充分、是否存在竞争解释"
+    underwriting_confidence:
+      level: "high | medium | low | insufficient | not_applicable"
+      rationale: "机制对最终投资/决策判断的可依赖程度；非投资对象可为 not_applicable"
+
   evidence_independence:
     shared_evidence_with_models: []
     independent_evidence: true
     note: "是否只是重复使用同一事实"
+
   incremental_information:
     adds_new_mechanism: true
     adds_new_evidence: true
-    changes_decision: false
     adds_new_falsification: true
+    changes_decision: false
+    unique_insight: "相对已选模型新增了什么"
+
+  decision_impact:
+    level: "high | medium | low | none"
+    affected_dimensions: ["quality | growth | risk | valuation | position_sizing | strategy | other"]
+    explanation: ""
+
   next_models:
     - "007"
 
@@ -75,12 +100,35 @@ portfolio_summary:
     independent_mechanism_clusters: 0
     duplicate_or_supporting_models: 0
 
-contract_version: "audit-output/4.0"
+contract_version: "audit-output/5.0"
+
 object_summaries:
-  company: {conclusion: "", evidence_ids: [], confidence: 0, unknowns: []}
-  security: {conclusion: "", evidence_ids: [], confidence: 0, unknowns: []}
-  share_class: {applicable: false, conclusion: "", evidence_ids: [], confidence: 0, unknowns: []}
-  industry: {conclusion: "", evidence_ids: [], confidence: 0, unknowns: []}
+  company:
+    applicable: true
+    conclusion: ""
+    evidence_ids: []
+    confidence_dimensions: {}
+    unknowns: []
+  security:
+    applicable: true
+    conclusion: ""
+    evidence_ids: []
+    confidence_dimensions: {}
+    unknowns: []
+  share_class:
+    applicable: false
+    conclusion: ""
+    evidence_ids: []
+    confidence_dimensions: {}
+    unknowns: []
+  industry:
+    applicable: true
+    conclusion: ""
+    evidence_ids: []
+    confidence_dimensions: {}
+    unknowns: []
+
 compatibility:
-  legacy_fields: "v3 字段继续有效；缺失的新证据元数据视为 unknown。"
+  legacy_fields: "v4及更早字段继续可读；旧 claim_type/source_type 可映射到最接近的新枚举，无法确定时记为 unknown/other。"
+  legacy_confidence: "单一 confidence 0-100 保留作为兼容字段；新分析必须同时给出三维 confidence_dimensions。"
   trading_counter: "继续作为 security 下的交易柜台维度，不等同 share_class。"

@@ -1,6 +1,7 @@
-version: 1
-schema: benchmark-v1
+version: 2
+schema: benchmark-v2
 status: template_only
+
 case:
   id: "company-period-scope"
   object_ids:
@@ -10,36 +11,95 @@ case:
     industry: null
   as_of_date: "YYYY-MM-DD"
   metric_period: "FY2025 | 2025Q4 | null"
+  evidence_cutoff: "YYYY-MM-DD"
   model_set_version: "1.0.0"
-  router_version: "4.0.0"
+  router_version: "5.0.0"
+  audit_output_contract: "5.0.0"
+
   adjudication:
     reviewer: ""
     reviewed_at: "YYYY-MM-DD"
-    evidence_cutoff: "YYYY-MM-DD"
+    review_status: "draft | verified | disputed"
+    notes: ""
+
   relevance_matrix:
     - model_id: "001"
-      object_type: "company | security | share_class | industry"
+      object_type: "company | security | share_class | industry | policy | strategy | analyst_self"
       relevance: "Material | Secondary | Not material"
+      question: ""
+      mechanism: ""
       evidence_ids: []
       rationale: ""
-      confidence: 0.0
+      confidence:
+        evidence: "high | medium | low | insufficient"
+        mechanism: "high | medium | low | insufficient"
+        underwriting: "high | medium | low | insufficient | not_applicable"
+      incremental_information:
+        level: "high | medium | low | none"
+        unique_insight: ""
+        adds_new_mechanism: false
+        adds_new_evidence: false
+        adds_new_falsification: false
+      decision_impact:
+        level: "high | medium | low | none"
+        affected_dimensions: []
+        explanation: ""
+      shared_evidence_with_models: []
+      same_conclusion_with_models: []
+      adjudication_status: "unreviewed | reviewed | verified | disputed"
+
   evidence:
     - evidence_id: "E1"
       claim: ""
       as_of_date: "YYYY-MM-DD"
       metric_period: null
-      claim_type: "reported_fact | estimate | inference | opinion"
-      source_type: "filing | company | regulator | independent | market_data | other"
+      published_at: "YYYY-MM-DD | null"
+      retrieved_at: "YYYY-MM-DD | null"
+      claim_type: "reported_fact | company_claim | external_fact | analyst_inference | assumption | estimate"
+      source_type: "regulatory_filing | company_disclosure | regulator | independent_primary | independent_secondary | market_data | other"
       source_url: ""
       evidence_quality: "high | medium | low | unknown"
       normalization: ""
+
+  pairwise_independence:
+    - model_a: "031"
+      model_b: "054"
+      relationship: "duplicate | complementary | object_specific | prerequisite | supports | commonly_confused_with | conflicts_with | none"
+      co_selected: true
+      shared_evidence_ids: []
+      same_conclusion: false
+      incremental_information_a: "high | medium | low | none"
+      incremental_information_b: "high | medium | low | none"
+      rationale: ""
+
   mechanism_votes:
     - cluster: ""
-      relation: "duplicate | complementary | object-specific"
+      model_ids: []
       object_type: "company"
-      evidence_ids: []
-      counted_once: true
+      independent_evidence_ids: []
+      counted_mechanisms: 0
+      rationale: ""
+
+  derived_metrics:
+    material_models: null
+    secondary_models: null
+    independent_mechanisms: null
+    duplicate_models: null
+    co_selection_rate: null
+    same_evidence_rate: null
+    same_conclusion_rate: null
+    incremental_information_rate: null
+
   completeness:
-    expected_model_ids: "001–100"
+    expected_model_range: "001-100"
+    expected_model_count: 100
+    adjudicated_model_count: 0
     all_models_adjudicated: false
+    evidence_references_complete: false
+    pairwise_independence_checked: false
     independent_evidence_checked: false
+
+benchmark_policy:
+  exact_statistics_gate: "只有 all_models_adjudicated=true、adjudicated_model_count=100 且 evidence_references_complete=true 的案例才能进入精确 benchmark 聚合。"
+  no_frequency_only_pruning: "模型是否保留不能只按 Material 出现频率判断；必须同时考虑 incremental_information 与 decision_impact。"
+  holdout_rule: "用于最终泛化评估的 holdout case 不得参与 Router 或模型集合的日常调参。"
