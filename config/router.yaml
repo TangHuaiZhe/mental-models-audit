@@ -81,7 +81,7 @@ selection_pipeline:
 
 selection_rules:
   - "先按问题结构选模型，不按课程顺序选。"
-  - "只有 duplicate 且同一对象、命题与证据成立时才硬去重。"
+  - "只有 duplicate 且同一对象、命题与证据成立时才硬去重；关系图未声明的模型对默认 relation=none，不做关系型去重。"
   - "complementary 模型只要核心子问题、机制或增量信息独立即可联合展开；共享背景事实本身不构成重复。"
   - "没有可观察证据的模型不得因为类比漂亮而升级为Material。"
   - "公司好坏、证券价格、股权类别和同一股份的交易柜台必须显式拆开。"
@@ -101,3 +101,4 @@ relationship_policy:
     - "supports: 可联合调用，不因支持关系去重。"
     - "commonly_confused_with: 不去重；输出时显式区分。"
     - "conflicts_with: 同时保留并比较适用条件，不得静默选择一方。"
+    - "none: 未声明关系时不执行关系型去重；同 cluster、同 tag 或名称相似都不能替代显式 duplicate。"
