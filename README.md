@@ -47,6 +47,8 @@
 
 [阅读《跨学科思维模型100讲》](https://tanghuaizhe.github.io/mental-models-audit/)
 
+[下载 EPUB 电子书（Model Set v1.0）](docs/downloads/跨学科思维模型100讲-Model-Set-v1.0.epub)
+
 站点使用 MkDocs Material，由 `.github/workflows/pages.yml` 在 `main` 更新后自动构建并部署。
 
 课程正文位于 `docs/course/`，共 100 讲；左侧导航按 10 个学科模块组织，并提供全文搜索、明暗主题、上一讲/下一讲以及课程与对应 Audit Skill 的链接。
