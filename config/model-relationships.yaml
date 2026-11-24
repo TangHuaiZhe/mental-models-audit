@@ -1,8 +1,12 @@
 version: 1
 model_set_version: "1.0.0"
 canonical_for_pairwise_semantics: true
+default_when_missing: none
 
 relation_semantics:
+  none:
+    description: "关系图中未声明的模型对默认视为无特殊关系；不得仅因同 cluster、相似标签或名称相近执行去重。"
+    router_policy: "no_relation_based_dedup"
   duplicate:
     description: "同一分析对象上的两个模型回答实质相同的机制问题，且主要依赖相同证据；可同时保留相关性判定，但汇总只计一次。"
     router_policy: "hard_dedup_when_same_object_claim_and_evidence"
