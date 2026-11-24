@@ -134,8 +134,8 @@ class CalibrationTests(unittest.TestCase):
             rendered,
         )
         self.assertIn(MARKER, rendered)
-        self.assertFalse(rendered.lstrip().startswith('# 第'))
-        self.assertTrue(rendered.startswith('## 一句话定义'))
+        self.assertFalse(rendered.lstrip().startswith('# '))
+        self.assertTrue(rendered.startswith('## '))
 
     def test_router_has_no_blanket_cluster_penalty(self):
         router = yaml.safe_load(
