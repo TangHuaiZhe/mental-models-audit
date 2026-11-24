@@ -56,6 +56,12 @@
 GitHub Pages 已配置为由 GitHub Actions 发布。后续推送到 `main` 会自动重新构建网站。
 
 
+## 内容治理与系统校准
+
+GitHub `main` 是课程正文与可执行审查技能的唯一事实来源；Notion 和课程站是单向发布目标。Notion 的 100 个目标页面已通过课程总页核对；自动发布仍需单独配置凭据和启用开关。详见 [Calibration Phase：Milestone 1–2](docs/calibration.md)。
+
+模型集合、路由、输出契约与基准契约独立版本化；当前 100 个模型 ID 冻结，本阶段不改课程正文。
+
 ## Model Set 版本治理
 
 - Active models: `config/model-registry.yaml`

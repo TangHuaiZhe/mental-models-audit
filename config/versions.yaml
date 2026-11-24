@@ -1,0 +1,9 @@
+model_set: 1.0.0
+router: 4.0.0
+audit_output_contract: 4.0.0
+benchmark_contract: 1.0.0
+publication_manifest: 1.0.0
+compatibility:
+  model_ids: frozen_001_to_100
+  prior_audit_output: v3_readable_with_missing_v4_fields_unknown
+  prior_regression_cases: retained_as_historical_non_benchmark

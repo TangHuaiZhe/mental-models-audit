@@ -1,0 +1,45 @@
+version: 1
+schema: benchmark-v1
+status: template_only
+case:
+  id: "company-period-scope"
+  object_ids:
+    company: "stable company identifier"
+    security: null
+    share_class: null
+    industry: null
+  as_of_date: "YYYY-MM-DD"
+  metric_period: "FY2025 | 2025Q4 | null"
+  model_set_version: "1.0.0"
+  router_version: "4.0.0"
+  adjudication:
+    reviewer: ""
+    reviewed_at: "YYYY-MM-DD"
+    evidence_cutoff: "YYYY-MM-DD"
+  relevance_matrix:
+    - model_id: "001"
+      object_type: "company | security | share_class | industry"
+      relevance: "Material | Secondary | Not material"
+      evidence_ids: []
+      rationale: ""
+      confidence: 0.0
+  evidence:
+    - evidence_id: "E1"
+      claim: ""
+      as_of_date: "YYYY-MM-DD"
+      metric_period: null
+      claim_type: "reported_fact | estimate | inference | opinion"
+      source_type: "filing | company | regulator | independent | market_data | other"
+      source_url: ""
+      evidence_quality: "high | medium | low | unknown"
+      normalization: ""
+  mechanism_votes:
+    - cluster: ""
+      relation: "duplicate | complementary | object-specific"
+      object_type: "company"
+      evidence_ids: []
+      counted_once: true
+  completeness:
+    expected_model_ids: "001–100"
+    all_models_adjudicated: false
+    independent_evidence_checked: false

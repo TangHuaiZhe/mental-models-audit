@@ -1,4 +1,4 @@
-version: 3
+version: 4
 model_set_version: "1.0.0"
 
 atomic_audit:
@@ -12,10 +12,22 @@ atomic_audit:
     - fact: "支持当前命题的证据"
       source: "来源或数据定位"
       evidence_id: "E1"
+      as_of_date: "YYYY-MM-DD | null"
+      metric_period: "FY2025 | 2025Q4 | null"
+      claim_type: "reported_fact | estimate | inference | opinion"
+      source_type: "filing | company | regulator | independent | market_data | other"
+      evidence_quality: "high | medium | low | unknown"
+      normalization: "原始口径、单位、币种、调整与可比性说明 | null"
   evidence_against:
     - fact: "反对当前命题的证据"
       source: "来源或数据定位"
       evidence_id: "E2"
+      as_of_date: "YYYY-MM-DD | null"
+      metric_period: "FY2025 | 2025Q4 | null"
+      claim_type: "reported_fact | estimate | inference | opinion"
+      source_type: "filing | company | regulator | independent | market_data | other"
+      evidence_quality: "high | medium | low | unknown"
+      normalization: "原始口径、单位、币种、调整与可比性说明 | null"
   mechanism: "证据通过什么机制影响公司/行业/证券"
   implication: "对经营、竞争、资本回报、风险或估值的含义"
   bull_case_impact: "strengthen | neutral | weaken"
@@ -25,6 +37,10 @@ atomic_audit:
   falsification:
     - "可观察、尽量带阈值或时间的证伪条件"
   confidence: 0
+  confidence_basis:
+    score: "0–1；说明证据覆盖、独立性与不确定性"
+    calibrated_on: null
+    limitations: []
   evidence_independence:
     shared_evidence_with_models: []
     independent_evidence: true
@@ -58,3 +74,13 @@ portfolio_summary:
     material_models_raw: 0
     independent_mechanism_clusters: 0
     duplicate_or_supporting_models: 0
+
+contract_version: "audit-output/4.0"
+object_summaries:
+  company: {conclusion: "", evidence_ids: [], confidence: 0, unknowns: []}
+  security: {conclusion: "", evidence_ids: [], confidence: 0, unknowns: []}
+  share_class: {applicable: false, conclusion: "", evidence_ids: [], confidence: 0, unknowns: []}
+  industry: {conclusion: "", evidence_ids: [], confidence: 0, unknowns: []}
+compatibility:
+  legacy_fields: "v3 字段继续有效；缺失的新证据元数据视为 unknown。"
+  trading_counter: "继续作为 security 下的交易柜台维度，不等同 share_class。"

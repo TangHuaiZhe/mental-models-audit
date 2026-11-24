@@ -1,0 +1,60 @@
+name: Calibration validation and Notion publication
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: Publish verified mappings to Notion
+        type: boolean
+        required: false
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: notion-publication
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install PyYAML==6.0.3
+      - run: python scripts/validate_calibration.py
+      - run: python -m unittest discover -s tests -p 'test_*.py'
+      - run: python scripts/publish_notion.py --state notion-publish-state.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: notion-publication-plan
+          path: notion-publish-state.json
+          if-no-files-found: ignore
+  publish:
+    needs: validate
+    if: >-
+      (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.apply))
+      && vars.NOTION_PUBLISH_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    environment: notion-publication
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install PyYAML==6.0.3
+      - name: Publish and verify
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+        run: python scripts/publish_notion.py --apply --state notion-publish-state.json --write-manifest
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: notion-publication-status
+          path: |
+            notion-publish-state.json
+            content-manifest.yaml
+          if-no-files-found: ignore
