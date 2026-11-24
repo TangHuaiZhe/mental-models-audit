@@ -71,6 +71,7 @@ def validate():
         assert cluster['dedup_policy'] == 'pairwise_relationship_graph'
 
     relationship_doc = docs['config/model-relationships.yaml']
+    assert relationship_doc['default_when_missing'] == 'none'
     allowed_relations = {
         'duplicate', 'complementary', 'object_specific', 'prerequisite',
         'supports', 'commonly_confused_with', 'conflicts_with'
