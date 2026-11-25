@@ -133,7 +133,7 @@ models:
   mapping_status: verified
   github_path: docs/course/015-goodharts-law.md
   skill_path: skills/015-goodharts-law/SKILL.md
-  content_hash: sha256:7586737f8c3eabef457ddc6f205cc24ee3e6884a749b52d781f99fbea7d62f26
+  content_hash: sha256:d83cd4fd72533d7f1a237ea2bf89816ab6126a96ce6723e7cf6ea8ee359de8aa
   last_sync: null
   mapping_verified_at: '2026-11-24'
   mapping_evidence: Notion course index child-page listing
@@ -187,7 +187,7 @@ models:
   mapping_status: verified
   github_path: docs/course/021-wrights-law-experience-curve.md
   skill_path: skills/021-wrights-law-experience-curve/SKILL.md
-  content_hash: sha256:c5af90d5be358538abd8ae85d919c9e434f4d02ad75d57b617070b6af3c2494a
+  content_hash: sha256:82a8b3d4013185b9fcaa471b463210887f727bfd7b4953040207d204ba370844
   last_sync: null
   mapping_verified_at: '2026-11-24'
   mapping_evidence: Notion course index child-page listing
@@ -304,7 +304,7 @@ models:
   mapping_status: verified
   github_path: docs/course/034-power-law-pareto.md
   skill_path: skills/034-power-law-pareto/SKILL.md
-  content_hash: sha256:3bb4f140a30b27b1349528b25c4b99db88f57e03852a82b4b1f6ba846c469220
+  content_hash: sha256:c8e4963399c39e2c995badd5f18eae38258412b9e95df0d3d533bb784d3947d6
   last_sync: null
   mapping_verified_at: '2026-11-24'
   mapping_evidence: Notion course index child-page listing
@@ -376,7 +376,7 @@ models:
   mapping_status: verified
   github_path: docs/course/042-maturity-transformation-duration-gap.md
   skill_path: skills/042-maturity-transformation-duration-gap/SKILL.md
-  content_hash: sha256:1af0f48b11c63cf1db3f0bda6c90c2a9f71d4e7b873d8adae59ac85da3cd80b7
+  content_hash: sha256:021d5688bedd1bf298d4e6f87ef02a38ad6df47b7d5fff7df1f0338851462c1a
   last_sync: null
   mapping_verified_at: '2026-11-24'
   mapping_evidence: Notion course index child-page listing
@@ -475,7 +475,7 @@ models:
   mapping_status: verified
   github_path: docs/course/053-s-curve-diffusion.md
   skill_path: skills/053-s-curve-diffusion/SKILL.md
-  content_hash: sha256:6ba32dcfa01769826b255077d2cbd6b72c7e2441c7028ab61e20c2d4e5651717
+  content_hash: sha256:67ebe5878da39d2b4251b8f2a875468ae19b68d1480290c613e3dfa01c16770a
   last_sync: null
   mapping_verified_at: '2026-11-24'
   mapping_evidence: Notion course index child-page listing
@@ -511,7 +511,7 @@ models:
   mapping_status: verified
   github_path: docs/course/057-explore-exploit.md
   skill_path: skills/057-explore-exploit/SKILL.md
-  content_hash: sha256:e5d08201b2cf199a8747ac73199655d4007dd54ed937cf72b8f75928b613898f
+  content_hash: sha256:97efda19ef90e6eabfe8dbd2a3d85e8dec77b8b45c4f8e640bb235306a043279
   last_sync: null
   mapping_verified_at: '2026-11-24'
   mapping_evidence: Notion course index child-page listing
@@ -601,7 +601,7 @@ models:
   mapping_status: verified
   github_path: docs/course/067-path-dependence-lock-in.md
   skill_path: skills/067-path-dependence/SKILL.md
-  content_hash: sha256:563fb64a1499fb666962399e2e2f2802a2d4e5c1f69632a9ef435bea2de6315b
+  content_hash: sha256:dfb660c727a046588904571924ea16a330f26883a9548f92005bd3e119fdd8a6
   last_sync: null
   mapping_verified_at: '2026-11-24'
   mapping_evidence: Notion course index child-page listing
@@ -628,7 +628,7 @@ models:
   mapping_status: verified
   github_path: docs/course/070-antifragility-convexity.md
   skill_path: skills/070-antifragility-convexity/SKILL.md
-  content_hash: sha256:dadcb45376b71292bb4a29dd52d46ac58aa242f272e75aaa6d3423e7e365be8c
+  content_hash: sha256:c79803335621a57ce2fa68dde28dc13446fbc206eaefc60c9ca0bd0895c2815d
   last_sync: null
   mapping_verified_at: '2026-11-24'
   mapping_evidence: Notion course index child-page listing
@@ -673,7 +673,7 @@ models:
   mapping_status: verified
   github_path: docs/course/075-stock-flow-dynamics.md
   skill_path: skills/075-stock-flow-dynamics/SKILL.md
-  content_hash: sha256:c21d833e2ef7db6223b3f8ffd0485ec98d84bc4cbac5ee5000710fe72387b487
+  content_hash: sha256:c68b1cc9a4aa1681663f0edcc65065f4912e7c2477625c05300766e99a14b174
   last_sync: null
   mapping_verified_at: '2026-11-24'
   mapping_evidence: Notion course index child-page listing
@@ -817,7 +817,7 @@ models:
   mapping_status: verified
   github_path: docs/course/091-capital-cycle.md
   skill_path: skills/091-capital-cycle/SKILL.md
-  content_hash: sha256:9fed0cf63fd0c0de16bb8cdf43fe893b6e71cfb579325ae26a5a3d32168b6eff
+  content_hash: sha256:1f78428c58c7edfcf5fe9e3bd6a2ba5b86db27fd3b63b11fca942c79803149c9
   last_sync: null
   mapping_verified_at: '2026-11-24'
   mapping_evidence: Notion course index child-page listing
