@@ -40,6 +40,7 @@ extra_css:
 nav:
   - 首页: index.md
   - Audit Skills: audit.md
+  - 课程质量量表: course-quality-rubric.md
   - 01—10 通用认知与元思维:
       - "01 地图不是疆域（The Map Is Not the Territory）": course/001-map-territory.md
       - "02 第一性原理——从基本事实重新构建问题": course/002-first-principles.md
