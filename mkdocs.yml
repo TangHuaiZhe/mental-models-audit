@@ -27,6 +27,8 @@ theme:
 plugins:
   - search:
       lang: zh
+hooks:
+  - scripts/seo_metadata.py
 markdown_extensions:
   - admonition
   - attr_list

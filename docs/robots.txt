@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tanghuaizhe.github.io/mental-models-audit/sitemap.xml
